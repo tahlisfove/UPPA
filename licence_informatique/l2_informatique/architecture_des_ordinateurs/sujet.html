@@ -1,0 +1,187 @@
+<html>
+<head> 
+  <link rel="stylesheet" href="../../style.css" type="text/css">
+  <title>Projet Architecture - 2021/22</title>
+
+<style>
+ol > li { padding-bottom:0.3cm; }
+ul > li { padding-bottom:0.3cm; }
+span.code { font-family : times; color:#004444; }
+code { font-size:90% }
+
+table {
+	border-collapse:collapse;
+	border: thin solid black;
+}
+
+td { 
+	border: thin solid black;
+	padding:0.2cm;
+}
+</style>
+ 
+</head>
+<body>
+
+<h1>Projet Architecture 2021/22: séquence de calcul en notation polonaise inverse</h1>
+
+<p>Ce projet est noté et compte pour la note de contrôle continu du
+module d'architecture des ordinateurs. Le résultat à fournir est le
+fichier du circuit réalisé sous le logiciel Logisim. Le travail est à
+faire par binôme.</p>
+
+<p>Le but de ce projet, à l'aide du logiciel Logisim, est de réaliser
+un circuit comprenant une unité de calcul en nombres entiers non
+signés et exécutant une séquence de calculs exprimée en notation
+polonaise inverse.</p>
+
+
+<h2>Partie 1 : unité de calcul</h2>
+
+<p>Votre unité de calcul manipulera des nombres entiers non signés sur
+8 bits. Elle sera capable de réaliser l'addition, la soustraction en
+valeur absolue, la muliplication et la division entière pour deux
+nombres. Elle devra également préciser qu'un débordement a eu lieu
+pendant un calcul, c'est-à-dire si le résultat n'est pas codable sur 8
+bits.</p>
+
+<p>Le composant de votre unité de calcul aura comme entrées/sorties
+:</p>
+<ul>
+<li>2 entrées A et B sur 8 bits qui sont les paramètres du calcul.</li>
+<li>Un code d'opération sur 2 bits qui précise quel calcul effectuer :
+00 pour l'addition, 01 pour la soutraction en valeur absolue, 10 pour
+la multiplication et 11 pour la division entière.</li>
+<li>Une sortie S sur 8 bits qui contiendra le résultat du calcul.</li>
+<li>Une sortie D sur 1 bit qui indique si le calcul a débordé.</li>
+</ul>
+
+
+<h2>Partie 2 : implémentation d'une pile</h2>
+
+<p>Vu la notation en polonaise inverse, l'exécution de la séquence de
+calcul nécessite de passer par une pile qui contiendra les paramètres
+et résultats des calculs. Cette pile contiendra des valeurs sur 8 bits
+et aura une taille quelconque. Quand elle sera activée, la pile pourra
+soit empiler une nouvelle valeur, soit dépiler et retourner la valeur
+en son sommet.</p>
+
+<p>En détail, les entrées/sorties du composant pile :</p>
+<ul>
+<li>Une entrée de données sur 8 pour la valeur à empiler.</li>
+<li>Une sortie de données sur 8 bits pour retourner la valeur
+dépilée.</li>
+<li>Une entrée d'activation E : si E vaut 0, la pile ne fait rien et
+son contenu est conservé, si E vaut 1 la pile réalise une
+opération.</li>
+<li>Un code d'opération sur 1 bit : 0 pour dépiler, 1 pour empiler.</li>
+<li>Un signal d'horloge en entrée car la pile sera implémentée par une
+mémoire (composant RAM de Logisim) dont les opérations sont
+synchronisées par rapport à une horloge.</li>
+</ul>
+
+<h2>Partie 3 : exécution d'une séquence de calcul</h2>
+
+<p>La séquence de calcul à exécuter sera stockée dans une mémoire
+(composant RAM ou ROM de Logisim). La séquence est composée d'une
+suite de valeurs, codant soit des entiers soit des opérations.</p>
+
+<p>La séquence sera codée selon le principe de la notation polonaise
+inverse. Son principe est que dans l'écriture du calcul, les opérandes
+précèdent l'opérateur. Dans l'interprétation de la séquence, si un
+nombre est rencontré, il est empilé et quand une opération est
+rencontrée, deux valeurs sont dépilées, l'opération est appliquée
+dessus et le résultat est empilé. Par exemple, <i>4 + 3</i>
+s'écrit <i>4 3 +</i> et <i>4 x ((5 - 8) / 2)</i> s'écrit <i>5 8 - 2 /
+4 x</i>.</p>
+
+<p>Afin de différencier le codage d'une opération de celui d'un
+entier, on utilisera le principe suivant : si le bit de poids fort est
+à 1, il s'agit du code d'une opération, sinon, il s'agit du codage
+d'un entier. La valeur particulière 0 signifiera la fin du
+calcul. Ainsi, les entiers codés dans une séquence auront une valeur
+comprise entre 1 et 127 (mais l'unité de calcul ou la pile
+manipuleront des entiers sur 8 bits entre 0 et 255).</p>
+
+<p>Le code d'une opération à réaliser est donné dans la table
+ci-dessous, en hexa&nbsp;:</p>
+
+<center>
+<table border="1">
+<tr>
+<td> <b>Code</b></td> <td><b>Opération</b></td>
+</tr>
+
+<tr>
+<td>00</td><td>Fin du calcul</td> 
+</tr>
+
+<tr>
+<td>81</td><td>Addition</td> 
+</tr>
+
+<tr>
+<td>82</td><td>Soustraction en valeur absolue</td> 
+</tr>
+
+<tr>
+<td>83</td><td>Multiplication</td> 
+</tr>
+
+<tr>
+<td>84</td><td>Division entière</td> 
+</tr>
+
+</table>
+</center>
+
+<p>Sachant qu'en mémoire une séquence de calcul est stockée à partir
+de l'adresse 0 de la RAM le contenu mémoire suivant (en hexa) :</p>
+
+<p class="code">
+11 05 0C 83 81 02 84 16 82 00<br />
+</p>
+
+<p>exécute le calcul :<br /><br /> 
+
+<i>((( 17 + ( 5 * 12 )) / 2 ) - 22 ) <b>=</b> 16</i>
+</p>
+
+<p>A la fin de l'exécution de la séquence de calculs, le résultat
+final restera affiché. Si le résultat du calcul n'est pas bon à cause
+d'un débordement d'un des calculs de la séquence, une diode de
+débordement sera activée.</p>
+
+<h2>Travail attendu</h2>
+
+<p>Vous m'enverrez par mail et par binôme, pour le Vendredi 17 Décembre à 20h
+au plus tard : <p>
+<ul>
+
+<li>Le fichier Logisim implémentant votre circuit nommé
+"Binome1-Binome2.circ". N'hésitez pas à rajouter du texte sur votre
+circuit pour expliquer comment l'utiliser.</li>
+
+<li>Si vous n'avez pas tout implémenté ou si votre circuit ne
+fonctionne pas bien, vous pouvez au besoin rajouter un fichier nommé
+"Binome1-Binome2.txt" pour décrire cela en quelques
+lignes.</li> 
+</ul>
+
+<p>Chaque circuit sera testé. Si vous n'avez pas réussi à réaliser
+tout ce qui est demandé, assurez vous d'envoyer un circuit qui permet
+de tester au moins ce qui a été fait (notamment votre composant de
+calcul et votre pile). Un circuit ne se lançant pas à cause d'erreurs
+ou ne faisant rien ne peut pas être évalué et donc noté.</p>
+
+<p>Le barême approximatif est le suivant :</p>
+<ul>
+<li>Réalisation d'uniquement la partie 1 : note sur 7</li>
+<li>Réalisation de la partie 1 et de la partie 2 de manière
+indépendante : note sur 13</li>
+<li>Réalisation des 3 parties : note sur 20</li>
+</ul>
+
+</body>
+</html> 
+

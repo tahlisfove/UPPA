@@ -1,0 +1,46 @@
+Projet Architecture 2021/22: séquence de calcul en notation polonaise inverse
+Pour ce projet nous avons travaillé sur Windows et pour cela utilisé la version logisim de Windows.
+
+
+Partie 1 : unité_de_calcul (fonctionnelle)
+
+Pour réaliser notre unité de calcul nous avons crée quatre sous-parties, l’ addition, la soustraction (en valeur absolue), la multiplication et la division 
+entière séparément pour les réunir ensuite dans la partie 1 (unité_de_calcul), nous avons également utilisé deux ‘Probe’ en entrée et un en sorti, tout cela 
+pour une meilleure visibilité et pour une meilleure optimisation. Pour utiliser l’unité de calcul il faut choisir l’opération à effectuer avec le ‘Pin’ code 
+d’opération: 00 pour l'addition, 01 pour la soustraction en valeur absolue, 10 pour la multiplication et 11 pour la division entière et ensuite rentrer les 
+deux valeurs souhaitées dans les ‘Pin’ A et B prévu a cet effet. Si un débordement a lieu la ‘Pin’ débordement se met sur 1 sinon il n’y a pas de débordement. 
+Il n'y a pas de débordement ni pour la division ni pour la soustrction car elle est en valeur absolue.
+
+
+Partie 2 : implémentation_d'une_pile (fonctionnelle)
+
+Pour cette deuxième partie nous avons donc créé une pile qui contiendra les paramètres et résultats des calculs pour la notation en polonaise inverse. Nous 
+avons alors deux opérations empiler et dépiler. Pour empiler il faut entrer la valeur demandée en entrée, mettre les ‘Pin’ valeur, code d'opération et E à 1 
+et ensuite faire un signal d’horloge. Pour dépiler on doit mettre les ‘Pin’ valeur et code opérateur à 0 et le ‘Pin’ E a 1. Le bouton clear permet de vider 
+le contenue de la RAM. De plus nous avons ajouté des éléments ‘Probe’ à coter du bit d’entrée et du bit de sortie, cela affiche les données en entier non signé 
+pour une meilleure compréhension.
+
+
+Partie 3 : exécution_d'une_séquence_de_calcul (défaillante)
+
+Le problème principal est l'exécution de la séquence de calcul à l'aide de la pile,
+
+Pour l'exécution d'une séquence de calcul, nous avons essayé de faire l'ensemble de la partie directement mais cela ne marchait pas, on a donc créé une version 
+"bêta" qui effectue seulement l'exécution de la séquence de calcul sans la pile: "exécution_d'une_séquence_de_calcul" en changeant la séquence contenue dans la 
+mémoire (ROM) pour effectuer une séquence de manière : une valeur, une opération, une valeur, une opération ... pour vérifier si notre raisonemment avec l'unité 
+de calcul était correcte, la séquence passe alors de '11 05 0C 83 81 02 84 16 82 00' à '05 83 12 81 17 84 02 82 22 00' comme présenter sur l'éxemple. Cette partie 
+fonctionne nous avons imbriqué toute la séquence reliée à l'élément 'Clock' il suffit de faire tourner jusqu'à la fin de la séquence de calcul souhaitée, de plus 
+nous avons ajouté une zone dans laquelle les valeurs, du code opération, du bit A, du bit B et du résultat final sont actualisées a chaque tour de 'Clock' ainsi 
+que des 'Probe' associées à chacune dès valeur pour une meilleure visibilité comme pour les parties précédentes.
+
+Puis nous avons créé un second circuit "test_séquence_pile" dans lequel nous avons essayé d'ajouter la pile créée lors de la partie 2 au programme fait précédemment, 
+cependant nous n'avons pas trouvé comment bien calculer les élement présents dans la pile, de plus les valeurs de sortie de la pile sont codées de manières "dure" 
+(seulement cete séquence de calcul est réalisable). 
+Pour faire fonctionner le début de notre séquence de calcul il faut partir avec le 'Pin' ON/OFF sur 1 et le 'Pin' E/D sur 0 faire des clicks de souris sur l'élément 
+clock (8), changer la valeur E/D à 1 et effectué des clicks sur l'élément cloque pour dépiler les éléments qui ont été préalablement empiler, changer la valeur E/D 
+sur 1 à chaque fois que l'on trouve un opérateur (81, 82, 83 ou 84) et inversement. Le premier calcul marche bien le registre du code opération prend la valeur 83 (première opération multiplication), ensuite à la sortie de la pile le registre A 
+prend la valeur 0C et ensuite le registre B prend la valeur 05 le calcule s'effectue et on obtient a la sortie de l'unité de calcul la valeur 3C qui est juste 
+(en décimal (12 05 *) = 60), c'est les valeurs suivantes qui ont du mal le code opération est toujours récupéré mais le résultat du calcul n'est pas stocké dans 
+le bit A la suite du calcul n'est donc pas bien effectuée.
+
+

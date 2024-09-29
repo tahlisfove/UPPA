@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Traducteur</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"
+  />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  />
+  <link rel="stylesheet" href="app.css" /> </head>
+<style>
+  .badge {
+    width: 30px;
+    font-size: 100%;
+  }
+
+</style>
+
+<body>
+  <section id="app"> Chargement... </section>
+
+  <!-- Modèle de l'interface graphique -->
+
+  <hr /> 
+
+  <div class="container">
+
+    <!--<section id="header" class="mt-4">
+      <div class="row mb-4">
+        <div class="col-6">
+          <h1>Traducteur</h1>
+        </div>
+        <div class="col-6 text-right align-middle">
+          <div class="btn-group mt-2">
+            <button class="btn btn-primary">Charger</button>
+            <button class="btn btn-ternary">Enregistrer</button>
+            <button class="btn btn-secondary">Préférences</button>
+            <button class="btn btn-primary">À propos</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tabs">
+      <div class="row justify-content-start ml-1 mr-1">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active"
+              href="#">Traductions
+              <span class="badge badge-primary">4</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Français
+              <span class="badge badge-primary">3</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Anglais
+              <span class="badge badge-primary">2</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Arabe
+              <span class="badge badge-primary">1</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <select class="custom-select" id="selectFrom">
+              <option selected="selected" value="0">Autre langue...</option>
+              <option value="es">Espagnol (1)</option>
+              <option value="it">Italien (1)</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <br />
+
+    <section id="request">
+      <form action="">
+        <div class="form-group">
+          <fieldset class="form-group">
+            <div class="row align-items-end">
+              <div class="col-sm-3 col-5">
+                <div class="form-group">
+                  <label for="selectFrom">Depuis</label>
+                  <select class="custom-select" id="selectFrom">
+                    <option selected="selected" value="fr">Français</option>
+                    <option value="en">Anglais</option>
+                    <option value="es">Espagnol</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group col-sm-1 col-2">
+                <button class="btn btn-secondary" type="button">⇄</button>
+              </div>
+              <div class="col-sm-3 col-5">
+                <div class="form-group">
+                  <label for="selectTo">Vers</label>
+                  <select class="custom-select" id="selectTo">
+                    <option value="fr">Français</option>
+                    <option selected="selected" value="en">Anglais</option>
+                    <option value="es">Espagnol</option>
+                    <option value="it">Italien</option>
+                    <option value="ar">Arabe</option>
+                    <option value="eo">Espéranto</option>
+                    <option value="ja">Japonais</option>
+                    <option value="zh">Chinois</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-sm-5 col-12">
+                <div class="input-group mb-3">
+                  <input value="" id="expressionText" type="text" class="form-control" placeholder="Expression..." />
+                  <div class="input-group-append">
+                    <button class="btn btn-primary" type="button">Traduire</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </form>
+    </section>
+
+    <section id="translations">
+      <fieldset>
+        <legend class="col-form-label">Traductions</legend>
+        <div class="table-responsive">
+          <table class="col-12 table table-sm table-bordered">
+            <thead>
+              <th class="align-middle text-center col-1">
+                <a href="#">N°</a>
+              </th>
+              <th class="align-middle text-center col-1">
+                <a href="#">Depuis</a>
+              </th>
+              <th class="align-middle text-center ">
+                <a href="#">Expression</a>
+              </th>
+              <th class="align-middle text-center col-1">
+                <a href="#">Vers</a>
+              </th>
+              <th class="align-middle text-center ">
+                <a href="#">Traduction</a>
+              </th>
+              <th class="align-middle text-center col-1">
+                <div class="btn-group">
+                  <button class="btn btn-ternary">Suppr.</button>
+                </div>
+              </th>
+            </thead>
+            <tr>
+              <td class="text-center text-secondary"> 0 </td>
+              <td class="text-center">
+                <span class="badge badge-info">fr</span>
+              </td>
+              <td>asperge</td>
+              <td class="text-center">
+                <span class="badge badge-info">en</span>
+              </td>
+              <td>asparagus</td>
+              <td class="text-center">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center text-secondary"> 1 </td>
+              <td class="text-center">
+                <span class="badge badge-info">ar</span>
+              </td>
+              <td class="text-right">البرتقالي</td>
+              <td class="text-center">
+                <span class="badge badge-info">fr</span>
+              </td>
+              <td>orange</td>
+              <td class="text-center">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center text-secondary"> 2 </td>
+              <td class="text-center">
+                <span class="badge badge-info">en</span>
+              </td>
+              <td>cauliflower</td>
+              <td class="text-center">
+                <span class="badge badge-info">fr</span>
+              </td>
+              <td>chou fleur</td>
+              <td class="text-center">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center text-secondary"> 3 </td>
+              <td class="text-center">
+                <span class="badge badge-info">it</span>
+              </td>
+              <td>pomodoro</td>
+              <td class="text-center">
+                <span class="badge badge-info">es</span>
+              </td>
+              <td>tomate</td>
+              <td class="text-center">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="5" class="align-middle text-center"> </td>
+              <td class="align-middle text-center">
+                <div class="btn-group">
+                  <button class="btn btn-secondary">Suppr. tous</button>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <section id="pagination">
+          <div class="row justify-content-center">
+
+            <nav class="col-auto">
+              <ul class="pagination">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1">Précédent</a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item disabled">
+                  <a class="page-link" href="#">Suivant</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="col-auto">
+              <div class="input-group mb-3">
+                <select class="custom-select" id="selectTo">
+                  <option value="3">3</option>
+                  <option selected="selected" value="6">6</option>
+                  <option value="9">9</option>
+                </select>
+                <div class="input-group-append">
+                  <span class="input-group-text">par page</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+      </fieldset>
+    </section> -->
+
+  </div>
+
+  <script type="text/javascript" src="googleTranslation.js"></script>
+  <script type="text/javascript" src="dataTranslations1.js"></script>
+  <script type="text/javascript" src="translator.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>
