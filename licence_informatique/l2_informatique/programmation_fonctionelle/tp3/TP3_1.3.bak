@@ -1,0 +1,10 @@
+(define (comptebon N L)
+  (cond ((null? L)#f)
+        ((< (car L) N)(comptebon (- N (car l)) (cdr l)))
+        ((equal? (car L) N) (car L))
+        (else #f)))
+        
+
+(comptebon 7 '(2 8))
+
+(comptebon 21 '(1 1 3 5 7 10 12 15))

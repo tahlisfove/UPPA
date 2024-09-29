@@ -1,0 +1,13 @@
+(define (produit-Julie? e l)
+  (cond
+    ((null? l)#f)
+    ((equal? (car l) e) #t)
+    ((list? (car l))(or(produit-Julie? e(car l))
+                       (produit-Julie? e (cdr l))))
+    (else(produit-Julie? e (cdr l)))))
+
+(define produit-liste-Julie '("farine" "pain" "tomate" "aubergine" "avocat" "salade" "courgette" "limonade"))
+
+(produit-Julie? "farine" produit-liste-Julie)
+
+

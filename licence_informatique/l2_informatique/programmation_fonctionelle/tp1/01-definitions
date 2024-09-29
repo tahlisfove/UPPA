@@ -1,0 +1,49 @@
+(define (prixttc1 TVA HT ) (+ HT (* HT (/ TVA 100))))
+
+(define (prixttc2 TVA HT ) ((display "PRIX HT :") (display HT)
+                                   (newline)
+                                   (display "PRIX TVA :" )(display TVA)
+                                   (newline)
+                                   (display "PRIX TTC :" )(display (prixttc1 TVA HT ) )
+                                   ))
+
+
+(prixttc1 150 700 )
+
+(define (prixttc1 prix tva)
+  (+ prix (* prix (/ tva 100)))
+  )
+
+;-------
+
+(define (prixttc2 prix tva)
+  (begin
+  (display "Prix HT : ")(display prix)(newline)
+  (display "TVA : ")(display tva)(newline)
+  (display "----------------")(newline)
+  (display "Prix TTC : ")(display (+ prix (* prix (/ tva 100)))))
+  )
+
+;-----
+
+(define tva 2)
+
+(define (prixttc3 prix)
+  (begin
+  (display "Prix HT : ")(display prix)(newline)
+  (display "TVA : ")(display tva)(newline)
+  (display "----------------")(newline)
+
+  (display "Prix TTC : ")(display (+ prix (* prix (/ tva 100)))))
+  )
+
+;-------
+
+(define (prixttc4)
+  (begin
+  (display "Rentrez Prix : ")(let ((prix (read)))(newline)
+  (display "Prix HT : ")(display prix)(newline)
+  (display "----------------")(newline)
+  (display "TVA : ")(display tva)(newline)
+  (display "Prix TTC : ")(display (+ prix (* prix (/ tva 100)))))
+  ))
