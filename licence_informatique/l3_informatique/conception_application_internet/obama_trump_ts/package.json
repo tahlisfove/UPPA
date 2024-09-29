@@ -1,0 +1,15 @@
+{
+  "author": "B--Di",
+  "description": "ObamaTrump",
+  "license": "MIT",
+  "main": "js/ObamaTrump.js",
+  "name": "ObamaTrump",
+  "version": "1.0.0",
+  "scripts": {
+    "configuration": "tsc --showConfig",
+    "construction": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}

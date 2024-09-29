@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "outDir": "js",
+    "strict": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "target": "ES6"
+  },
+  "include": [
+    "ts/**/*"
+  ]
+}

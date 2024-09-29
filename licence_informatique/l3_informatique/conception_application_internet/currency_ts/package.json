@@ -1,0 +1,11 @@
+{
+  "name": "Currency.ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Currency.js",
+  "author": "FranckBarbier.com",
+  "license": "MIT",
+  "scripts": {
+    "test": "node ./Pure_JavaScript/Currency.js"
+  }
+}

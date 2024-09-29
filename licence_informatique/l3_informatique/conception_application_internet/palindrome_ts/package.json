@@ -1,0 +1,21 @@
+{
+  "author": "contact@barbierdarnal.com",
+  "description": "Bla bla bla...",
+  "keywords": [
+    "Sparks formation",
+    "TypeScript"
+  ],
+  "license": "MIT",
+  "name": "Palindrome",
+  "version": "1.0.0",
+  "main": "js/Palindrome.js",
+  "typings": "js/Palindrome.d.ts",
+  "scripts": {
+    "configuration": "tsc --showConfig",
+    "construction": "tsc",
+    "execution": "node js/Palindrome.js"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.2"
+  }
+}

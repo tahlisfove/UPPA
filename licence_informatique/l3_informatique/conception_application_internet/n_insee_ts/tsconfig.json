@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+//    "module": "commonjs", // Not compatible with ES6 export-import
+    "target": "es6",
+//    "sourceMap": true
+  },
+  "files": [
+    "ts/Main.ts"
+  ]
+}

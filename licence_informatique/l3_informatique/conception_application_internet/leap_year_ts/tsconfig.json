@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "js",
+    "sourceMap": false, // Debug issues...
+    "target": "ES6"
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "files": [
+    "ts/Leap_year.ts",
+    "ts/Main.ts"
+  ]
+}

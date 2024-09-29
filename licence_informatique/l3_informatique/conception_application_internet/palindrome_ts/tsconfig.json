@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "declaration": true, // See also '"typings": "js/Palindrome.d.ts",' in 'package.json'...
+    // "emitDeclarationOnly": true,
+    "module": "CommonJS", // Chosen syntax (e.g., 'import', 'export'...) in JavaScript files (https://www.typescriptlang.org/tsconfig#module)
+    "moduleResolution": "node", // Chosen method (alternative is "classic", but it is legacy)
+    "outDir": "js",
+    "sourceMap": false, // Debug issues...
+    "target": "ES5"
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "files": [
+    "ts/Palindrome.ts"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "author": "contact@barbierdarnal.com",
+  "description": "Bla bla bla...",
+  "keywords": [
+    "Sparks formation",
+    "TypeScript"
+  ],
+  "license": "MIT",
+  "name": "Leap year",
+  "version": "1.0.0",
+  "main": "js/Main.js",
+  "scripts": {
+    "construction": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.2",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
+  }
+}

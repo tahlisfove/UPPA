@@ -1,0 +1,15 @@
+{
+  "author": "FranckBarbier.com",
+  "description": "Horner method",
+  "license": "MIT",
+  "main": "horner.js",
+  "name": "horner.ts",
+  "version": "1.0.0",
+  "scripts": {
+    "Compilation": "tsc",
+    "Horner": "node ./Horner.js"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}
