@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <title>TP4 - Exercice n°1</title>
+  <script type="text/javascript" src="./exo_1.js"></script>
+</head>
+
+<body>
+  <h2>Exercice n°1</h2>
+  <script>
+  // Déclarer les variables
+ let n1, n2, res;
+
+ // Premier test
+ n1 = 2;
+ n2 = 3;
+ res = plusGrand2(n1, n2);
+ console.log("Le plus grand de " + n1 + " et " + n2 + " est " + res);
+ // doit afficher : Le plus grand de 2 et 3 est 3
+
+ // Deuxième test
+ n1 = 3;
+ n2 = 2;
+ res = plusGrand2(n1, n2);
+ console.log("Le plus grand de " + n1 + " et " + n2 + " est " + res);
+ // doit afficher : Le plus grand de 3 et 2 est 3
+ // Déclarer une variable supplémentaire
+ let n3;
+
+ // un test
+ n1 = 25;
+ n2 = 38;
+ n3 = 14;
+ res = plusGrand3(n1, n2, n3);
+ console.log("Le plus grand de " + n1 + ", " + n2 + " et " + n3 + " est " + res);
+ // doit afficher : Le plus grand de 25, 38 et 14 est 38
+
+  </script>
+</body>
+
+</html>

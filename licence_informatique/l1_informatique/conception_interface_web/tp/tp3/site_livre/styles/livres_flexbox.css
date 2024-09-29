@@ -1,0 +1,122 @@
+
+
+/* Pour colorer les blocs, activez les règles en 
+   supprimant les caractères '_'.
+*/
+ 
+
+
+
+
+/* Positionnement des blocs */
+div nav{
+  
+  display: flex;
+  justify-content: space-around;
+  
+  
+}
+
+  
+header div:last-child{
+  width:600px;
+  height:100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  
+  
+}
+
+/* Header */
+header img {
+  height: 100px;
+  vertical-align: bottom;
+}
+
+header { background-color: #393939;
+  display:flex;
+  align-items:flex-start;
+  justify-content: flex-start;
+  
+  
+  
+  color:white;
+ 
+  
+
+}
+
+header nav{
+  display:flex;
+  justify-content:flex-start;
+  padding-bottom:20px;
+  padding-left:8px;
+  
+}
+a{
+  
+  text-decoration: none;
+  color:white;
+  font-family:  sans-serif;
+  width:400px;
+  
+  font-weight: bold;
+}
+a.actif{
+  border-bottom: 8px solid #FFBC23;
+  
+
+  
+}
+
+/* Section */
+section { background-color: lightgrey;
+  display:flex;
+  
+
+}
+section aside { background-color: tomato;
+  width:250px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center; 
+  
+ 
+ 
+}
+aside img[src="./couverture.jpg"]{
+  height:400px;
+  width:215px;
+  padding-bottom: 8px;
+}
+
+h5{
+  border-bottom: 2px solid #393939;
+ 
+}
+h3{
+  color:grey;
+}
+h3 b{
+  color:black; 
+}
+section article { background-color: orange;
+  width:450px;
+
+}
+
+/* Footer */
+footer { background-color: grey;
+  display: flex;
+  justify-content: flex-start;
+  width:700px;
+  padding-left: 8px;
+
+}
+footer div { background-color: lightgreen;
+  width: 215px;
+
+}

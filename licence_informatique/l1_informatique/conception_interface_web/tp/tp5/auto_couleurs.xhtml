@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>couleurs</title>
+    <style type="text/css">
+
+      html {
+        height:100%;
+      }
+
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+    </style>
+  </head>
+
+  <body oncontextmenu="return rainbow()"></body>
+
+  <script>
+    window.alert("click droit pour changer de couleur");
+    function rainbow(){
+      document.body.style.backgroundColor = "rgb("+Math.floor((Math.random())*250)+","+Math.floor((Math.random())*250)+","+Math.floor((Math.random())*250)+")"
+      return false;
+    }
+  </script>
+</html>
