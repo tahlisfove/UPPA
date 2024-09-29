@@ -1,0 +1,46 @@
+set transaction {read only | read write};
+set transaction isolation level {serializable | read committed};
+lock table nomTable in {exclusive | share} mode;
+
+//
+
+vmouche@scinfe178 (app)
+cd /Home/vmouche/robo3t-1.4.4-linux-x86_64-e6ac9ec/bin 
+./robo3t
+
+vmouche@scinfe178 (serveur)
+cd /Home/vmouche/mongodb-linux-x86_64-ubuntu2004-5.0.5/bin
+./mongod --dbpath data/db
+
+vmouche@scinfe178 (client)
+cd /Home/vmouche/mongodb-linux-x86_64-ubuntu2004-5.0.5/bin 
+./mongo
+
+
+//
+
+vmouche@scinfe178 
+cd /Home/vmouche/mongodb-linux-x86_64-ubuntu2004-5.0.5/bin
+mongoimport --db nomBase --collection nomCollection --file nomFile.json
+
+
+//
+
+use bdTest
+show dbs
+db.dropDatabase()
+
+db.createCollection("collecttest")
+show collections
+db.collecTest.insert({key:"value"})
+db.collecTest.remove({key:"value"})
+db.collecTest.drop()
+
+
+//
+
+vmouche@scinfe178 
+cd /Home/vmouche/neo4j-community-4.4.3/bin
+./neo4j console
+
+http://localhost:7474

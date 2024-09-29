@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Visualisation de Données - TP 1</title>
+        <!-- https://d3js.org/ -->
+        <script type="text/javascript" src="js/d3.v7.min.js"></script>
+        <!-- https://vega.github.io/vega-lite/ -->
+        <script src="https://cdn.jsdelivr.net/npm/vega@5.25.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.12.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.22.1"></script>
+        <!-- Your code -->
+        <script type="text/javascript" src="js/tp1.js"></script>
+        <style>
+svg {
+    display: block;
+    border: 1px solid #444;
+    margin-left: auto;
+    margin-right: auto;
+}
+        </style>
+    </head>
+
+    <body onload="createViz()">
+        <div id="main">
+            <div class="header">
+                <form>
+                  <input type="text" name="countField" value="10" id="countTf"
+                         onkeydown="handleKeyEvent(event);"/>
+                  <select id="searchType" name="searchFor">
+                    <option value="color">Color</option>
+                    <option value="shape">Shape</option>
+                    <option value="colorANDshape">Color &amp; Shape</option>
+                  </select>
+                  <input type="button" value="Set" onclick="set();" id="setBt"/>
+                </form>
+            </div>
+        </div>
+    </body>
+
+</html>
