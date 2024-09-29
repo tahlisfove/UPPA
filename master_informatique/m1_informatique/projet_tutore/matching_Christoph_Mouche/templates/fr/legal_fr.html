@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <!-- HEAD -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITRE -->
+    <title>Mentions légales - MatchifyJobs</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/logo.png') }}"/>
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/header.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/buttons.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/legal.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/footer.css') }}">
+  </head>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo_container_head">
+      <a class="logo_link" href="/welcome_fr"><img class="match_logo_header" src="../../static/img/logo.png" alt="Logo"></a>
+      <a class="logo_link" href="/welcome_fr"><span id="logo">MatchifyJobs</span></a>
+    </div>
+    <div class="header_div">
+      <a class="header_link" href="/welcome_fr">Accueil</a>
+      <a class="header_link" href="/login_fr">Plateforme</a>
+      <a class="header_link" href="/challenges_fr">Challenges</a>
+      <a id="about_us" class="header_link" href="/us_fr">A Propos</a>
+      <button id="button_logout" onclick="window.location.href='/login_fr'">Connexion</button>
+      <div class="dropdown">
+        <div id="debut" class="dl">
+          <div>
+            <button class="dropbtn" onclick="toggleFin(this)">
+              <img class="selection_langue" id="french-flag" src="../../static/img/drapeau_fr.png" alt="Drapeau françcais">
+            </button>
+          </div>
+          <div class="lang"> Fr</div>
+        </div>
+        <div id="fin" class="dl">
+          <div>
+            <button onclick="redirectToEnglishLegal()" class="dropfinbtn">
+              <img class="selection_langue" id="english-flag" src="../../static/img/drapeau_en.png" href="/legal" alt="Drapeau anglais">
+            </button>
+          </div>
+          <div class="lang"> En</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <div class="left-section">
+      <p class="titre">Mentions légales</p>
+      <p class="sous_titre">Informations légales importantes à connaître.</p>
+    </div>
+    <div id="right_section_legal">
+      <div class="info_entreprise">
+        <p class="editor"><strong>Nom de l'entreprise :</strong> MatchifyJobs</p>
+        <p class="editor"><strong>Capital :</strong> 45 748 890 €</p>
+        <p class="editor"><strong>Siège social :</strong> 7 Place Royale, 64000 Pau, France</p>
+        <p class="editor"><strong>Contacts :</strong> +33 5 05 05 05 05</p> 
+      </div>
+      <div class="div_content"> 
+        <strong>Données personnelles</strong>
+        <br>En nous envoyant vos informations, vous acceptez qu'elles soient collectées par MatchifyJobs, responsable de leur traitement, et utilisées uniquement pour répondre à votre demande ainsi que pour toute autre communication connexe de notre part. Conformément au Règlement Général sur la Protection des Données de l'Union Européenne No. 2016/679 du 27 avril 2016, vous avez le droit d'accéder et de modifier vos données, de retirer votre consentement, de limiter leur traitement, de vous opposer, ou de bénéficier du droit à la portabilité des données dans certains cas. Pour plus d'informations ou si vous souhaitez exercer vos droits, veuillez contacter <a href="mailto:mesdonnees@matchifyjobs.com">mesdonnees@matchifyjobs.com</a>.
+      </div>
+      <div class="div_content">
+        <strong>Droits d'auteur</strong>
+        <br>La reproduction totale ou partielle des pages, des données ou de tout autre composant de ce site Web est interdite sans autorisation. Les droits de propriété intellectuelle relatifs à ce site Web appartiennent à MatchifyJobs. Toute utilisation, représentation, modification, publication, adaptation totale ou partielle de ce site Web par quelque moyen ou processus que ce soit est interdite sans l'autorisation écrite de MatchifyJobs.
+      </div>
+      <div class="div_content">
+        <strong>Responsabilité</strong>
+        <br>MatchifyJobs s'efforce de fournir des informations exactes et à jour sur ce site, mais ne peut garantir sa complétude ou son exactitude à tout moment. En accédant à ce site, vous acceptez que MatchifyJobs ne soit pas responsable des erreurs ou omissions dans les informations fournies. MatchifyJobs se réserve le droit de modifier le contenu de ce site à tout moment et sans préavis. En utilisant ce site, vous acceptez d'évaluer l'exactitude, l'exhaustivité ou l'utilité de toute information, opinion, conseil ou autre contenu disponible sur ce site selon vos propres termes.
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="logo_container_foot">
+      <img class="match_logo_footer" src="../../static/img/logo.png" alt="Logo">
+      <span id="copyright">Copyright &copy; 2024 MatchifyJobs - Tous droits réservés.</span>
+    </div>
+    <div class="footer_div">
+      <a class="footer_logo" href="https://www.instagram.com/matchifyjobs/"><img src="../../static/img/logo_instagram.png" alt="Instagram"></a>
+      <a class="footer_logo" href="https://twitter.com/matchifyjobs/"><img src="../../static/img/logo_x.png" alt="X"></a>
+      <a class="footer_logo" href="https://www.linkedin.com/company/matchifyjobs/"><img src="../../static/img/logo_linkedin.png" alt="LinkedIn"></a>
+      <span id="separator"><b>|</b></span>
+      <a class="footer_link" href="">Mentions légales</a>
+      <a class="footer_link" href="/faq_fr">FAQ</a>
+      <a class="footer_link" href="/contact_fr">Nous contacter</a>
+    </div>
+  </footer>
+
+  <!-- SCRIPT JS -->
+  <script src="../../static/script/langue.js"></script>
+
+</html>

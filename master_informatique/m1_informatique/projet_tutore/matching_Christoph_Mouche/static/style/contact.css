@@ -1,0 +1,123 @@
+/* division droite de la page contact */
+#right_section_contact {
+  width: 70%;
+  background-color: #f9f9f9;
+  padding-top: 80px;
+  padding-bottom: 70px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* formulaire de contact su service client */
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* différentes lignes du formulaire */
+.form_input {
+  display: flex;
+  width: 640.2px;
+}
+
+/* colonne du formulaire */
+.colonne,
+.remark {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* zone de texte input du formulaire */
+.inputfields {
+  width: 260px;
+  height: 40px;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 2px solid rgb(113, 113, 203);
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* focus sur le formulaire */
+.inputfields:focus,
+.selectfields:focus,
+.remark textarea:focus {
+  border-color: rgb(112, 166, 184);
+}
+
+/* zone de choix select du formulaire */
+.selectfields {
+  width: 280px;
+  height: 44px;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding-left: 15px;
+  background-color: white;
+  border: 2px solid rgb(113, 113, 203);
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* zone d'écriture textarea du formulaire */
+.remark textarea {
+  width: 580px;
+  height: 120px;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-top: 15px;
+  font-size: 14px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  resize: none;
+  border: 2px solid rgb(113, 113, 203);
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* zone d'écriture textarea du formulaire */
+.remark {
+  margin-bottom: 15px;
+}
+
+/* titre de la zone areatext */
+.remark label {
+  margin-top: 30px;
+}
+
+/* div pour placer le titre de textarea */
+.degager {
+  clear: both;
+}
+
+/* label avant button du formulaire */
+#infoform{
+  width: 640.2px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+/* classe pour rendre invisible des division */
+.hide {
+  display: none;
+}
+
+/* division succès de message envoyé */
+.success-message {
+  font-size: 22px;
+  text-align: center;
+  padding-top: 112.7px;
+  padding-bottom: 152.7px;
+}
+
+/* label du message envoyé */
+#placement {
+  margin-top: 120px;
+  margin-bottom: 20px;
+}

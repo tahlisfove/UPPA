@@ -1,0 +1,165 @@
+/* boutton envoyer formulaire */
+#button_contact {
+  width: auto;
+  height: auto;
+  padding: 8px;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+
+/* boutton réinitialiser formulaire */
+#button_reset {
+  width: auto;
+  height: auto;
+  padding: 8px;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+
+/* boutton page platform */
+.button_platform {
+  margin: 20px;
+  margin-bottom: 55px;
+  width: auto;
+  height: 50px;
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 16px;
+}
+
+/* boutton page accueil */
+.button_accueil {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: 15%;
+  height: 50px;
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 16px;
+}
+
+/* paramétres des bouttons */
+#button_contact,
+#button_reset,
+#button_logout,
+.button_platform,
+.button_accueil {
+  display: inline-block;
+  height: auto;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* paramétres des bouttons avant*/
+#button_contact:before,
+#button_reset:before,
+#button_logout:before,
+.button_platform:before,
+.button_accueil:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: rgb(113, 113, 203);
+  transition: all 0.4s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+
+/* paramétres des bouttons aprés */
+#button_contact:after,
+#button_reset:after,
+#button_logout:after,
+.button_platform:after,
+.button_accueil:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(163, 163, 225);
+  border-radius: 10rem;
+  z-index: -2;
+}
+
+/* animation des bouttons */
+#button_contact:hover,
+#button_reset:hover,
+#button_logout:hover,
+.button_platform:hover,
+.button_accueil:hover {
+  color: #fff;
+}
+
+/* animation des bouttons */
+#button_contact:hover:before,
+#button_reset:hover:before,
+#button_logout:hover:before,
+.button_platform:hover:before,
+.button_accueil:hover:before {
+  width: 100%;
+}
+
+/* boutton de connection */
+#button_logout {
+  margin: 30px;
+  margin-left: 40px;
+  margin-right: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  width: auto;
+  height: auto;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  letter-spacing: 0rem;
+}
+
+/* animation avant button connection */
+#button_logout:before {
+  background-color: rgb(143, 143, 161);
+
+}
+
+/* animation aprés button connection */
+#button_logout:after {
+  background-color: rgb(105, 105, 117);
+}
+
+/* boutton upload fichier zip */
+#button_upload {
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+/* couleur button upload */
+#button_upload {
+  color: white;
+  background-color: rgb(113, 113, 203);
+  border: 2px solid rgb(163, 163, 225);
+  outline: none;
+}
+
+/* animation button upload */
+#button_upload:hover {
+  background-color: rgb(163, 163, 225);;
+  cursor: pointer;
+  transition: 0.5s;
+}

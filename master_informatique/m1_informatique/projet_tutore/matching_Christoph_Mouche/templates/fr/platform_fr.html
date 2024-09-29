@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <!-- EN-TÊTE -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITRE -->
+    <title>Plateforme - MatchifyJobs</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/logo.png') }}"/>
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/transition.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/header.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/buttons.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/platform.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/footer.css') }}">
+  </head>
+
+  <!-- TRANSITION -->
+  <div class="digital-transition is-active">
+    <img src="../../static/img/logo.png">
+  </div>
+
+  <!-- EN-TÊTE -->
+  <header>
+    <div class="logo_container_head">
+      <a class="logo_link" href="/welcome_fr"><img class="match_logo_header" src="../../static/img/logo.png" alt="Logo"></a>
+      <a class="logo_link" href="/welcome_fr"><span id="logo">MatchifyJobs</span></a>
+    </div>
+    <div class="header_div">
+      <a class="header_link" href="/welcome_fr">Accueil</a>
+      <a class="header_link page_actuelle" href="platform_fr">Plateforme</a>
+      <a class="header_link" href="/challenges_fr">Challenges</a>
+      <a id="about_us" class="header_link" href="/us_fr">A Propos</a>
+      <button id="button_logout" onclick="window.location.href='welcome_fr'">Déconnexion</button>
+      <div class="dropdown">
+        <div id="debut" class="dl">
+          <div>
+            <button class="dropbtn" onclick="toggleFin(this)">
+              <img class="selection_langue" id="french-flag" src="../../static/img/drapeau_fr.png" alt="Drapeau Français">
+            </button>
+          </div>
+          <div class="lang" id="langueweb"> Fr</div>
+        </div>
+        <div id="fin" class="dl">
+          <div>
+            <button onclick="redirectToEnglishPlatform()" class="dropfinbtn">
+              <img class="selection_langue" id="english-flag" src="../../static/img/drapeau_en.png" href="/platform" alt="Drapeau Anglais">
+            </button>
+          </div>
+          <div class="lang"> En</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- PRINCIPAL -->
+  <main>
+
+    <!-- SECTIONS -->
+    <div id="left_section_platform">
+      <div class="etape_obligatoire">
+
+        <!-- SECTION 1 -->
+        <div class="outils" id="drag_div">
+          <div class="titre_upload">
+            <p class="step_name"><span>CVs*</span></p>
+          </div>
+          <div class="upload-area" id="drag-drop-area" accept=".zip">
+            <img class="dragdrop" src="../../static/img/drag_drop.jpg">
+            <p>Glisser & Déposer le Fichier Ici</p>
+            <p id="or">ou</p>
+            <button id="button_upload" onclick="openFileSelector()" accept=".zip, .pdf, .x-zip-compressed">Télécharger le Fichier Depuis</button>
+            <p id="nomfichier">Aucun fichier sélectionné</p>
+          </div>
+          <div>
+            <a class="clear_text" id="file_clear">Effacer le fichier</a>
+          </div>
+        </div>
+
+        <!-- SECTION 2 -->
+        <div class="outils" id="domaine_div">
+          <div class="titre_upload">
+            <p class="step_name"><span>Poste*</span></p>
+          </div>
+          <div class="domaine_area">
+            <select class="liste" id="firstPartDropdown" required>
+              <option value="" disabled selected hidden>Choisir un domaine*</option>
+            </select>
+            <select class="liste" id="secondPartDropdown" required disabled>
+              <option value="" disabled selected hidden>Choisir un poste*</option>              
+            </select>
+            <p id="description" hidden></p>
+          </div>
+          <div>
+            <a class="clear_text" id="job_clear">Effacer le poste</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 3 -->
+      <div class="outils" id="infosup_div">
+        <div class="titre_upload">
+          <p class="step_name"><span>Informations Supplémentaires</span></p>
+        </div>
+        <div class="textarea_div">
+          <textarea class="textsup_area" placeholder="Ajoutez des informations spécifiques sur le profil que vous recherchez.&#10;Évitez les phrases pour améliorer la précision du match."></textarea>
+        </div>
+        <div>
+          <a class="clear_text" id="text_clear">Effacer le texte</a>
+        </div>
+      </div>
+
+      <!-- SECTION 4 -->
+      <div class="div_bouton">
+        <button class="button_platform" id="reset_button">Réinitialiser</button>
+        <button class="button_platform" id="match_button">Correspondance</button>
+      </div>
+
+      <!-- SECTION SUP -->
+      <div id="didiv" hidden>
+        <p id="jodes"></p>
+        <p id="cvzip"></p>
+      </div>
+
+    </div>
+
+    <!-- SECTION RÉSULTATS -->
+    <div id="right_section_platform">
+      <div class="matching-results">
+        <h2 id="titre_matching">Résultats de la correspondance</h2>
+        <div class="liste_matching">
+          <div class="aucun_resultat">
+            <p>En attente de correspondance</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- PIED DE PAGE -->
+  <footer>
+    <div class="logo_container_foot">
+      <img class="match_logo_footer" src="../../static/img/logo.png" alt="Logo">
+      <span id="copyright">Copyright &copy; 2024 MatchifyJobs - Tous droits réservés.</span>
+    </div>
+    <div class="footer_div">
+      <a class="footer_logo" href="https://www.instagram.com/matchifyjobs/"><img src="../../static/img/logo_instagram.png" alt="Instagram"></a>
+      <a class="footer_logo" href="https://twitter.com/matchifyjobs/"><img src="../../static/img/logo_x.png" alt="X"></a>
+      <a class="footer_logo" href="https://www.linkedin.com/company/matchifyjobs/"><img src="../../static/img/logo_linkedin.png" alt="LinkedIn"></a>
+      <span id="separator"><b>|</b></span>
+      <a class="footer_link" href="/legal_fr">Mentions Légales</a>
+      <a class="footer_link" href="/faq_fr">FAQ</a>
+      <a class="footer_link" href="/contact_fr">Nous Contacter</a>
+    </div>
+  </footer>
+
+  <!-- SCRIPT JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../../static/script/langue.js"></script>
+  <script src="../../static/script/jobs_fr.js"></script>
+  <script src="../../static/script/platform.js"></script>
+  <script src="../../static/script/transition.js"></script>
+
+</html>

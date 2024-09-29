@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- HEAD -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITRE -->
+    <title>Welcome - MatchifyJobs</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/logo.png') }}"/>
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/header.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/buttons.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/welcome.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/footer.css') }}">
+  </head>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo_container_head">
+      <a class="logo_link"><img class="match_logo_header" src="../../static/img/logo.png" href="" alt="Logo"></a>
+      <a class="logo_link" href="/"><span id="logo">MatchifyJobs</span></a>
+    </div>
+    <div class="header_div">
+      <a class="header_link page_actuelle" href="">Welcome</a>
+      <a class="header_link" href="/login">Platform</a>
+      <a class="header_link" href="/challenges">Challenges</a>
+      <a id="about_us" class="header_link" href="/us">About Us</a>
+      <button id="button_logout" onclick="window.location.href='/login'">Log In</button>
+      <div class="dropdown">
+        <div id="debut" class="dl">
+          <div>
+            <button class="dropbtn" onclick="toggleFin(this)">
+              <img class="selection_langue" id="english-flag" src="../../static/img/drapeau_en.png" alt="English Flag">
+            </button>
+          </div>
+          <div class="lang"> En</div>
+        </div>
+        <div id="fin" class="dl">
+          <div>
+            <button onclick="redirectToFrenchWelcome()" class="dropfinbtn">
+              <img class="selection_langue" id="french-flag" src="../../static/img/drapeau_fr.png" href="/welcome_fr" alt="English Flag">
+            </button>
+          </div>
+          <div class="lang"> Fr</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- WEBSITE TITLE -->
+    <div class="welcome_section">
+      <p class="titre"><strong class="bleu">HR Excellence</strong> at Your <strong class="bleu">Fingertips</strong></p>
+      <div class="divimg"><img id="photoaccueil" src="../../static/img/accueil.png"></div>  
+    </div>
+    <p class="sous_titre">Find the <span class="animate_text">best</span> <strong class="bleu">talents</strong> for your company with MatchifyJobs</p>
+    <h1 class="pqMJ">Why choose MatchifyJobs?</h1>
+
+    <!-- WEBSITE PRESENTATION -->
+    <div id="right_section_welcome">
+      <p>MatchifyJobs is a platform dedicated to companies and HR professionals. Our goal is to simplify your recruitment process by using advanced technologies such as artificial intelligence and data analysis to help companies find the best talents.</p>
+      <div class="pourquoi">
+        <div class="pts">
+          <p>Save time by automating CV sorting with our advanced matching algorithm.</p>
+        </div>
+        <div class="pts">
+          <p>Quickly identify the most relevant candidates for each position.</p>
+        </div>
+        <div class="pts">
+          <p>Optimize your recruitment efforts and reduce associated costs with our efficient approach.</p>
+        </div>
+      </div>
+      <div id="phrase_bt">
+        <p>Ready to find the best talents for your company? Start now by exploring our matching features.</p>
+      </div>      
+    </div>
+
+    <!-- BUTTON -->
+    <button class="button_accueil" onclick="window.location.href='/login'">Start matching</button>
+
+    <!-- MATCHING EXPLICATIONS -->
+    <div class="explications">
+
+      <!-- TITRE -->
+      <h1 id="titre_explication">How to Match Resumes to a Job</h1>
+
+      <!-- STEP 1 -->
+      <div class="etapes" id="etape1">
+        <div class="drap_text" id="divt1">
+          <div>
+            <div>
+              <div class="drapeau">1</div>
+              <svg width="49" height="24" viewBox="0 0 49 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.1192 2.69272e-06L0.119202 24L0.119203 0L24.1192 2.69272e-06Z" fill="#2c8bba"></path>
+                <path d="M24.1192 2.69272e-06L48.1191 24V0L24.1192 2.69272e-06Z" fill="#2c8bba"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="div_text">
+            <h2>Upload Resumes</h2>
+            <p class="petap">In the dedicated section, upload the resumes of the candidates you wish to evaluate. You must upload a ZIP file containing multiple resumes at once, as only one file can be uploaded in this area.</p>
+          </div>        
+        </div>
+        <div>
+          <img class="img_explication" id="img1" src="../../static/img/step1.png" alt="step1">
+        </div>
+      </div>
+
+      <!-- STEP 2 -->
+      <div class="etapes" id="etape2">
+        <div>
+          <img class="img_explication" id="img2" src="../../static/img/step2.png" alt="step2">
+        </div>
+        <div class="drap_text" id="divt2">
+          <div>
+            <div>
+              <div class="drapeau">2</div>
+              <svg width="49" height="24" viewBox="0 0 49 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.1192 2.69272e-06L0.119202 24L0.119203 0L24.1192 2.69272e-06Z" fill="#2c8bba"></path>
+                <path d="M24.1192 2.69272e-06L48.1191 24V0L24.1192 2.69272e-06Z" fill="#2c8bba"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="div_text">
+            <h2>Choose the Job Title</h2>
+            <p class="petap">Select the relevant IT field for the position. This step enables us to effectively target the skills required for the job.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 3 -->
+      <div class="etapes" id="etape3">
+        <div class="drap_text" id="divt3">
+          <div>
+            <div>
+              <div class="drapeau">3</div>
+              <svg width="49" height="24" viewBox="0 0 49 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.1192 2.69272e-06L0.119202 24L0.119203 0L24.1192 2.69272e-06Z" fill="#2c8bba"></path>
+                <path d="M24.1192 2.69272e-06L48.1191 24V0L24.1192 2.69272e-06Z" fill="#2c8bba"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="div_text">
+            <h2>Additional Information</h2>
+            <p class="petap">If you have specific criteria or additional information about the skills or qualities you are looking for, you can add them at this stage.</p>
+          </div>        
+        </div>
+        <div>
+          <img class="img_explication" id="img3" src="../../static/img/step3.png" alt="step3">
+        </div>
+      </div>
+
+      <!-- STEP 4 -->
+      <div class="etapes" id="etape4">
+        <div>
+          <img class="img_explication" id="img4" src="../../static/img/step4.png" alt="step4">
+        </div>
+        <div class="drap_text" id="divt4">
+          <div>
+            <div>
+              <div class="drapeau">4</div>
+              <svg width="49" height="24" viewBox="0 0 49 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.1192 2.69272e-06L0.119202 24L0.119203 0L24.1192 2.69272e-06Z" fill="#2c8bba"></path>
+                <path d="M24.1192 2.69272e-06L48.1191 24V0L24.1192 2.69272e-06Z" fill="#2c8bba"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="div_text">
+            <h2>Matching</h2>
+            <p class="petap">By clicking on the "Matching" button, our AI algorithm compares the candidates' resumes with the job description. You will then receive a list of candidates that best match your criteria.</p>
+          </div>        
+        </div>
+      </div>
+
+      <!-- STEP 5 -->
+      <div class="etapes" id="etape5">
+        <div class="drap_text" id="divt5">
+          <div>
+            <div>
+              <div class="drapeau">5</div>
+              <svg width="49" height="24" viewBox="0 0 49 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.1192 2.69272e-06L0.119202 24L0.119203 0L24.1192 2.69272e-06Z" fill="#2c8bba"></path>
+                <path d="M24.1192 2.69272e-06L48.1191 24V0L24.1192 2.69272e-06Z" fill="#2c8bba"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="div_text">
+            <h2>Next</h2>
+            <p class="petap">The matching results are displayed in the section on the right. Resumes are sorted by matching score, allowing you to see the most relevant candidates first, with the possibility of downloading the resumes of candidates to review or contact them for an interview.</p>
+          </div>              
+        </div>
+        <div>
+          <img class="img_explication" id="img4" src="../../static/img/step5.png" alt="step4">
+        </div>
+      </div>
+
+      <!-- BUTTON -->
+      <button class="button_accueil" onclick="window.location.href='/login'">Start matching</button>
+
+    </div>
+  </main>
+  
+  <!-- FOOTER -->
+  <footer>
+    <div class="logo_container_foot">
+      <img class="match_logo_footer" src="../../static/img/logo.png" alt="Logo">
+      <span id="copyright">Copyright &copy; 2024 MatchifyJobs - All rights reserved.</span>
+    </div>
+    <div class="footer_div">
+      <a class="footer_logo" href="https://www.instagram.com/matchifyjobs/"><img src="../../static/img/logo_instagram.png" alt="Instagram"></a>
+      <a class="footer_logo" href="https://twitter.com/matchifyjobs/"><img src="../../static/img/logo_x.png" alt="X"></a>
+      <a class="footer_logo" href="https://www.linkedin.com/company/matchifyjobs/"><img src="../../static/img/logo_linkedin.png" alt="LinkedIn"></a>
+      <span id="separator"><b>|</b></span>
+      <a class="footer_link" href="/legal">Legal Notice</a>
+      <a class="footer_link" href="/faq">FAQ</a>
+      <a class="footer_link" href="/contact">Contact Us</a>
+    </div>
+  </footer>
+
+  <!-- SCRIPT JS -->
+  <script src="../../static/script/langue.js"></script>
+
+</html>

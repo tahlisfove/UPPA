@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- HEAD -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITRE -->
+    <title>Challenges - MatchifyJobs</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/logo.png') }}"/>
+    
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/header.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/buttons.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/challenges.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/footer.css') }}">
+  </head>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo_container_head">
+      <a class="logo_link" href="/"><img class="match_logo_header" src="../../static/img/logo.png" alt="Logo"></a>
+      <a class="logo_link" href="/"><span id="logo">MatchifyJobs</span></a>
+    </div>
+    <div class="header_div">
+      <a class="header_link" href="/">Welcome</a>
+      <a class="header_link" href="/login">Platform</a>
+      <a class="header_link page_actuelle" href="">Challenges</a>
+      <a id="about_us" class="header_link" href="/us">About Us</a>
+      <button id="button_logout" onclick="window.location.href='/login'">Log In</button>
+      <div class="dropdown">
+        <div id="debut" class="dl">
+          <div>
+            <button class="dropbtn" onclick="toggleFin(this)">
+              <img class="selection_langue" id="english-flag" src="../../static/img/drapeau_en.png" alt="English Flag">
+            </button>
+          </div>
+          <div class="lang"> En</div>
+        </div>
+        <div id="fin" class="dl">
+          <div>
+            <button onclick="redirectToFrenchChallenges()" class="dropfinbtn ">
+              <img class="selection_langue" id="french-flag" src="../../static/img/drapeau_fr.png" alt="English Flag">
+            </button>
+          </div>
+          <div class="lang"> Fr</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <div class="left-section">
+      <p class="titre">Our Challenges</p>
+      <p class="sous_titre">Discover our challenges and solutions.</p>
+    </div>
+    <div id="right_section_challenges">
+      <div class="challenge">
+        <h4>1. Using CV Scoring to Target the Most Qualified Profiles</h4>
+        <p class="challenge_description">Incorporate artificial intelligence into your recruitment processes to quickly identify candidates most relevant to your criteria. Save time and gain rapid access to top talents.</p>
+      </div>
+      <div class="challenge">
+        <h4>2. Simplifying Management of Large Volumes of Applications</h4>
+        <p class="challenge_description">Modernize application management by streamlining processes, effectively organizing data, and saving time in handling multiple applications.</p>
+      </div>
+      <div class="challenge">
+        <h4>3. Identifying the Ideal Candidate for Each Position</h4>
+        <p class="challenge_description">With in-depth analysis of candidates' skills and experiences, identify the best-suited talents for each strategic position within your company.</p>
+      </div>
+      <div class="challenge">
+        <h4>4. Ensuring Diversity and Inclusion in the Recruitment Process</h4>
+        <p class="challenge_description">Develop strategies to ensure that the recruitment process is open and inclusive, allowing for balanced representation of candidates from diverse backgrounds.</p>
+      </div>
+      <div class="challenge">
+        <h4>5. Enhancing User Experience on the MatchifyJobs Platform</h4>
+        <p class="challenge_description">Deliver a user-friendly, intuitive, and ergonomic interface designed to streamline the recruitment process, enhance user experience, and thereby elevate user satisfaction.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="logo_container_foot">
+      <img class="match_logo_footer" src="../../static/img/logo.png" alt="Logo">
+      <span id="copyright">Copyright &copy; 2024 MatchifyJobs - All rights reserved.</span>
+    </div>
+    <div class="footer_div">
+      <a class="footer_logo" href="https://www.instagram.com/matchifyjobs/"><img src="../../static/img/logo_instagram.png" alt="Instagram"></a>
+      <a class="footer_logo" href="https://twitter.com/matchifyjobs/"><img src="../../static/img/logo_x.png" alt="X"></a>
+      <a class="footer_logo" href="https://www.linkedin.com/company/matchifyjobs/"><img src="../../static/img/logo_linkedin.png" alt="LinkedIn"></a>
+      <span id="separator"><b>|</b></span>
+      <a class="footer_link" href="/legal">Legal Notice</a>
+      <a class="footer_link" href="/faq">FAQ</a>
+      <a class="footer_link" href="/contact">Contact Us</a>
+    </div>
+  </footer>
+
+  <!-- SCRIPT JS -->
+  <script src="../../static/script/langue.js"></script>
+
+</html>

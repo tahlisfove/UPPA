@@ -1,0 +1,95 @@
+/* division droite de la page us */
+#right_section_us {
+  width: 70%;
+  background-color: #f9f9f9;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding-top: 25px;
+  text-align: center;
+}
+
+/* division sur l'équipe */
+.team_members {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+/* images de l'équipe */
+.team_members img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+  margin-top: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* noms de l'équipe */
+figcaption {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* statue dans l'entreprise */
+.status {
+  font-size: 11px;
+  margin: 5px;
+  margin-bottom: 15px;
+}
+
+/* figure image nom status */
+.figure_team {
+  padding: 10px;
+  background-color: #e9e9e9;
+  border-radius: 20px;
+  width: 130px;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  transition: transform 0.8s ease;
+}
+
+/* pour ajout de futur membres */
+.other_team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  transition: transform 0.8s ease;
+}
+
+/* bloc description entreprise et équipe */
+.description,
+.team {
+  margin-top: 60px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 60px;
+}
+
+/* sous titre des paragraphes */
+strong {
+  font-size: 18px;
+}
+
+/* texte des paragraphes */
+.histoire {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+/* transition ajout de futur membres */
+.other_team:hover {
+  transform: scale(1.4);
+}
+
+/* transition image nom status */
+.figure_team:hover {
+  transform: scale(1.1);
+}

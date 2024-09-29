@@ -1,0 +1,27 @@
+[
+    {
+        "id": "30d311a29399b565",
+        "type": "inject",
+        "z": "da9cc404ac7bfd84",
+        "name": "Sensor6/temp/21.6",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Sensor6/temp/21.6",
+        "payloadType": "str",
+        "x": 160,
+        "y": 100,
+        "wires": [
+            [
+                "53bf670f2fda15d9"
+            ]
+        ]
+    }
+]

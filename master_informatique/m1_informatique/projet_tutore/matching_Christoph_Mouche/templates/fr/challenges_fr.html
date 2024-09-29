@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <!-- HEAD -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITRE -->
+    <title>Défis - MatchifyJobs</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/logo.png') }}"/>
+    
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/header.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/buttons.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/challenges.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/footer.css') }}">
+  </head>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo_container_head">
+      <a class="logo_link" href="/welcome_fr"><img class="match_logo_header" src="../../static/img/logo.png" alt="Logo"></a>
+      <a class="logo_link" href="/welcome_fr"><span id="logo">MatchifyJobs</span></a>
+    </div>
+    <div class="header_div">
+      <a class="header_link" href="/welcome_fr">Accueil</a>
+      <a class="header_link" href="/login_fr">Plateforme</a>
+      <a class="header_link page_actuelle" href="">Challenges</a>
+      <a id="about_us" class="header_link" href="/us_fr">A Propos</a>
+      <button id="button_logout" onclick="window.location.href='/login_fr'">Connection</button>
+      <div class="dropdown">
+        <div id="debut" class="dl">
+          <div>
+            <button class="dropbtn" onclick="toggleFin(this)">
+              <img class="selection_langue" id="french-flag" src="../../static/img/drapeau_fr.png" alt="Drapeau Français">
+            </button>
+          </div>
+          <div class="lang"> Fr</div>
+        </div>
+        <div id="fin" class="dl">
+          <div>
+            <button onclick="redirectToEnglishChallenges()" class="dropfinbtn">
+              <img class="selection_langue" id="english-flag" src="../../static/img/drapeau_en.png" href="/challenges" alt="Drapeau Anglais">
+            </button>
+          </div>
+          <div class="lang"> En</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <div class="left-section">
+      <p class="titre">Nos challenges</p>
+      <p class="sous_titre">Découvrez nos défis et solutions.</p>
+    </div>
+    <div id="right_section_challenges">
+      <div class="challenge">
+        <h4>1. Utiliser le Score de CV pour Cibler les Profils les Plus Qualifiés</h4>
+        <p class="challenge_description">Incorporez l'intelligence artificielle dans vos processus de recrutement pour identifier rapidement les candidats les plus pertinents par rapport à vos critères. Gagnez du temps et accédez rapidement aux meilleurs talents.</p>
+      </div>
+      <div class="challenge">
+        <h4>2. Simplifier la Gestion de Grands Volumes de Candidatures</h4>
+        <p class="challenge_description">Modernisez la gestion des candidatures en rationalisant les processus, en organisant efficacement les données et en économisant du temps dans le traitement de multiples candidatures.</p>
+      </div>
+      <div class="challenge">
+        <h4>3. Identifier le Candidat Idéal pour Chaque Poste</h4>
+        <p class="challenge_description">Grâce à une analyse approfondie des compétences et des expériences des candidats, identifiez les talents les mieux adaptés à chaque poste stratégique au sein de votre entreprise.</p>
+      </div>
+      <div class="challenge">
+        <h4>4. Assurer la Diversité et l'Inclusion dans le Processus de Recrutement</h4>
+        <p class="challenge_description">Développez des stratégies pour garantir que le processus de recrutement soit ouvert et inclusif, permettant une représentation équilibrée des candidats issus de divers milieux.</p>
+      </div>
+      <div class="challenge">
+        <h4>5. Améliorer l'Expérience Utilisateur sur la Plateforme MatchifyJobs</h4>
+        <p class="challenge_description">Offrez une interface conviviale, intuitive et ergonomique conçue pour rationaliser le processus de recrutement, améliorer l'expérience utilisateur et ainsi augmenter la satisfaction des utilisateurs.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="logo_container_foot">
+      <img class="match_logo_footer" src="../../static/img/logo.png" alt="Logo">
+      <span id="copyright">Copyright &copy; 2024 MatchifyJobs - Tous droits réservés.</span>
+    </div>
+    <div class="footer_div">
+      <a class="footer_logo" href="https://www.instagram.com/matchifyjobs/"><img src="../../static/img/logo_instagram.png" alt="Instagram"></a>
+      <a class="footer_logo" href="https://twitter.com/matchifyjobs/"><img src="../../static/img/logo_x.png" alt="X"></a>
+      <a class="footer_logo" href="https://www.linkedin.com/company/matchifyjobs/"><img src="../../static/img/logo_linkedin.png" alt="LinkedIn"></a>
+      <span id="separator"><b>|</b></span>
+      <a class="footer_link" href="/legal_fr">Mentions Légales</a>
+      <a class="footer_link" href="/faq_fr">FAQ</a>
+      <a class="footer_link" href="/contact_fr">Nous Contacter</a>
+    </div>
+  </footer>
+
+  <!-- SCRIPT JS -->
+  <script src="../../static/script/langue.js"></script>
+
+</html>

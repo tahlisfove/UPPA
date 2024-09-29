@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <!-- HEAD -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITRE -->
+    <title>Accueil - MatchifyJobs</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/logo.png') }}"/>
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/header.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/buttons.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/welcome.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/footer.css') }}">
+  </head>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo_container_head">
+      <a class="logo_link" href="/welcome_fr"><img class="match_logo_header" src="../../static/img/logo.png" href="" alt="Logo"></a>
+      <a class="logo_link" href="/welcome_fr"><span id="logo">MatchifyJobs</span></a>
+    </div>
+    <div class="header_div">
+      <a class="header_link page_actuelle" href="">Accueil</a>
+      <a class="header_link" href="/login_fr">Plateforme</a>
+      <a class="header_link" href="/challenges_fr">Challenges</a>
+      <a id="about_us" class="header_link" href="/us_fr">A Propos</a>
+      <button id="button_logout" onclick="window.location.href='/login_fr'">Connection</button>
+      <div class="dropdown">
+        <div id="debut" class="dl">
+          <div>
+            <button class="dropbtn" onclick="toggleFin(this)">
+              <img class="selection_langue" id="french-flag" src="../../static/img/drapeau_fr.png" alt="Drapeau français">
+            </button>
+          </div>
+          <div class="lang"> Fr</div>
+        </div>
+        <div id="fin" class="dl">
+          <div>
+            <button onclick="redirectToEnglishWelcome()" class="dropfinbtn">
+              <img class="selection_langue" id="english-flag" src="../../static/img/drapeau_en.png" href="/" alt="Drapeau anglais">
+            </button>
+          </div>
+          <div class="lang"> En</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- WEBSITE TITLE -->
+    <div class="welcome_section">
+      <p class="titre"><strong class="bleu">Excellence en RH</strong> à portée de <strong class="bleu">main</strong></p>
+      <div class="divimg"><img id="photoaccueil" src="../../static/img/accueil.png"></div>  
+    </div>
+    <p class="sous_titre">Trouvez les <span class="animate_text">meilleurs</span> <strong class="bleu">talents</strong> pour votre entreprise avec MatchifyJobs</p>
+    <h1 class="pqMJ">Pourquoi choisir MatchifyJobs ?</h1>
+
+    <!-- WEBSITE PRESENTATION -->
+    <div id="right_section_welcome">
+      <p>MatchifyJobs est une plateforme dédiée aux entreprises et aux professionnels des ressources humaines. Notre objectif est de simplifier votre processus de recrutement en utilisant des technologies avancées telles que l'intelligence artificielle et l'analyse de données pour aider les entreprises à trouver les meilleurs talents.</p>
+      <div class="pourquoi">
+        <div class="pts">
+          <p>Économisez du temps en automatisant le tri des CV avec notre algorithme de correspondance.</p>
+        </div>
+        <div class="pts">
+          <p>Identifiez rapidement les candidats les plus pertinents pour chaque poste.</p>
+        </div>
+        <div class="pts">
+          <p>Optimisez vos efforts de recrutement et réduisez les coûts associés avec notre approche efficace.</p>
+        </div>
+      </div>
+      <div id="phrase_bt">
+        <p>Prêt à trouver les meilleurs talents pour votre entreprise ? Commencez maintenant en explorant notre fonctionnalité de correspondance.</p>
+      </div>      
+    </div>
+
+    <!-- BUTTON -->
+    <button class="button_accueil" onclick="window.location.href='/login_fr'">Commencer la correspondance</button>
+
+    <!-- MATCHING EXPLICATIONS -->
+    <div class="explications">
+
+      <!-- TITRE -->
+      <h1 id="titre_explication">Comment correspondre les CV à un poste</h1>
+
+      <!-- STEP 1 -->
+      <div class="etapes" id="etape1">
+        <div class="drap_text" id="divt1">
+          <div>
+            <div>
+              <div class="drapeau">1</div>
+              <svg width="49" height="24" viewBox="0 0 49 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.1192 2.69272e-06L0.119202 24L0.119203 0L24.1192 2.69272e-06Z" fill="#2c8bba"></path>
+                <path d="M24.1192 2.69272e-06L48.1191 24V0L24.1192 2.69272e-06Z" fill="#2c8bba"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="div_text">
+            <h2>Télécharger les CV</h2>
+            <p class="petap">Dans la section dédiée, téléchargez les CV des candidats que vous souhaitez évaluer. Vous devez télécharger un fichier ZIP contenant plusieurs CV à la fois, car un seul fichier peut être téléchargé dans cette zone.</p>
+          </div>        
+        </div>
+        <div>
+          <img class="img_explication" id="img1" src="../../static/img/etape1.png" alt="Étape 1">
+        </div>
+      </div>
+
+      <!-- STEP 2 -->
+      <div class="etapes" id="etape2">
+        <div>
+          <img class="img_explication" id="img2" src="../../static/img/etape2.png" alt="Étape 2">
+        </div>
+        <div class="drap_text" id="divt2">
+          <div>
+            <div>
+              <div class="drapeau">2</div>
+              <svg width="49" height="24" viewBox="0 0 49 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.1192 2.69272e-06L0.119202 24L0.119203 0L24.1192 2.69272e-06Z" fill="#2c8bba"></path>
+                <path d="M24.1192 2.69272e-06L48.1191 24V0L24.1192 2.69272e-06Z" fill="#2c8bba"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="div_text">
+            <h2>Choisir le titre du poste</h2>
+            <p class="petap">Sélectionnez le domaine ainsi que le métier pertinent pour le poste. Cette étape nous permet de cibler efficacement les compétences requises pour le poste shouaité.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 3 -->
+      <div class="etapes" id="etape3">
+        <div class="drap_text" id="divt3">
+          <div>
+            <div>
+              <div class="drapeau">3</div>
+              <svg width="49" height="24" viewBox="0 0 49 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.1192 2.69272e-06L0.119202 24L0.119203 0L24.1192 2.69272e-06Z" fill="#2c8bba"></path>
+                <path d="M24.1192 2.69272e-06L48.1191 24V0L24.1192 2.69272e-06Z" fill="#2c8bba"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="div_text">
+            <h2>Informations supplémentaires</h2>
+            <p class="petap">Si vous avez des critères spécifiques ou des informations supplémentaires sur les compétences ou qualités que vous recherchez, vous pouvez les ajouter à cette étape.</p>
+          </div>        
+        </div>
+        <div>
+          <img class="img_explication" id="img3" src="../../static/img/etape3.png" alt="Étape 3">
+        </div>
+      </div>
+
+      <!-- STEP 4 -->
+      <div class="etapes" id="etape4">
+        <div>
+          <img class="img_explication" id="img4" src="../../static/img/etape4.png" alt="Étape 4">
+        </div>
+        <div class="drap_text" id="divt4">
+          <div>
+            <div>
+              <div class="drapeau">4</div>
+              <svg width="49" height="24" viewBox="0 0 49 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.1192 2.69272e-06L0.119202 24L0.119203 0L24.1192 2.69272e-06Z" fill="#2c8bba"></path>
+                <path d="M24.1192 2.69272e-06L48.1191 24V0L24.1192 2.69272e-06Z" fill="#2c8bba"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="div_text">
+            <h2>Correspondance</h2>
+            <p class="petap">En cliquant sur le bouton "correspondance", notre algorithme d'IA compare les CV des candidats avec la description du poste. Vous recevrez ensuite une liste de candidats correspondant le mieux à vos critères.</p>
+          </div>        
+        </div>
+      </div>
+
+      <!-- STEP 5 -->
+      <div class="etapes" id="etape5">
+        <div class="drap_text" id="divt5">
+          <div>
+            <div>
+              <div class="drapeau">5</div>
+              <svg width="49" height="24" viewBox="0 0 49 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.1192 2.69272e-06L0.119202 24L0.119203 0L24.1192 2.69272e-06Z" fill="#2c8bba"></path>
+                <path d="M24.1192 2.69272e-06L48.1191 24V0L24.1192 2.69272e-06Z" fill="#2c8bba"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="div_text">
+            <h2>En suivant</h2>
+            <p class="petap">Les résultats de la correspondance sont affichés dans la section de droite. Les CV sont triés par score de correspondance, ce qui vous permet de voir les candidats les plus pertinents en premier, avec la possibilité de télécharger les CV des candidats pour les examiner ou les contacter pour un entretien.</p>
+          </div>              
+        </div>
+        <div>
+          <img class="img_explication" id="img4" src="../../static/img/etape5.png" alt="Étape 5">
+        </div>
+      </div>
+
+      <!-- BUTTON -->
+      <button class="button_accueil" onclick="window.location.href='/login_fr'">Commencer la correspondance</button>
+
+    </div>
+  </main>
+  
+  <!-- FOOTER -->
+  <footer>
+    <div class="logo_container_foot">
+      <img class="match_logo_footer" src="../../static/img/logo.png" alt="Logo">
+      <span id="copyright">Copyright &copy; 2024 MatchifyJobs - Tous droits réservés.</span>
+    </div>
+    <div class="footer_div">
+      <a class="footer_logo" href="https://www.instagram.com/matchifyjobs/"><img src="../../static/img/logo_instagram.png" alt="Instagram"></a>
+      <a class="footer_logo" href="https://twitter.com/matchifyjobs/"><img src="../../static/img/logo_x.png" alt="X"></a>
+      <a class="footer_logo" href="https://www.linkedin.com/company/matchifyjobs/"><img src="../../static/img/logo_linkedin.png" alt="LinkedIn"></a>
+      <span id="separator"><b>|</b></span>
+      <a class="footer_link" href="/legal_fr">Mentions Légales</a>
+      <a class="footer_link" href="/faq_fr">FAQ</a>
+      <a class="footer_link" href="/contact_fr">Nous contacter</a>
+    </div>
+  </footer>
+
+  <!-- SCRIPT JS -->
+  <script src="../../static/script/langue.js"></script>
+
+</html>

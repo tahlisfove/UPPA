@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- HEAD -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITRE -->
+    <title>Frequently asked questions - MatchifyJobs</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/logo.png') }}"/>
+    
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/header.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/buttons.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/faq.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/footer.css') }}">
+  </head>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo_container_head">
+      <a class="logo_link" href="/"><img class="match_logo_header" src="../../static/img/logo.png" alt="Logo"></a>
+      <a class="logo_link" href="/"><span id="logo">MatchifyJobs</span></a>
+    </div>
+    <div class="header_div">
+      <a class="header_link" href="/">Welcome</a>
+      <a class="header_link" href="/login">Platform</a>
+      <a class="header_link" href="/challenges">Challenges</a>
+      <a id="about_us" class="header_link" href="/us">About Us</a>
+      <button id="button_logout" onclick="window.location.href='/login'">Log In</button>
+      <div class="dropdown">
+        <div id="debut" class="dl">
+          <div>
+            <button class="dropbtn" onclick="toggleFin(this)">
+              <img class="selection_langue" id="english-flag" src="../../static/img/drapeau_en.png" alt="English Flag">
+            </button>
+          </div>
+          <div class="lang"> En</div>
+        </div>
+        <div id="fin" class="dl">
+          <div>
+            <button onclick="redirectToFrenchFaq()" class="dropfinbtn">
+              <img class="selection_langue" id="french-flag" src="../../static/img/drapeau_fr.png" href="/faq_fr" alt="English Flag">
+            </button>
+          </div>
+          <div class="lang"> Fr</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main id="faq_main">
+    <div class="left-section">
+      <p class="titre">Frequently asked questions</p>
+      <p class="sous_titre">Persistent question? <a class="mail" href="/contact">Our team is here to help!</a></p>
+    </div>
+    <div id="right_section_faq">
+      <details id="question1">
+        <summary>What type of resume files are supported?<span class="plus_symbol"></span></summary>
+        <p class="question">Currently only PDF files are supported. Ensure that your resume files are converted to PDF format before uploading the .zip folder or the .pdf file on our platform.</p>
+      </details>
+      <details id="question2">
+        <summary>How many resume files can I upload at once in a single compressed (ZIP) folder?<span class="plus_symbol"></span></summary>
+        <p class="question">There's no limit to the number of resume files you can upload in a single compressed (ZIP) folder, feel free to upload as many as you need.</p>
+      </details>
+      <details id="question3">
+        <summary>How does the candidate and job posting matching process work?<span class="plus_symbol"></span></summary>
+        <p class="question">After selecting an open position from our list and completing the optional text section, our AI algorithm will analyze information extracted from resume files against the job posting to calculate similarity percentage. This results in a list with the top 8 best potential candidates for the given role.</p>
+      </details>
+      <details id="question4">
+        <summary>Is there any limit regarding how many times you may attempt matching?<span class="plus_symbol"></span></summary>
+        <p class="question">No, you may initiate the matching process as often as necessary without limitations.</p>
+      </details>
+      <details id="question5">
+        <summary>Can I view individual similarity scores for each candidate after matching?<span class="plus_symbol"></span></summary>
+        <p class="question">No, only the top 8 candidates with the highest matching percentages are displayed. However, individual similarity scores for each candidate will soon be available.</p>
+      </details>
+      <details id="question6">
+        <summary>Is it possible to add a profession to the available selection choices?<span class="plus_symbol"></span></summary>
+        <p class="question">No, the list of professions is updated via a government website each month and is specific to each country. Adding is not available. However, if you wish to match with a profession not in the list, choose the "Other" and "Personalised" option, then enter in the Additional Information area the name and full description corresponding to the desired profession.</p>
+      </details>      
+      <details id="question7">
+        <summary>What additional details can be entered into the text box prior to matching?<span class="plus_symbol"></span></summary>
+        <p class="question">The text field allows users to specify important aspects, specific requirements or internal notes related to the open position. These inputs will factor into the matching process.</p>
+      </details>
+      <details id="question8">
+        <summary>Regarding privacy and security, how do stored resumes get handled?<span class="plus_symbol"></span></summary>
+        <p class="question">We take data privacy and security very seriously, all resume files are kept encrypted on secure servers accessible solely by authorized HR personnel within your organization.</p>
+      </details>
+      <details id="question9">
+        <summary>What should one do if unsatisfied with initial matching outcome?<span class="plus_symbol"></span></summary>
+        <p class="question">Modify the job description by adding additional information according to the desired candidate profile, then reset the matching process to obtain refined results.</p>
+      </details> 
+      <details id="question10">
+        <summary>How does MatchifyJobs ensure fairness in the recruitment process?<span class="plus_symbol"></span></summary>
+        <p class="question">MatchifyJobs is committed to promoting fairness and inclusion in recruitment. Our algorithm is designed to eliminate potential biases and promote an objective selection of candidates based solely on skills and suitability for the position.</p>
+      </details>
+      <details id="question11">
+        <summary>Is it possible to customize search criteria during the candidate matching process?<span class="plus_symbol"></span></summary>
+        <p class="question">Yes, our platform offers full flexibility in customizing search criteria. You can define specific criteria such as experience, education, skills, etc., to obtain more precise results.</p>
+      </details>
+      <details id="question12">
+        <summary>How can I contact the support team of MatchifyJobs in case of issues or questions?<span class="plus_symbol"></span></summary>
+        <p class="question">You can contact our support team via our contact form on our website, or by email at <a class="mail" href="mailto:support@matchifyjobs.com">support@matchifyjobs.com.</a></p>
+      </details>
+      <details id="question13">
+        <summary>Which languages are supported on the MatchifyJobs platform?<span class="plus_symbol"></span></summary>
+        <p class="question">Currently, MatchifyJobs only supports English. We are also working on adding new languages like French to better serve our users. However, the site is available in both English and French to facilitate greater understanding among users.</p>
+      </details>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="logo_container_foot">
+      <img class="match_logo_footer" src="../../static/img/logo.png" alt="Logo">
+      <span id="copyright">Copyright &copy; 2024 MatchifyJobs - All rights reserved.</span>
+    </div>
+    <div class="footer_div">
+      <a class="footer_logo" href="https://www.instagram.com/matchifyjobs/"><img src="../../static/img/logo_instagram.png" alt="Instagram"></a>
+      <a class="footer_logo" href="https://twitter.com/matchifyjobs/"><img src="../../static/img/logo_x.png" alt="X"></a>
+      <a class="footer_logo" href="https://www.linkedin.com/company/matchifyjobs/"><img src="../../static/img/logo_linkedin.png" alt="LinkedIn"></a>
+      <span id="separator"><b>|</b></span>
+      <a class="footer_link" href="/legal">Legal Notice</a>
+      <a class="footer_link" href="">FAQ</a>
+      <a class="footer_link" href="/contact">Contact Us</a>
+    </div>
+  </footer>
+
+  <!-- SCRIPT JS -->
+  <script src="../../static/script/langue.js"></script>
+
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skateparks>
+   <skatepark>
+      <title>Skatepark des Remparts</title>
+      <image>https://github.com/tahlisfove/IoT/blob/main/img/sk8park.jpg?raw=true</image>
+      <description>Le skatepark offre deux zones distinctes adaptées aux niveaux débutants et confirmés, équipées de modules uniques. Sa conception remarquable et sa taille permettent des performances exceptionnelles, se démarquant des autres structures de la région.</description>
+      <address>Chemin de Beneharnum, 64230 Lescar</address>
+      <latitude>43.33268403112534</latitude>
+      <longitude>-0.4335628116439437</longitude>
+      <eventimage>https://github.com/tahlisfove/IoT/blob/main/img/evenement.png?raw=true</eventimage>
+      <eventdescription>Inscrivez-vous dès maintenant à "Skoot 2", une compétition mêlant skateboard et trottinette, ouverte à tous les âges! Organisée par Culture Glisse à Lescar, cette journée promet des sensations fortes et une ambiance conviviale.</eventdescription>
+      <email>lescarskatefest@gmail.com</email>
+  </skatepark>
+</skateparks>

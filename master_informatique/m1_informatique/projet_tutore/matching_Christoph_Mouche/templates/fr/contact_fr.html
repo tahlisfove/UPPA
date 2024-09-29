@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <!-- HEAD -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- TITRE -->
+    <title>Nous contacter - MatchifyJobs</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/logo.png') }}"/>
+    
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/header.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/buttons.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/contact.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/footer.css') }}">
+  </head>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo_container_head">
+      <a class="logo_link" href="/welcome_fr"><img class="match_logo_header" src="../../static/img/logo.png" alt="Logo"></a>
+      <a class="logo_link" href="/welcome_fr"><span id="logo">MatchifyJobs</span></a>
+    </div>
+    <div class="header_div">
+      <a class="header_link" href="/welcome_fr">Accueil</a>
+      <a class="header_link" href="/login_fr">Plateforme</a>
+      <a class="header_link" href="/challenges_fr">Challenges</a>
+      <a id="about_us" class="header_link" href="/us_fr">A Propos</a>
+      <button id="button_logout" onclick="window.location.href='/login_fr'">Connexion</button>
+      <div class="dropdown">
+        <div id="debut" class="dl">
+          <div>
+            <button class="dropbtn" onclick="toggleFin(this)">
+              <img class="selection_langue" id="french-flag" src="../../static/img/drapeau_fr.png" alt="Drapeau français">
+            </button>
+          </div>
+          <div class="lang"> Fr</div>
+        </div>
+        <div id="fin" class="dl">
+          <div>
+            <button onclick="redirectToEnglishContact()" class="dropfinbtn">
+              <img class="selection_langue" id="english-flag" src="../../static/img/drapeau_en.png" href="/contact" alt="Drapeau anglais">
+            </button>
+          </div>
+          <div class="lang"> En</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main id="contact_main">
+    <div class="left-section">
+      <p class="titre">Nous contacter</p>
+      <p class="sous_titre">Améliorez l'efficacité de votre service des ressources humaines dès maintenant.</p>
+    </div>
+
+    <!-- DIV MESSAGE -->
+    <div id="right_section_contact">
+      <div id="success-message" class="success-message">
+        <p id="placement">Message envoyé avec succès !</p>
+        <p>Votre demande a été enregistrée et sera traitée prochainement. Merci de nous contacter !</p>
+        <p><button id="button_reset" class="reload-btn">Envoyer un autre message</button></p>
+      </div>
+
+      <!-- FORMULAIRE -->
+      <div id="cache">
+        <form id="contactForm" action="/submit_contact">
+          <div class="form_input">
+            <div class="colonne">
+              <label for="firstName">Prénom*</label><br>
+              <input class="inputfields" autocomplete='off' type="text" id="firstName" placeholder="Prénom" name="firstName" required>
+            </div>
+            <div class="colonne">
+              <label for="lastName">Nom*</label><br>
+              <input class="inputfields" autocomplete='off' type="text" id="lastName" placeholder="Nom" name="lastName" required>
+            </div>
+          </div>
+          <div class="form_input">
+            <div class="colonne">
+              <label for="email">E-mail*</label><br>
+              <input class="inputfields" autocomplete='off' type="email" id="email" placeholder="E-mail" name="email" required>
+            </div>
+            <div class="colonne">
+              <label for="phoneNumber">Numéro de téléphone* </label><br>
+              <input class="inputfields" autocomplete='off' type="tel" id="phoneNumber" placeholder="Numéro de téléphone" name="phoneNumber" required>
+            </div>
+          </div>
+          <div class="form_input">
+            <div class="colonne">
+              <label for="company">Entreprise* </label><br>
+              <input class="inputfields" autocomplete='off' type="text" id="company" placeholder="Entreprise" name="company">
+            </div>
+            <div class="colonne">
+              <label for="companySize">Taille de l'entreprise*</label><br>
+              <select class="selectfields" id="companySize" name="companySize" required>
+                <option value="" disabled selected hidden>Veuillez sélectionner</option>
+                <option value="1-9">1 à 9</option>
+                <option value="10-49">10 à 49</option>
+                <option value="50-99">50 à 99</option>
+                <option value="100-499">100 à 499</option>
+                <option value="500+">500 ou plus</option>
+              </select>
+            </div>
+          </div>
+          <div class="form_input">
+            <div class="remark">
+              <label for="remarks">Notes, suggestions ou questions* </label><br>
+              <textarea id="remarks" placeholder="Saisissez votre message ici..." name="remarks" required></textarea>
+            </div>
+          </div>
+          <div class="form_input">
+            <p id="infoform">En cliquant sur envoyer ci-dessous, vous consentez à permettre à MatchifyJobs de stocker et de traiter les informations personnelles soumises ci-dessus pour vous fournir le contenu demandé.</p>
+          </div>
+          <div class="form_input">
+            <button id="button_contact" class="clear-btn">Effacer</button>
+            <button id="button_contact">Envoyer</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="logo_container_foot">
+      <img class="match_logo_footer" src="../../static/img/logo.png" alt="Logo">
+      <span id="copyright">Copyright &copy; 2024 MatchifyJobs - Tous droits réservés.</span>
+    </div>
+    <div class="footer_div">
+      <a class="footer_logo" href="https://www.instagram.com/matchifyjobs/"><img src="../../static/img/logo_instagram.png" alt="Instagram"></a>
+      <a class="footer_logo" href="https://twitter.com/matchifyjobs/"><img src="../../static/img/logo_x.png" alt="X"></a>
+      <a class="footer_logo" href="https://www.linkedin.com/company/matchifyjobs/"><img src="../../static/img/logo_linkedin.png" alt="LinkedIn"></a>
+      <span id="separator"><b>|</b></span>
+      <a class="footer_link" href="/legal_fr">Mentions légales</a>
+      <a class="footer_link" href="/faq_fr">FAQ</a>
+      <a class="footer_link" href="">Nous contacter</a>
+    </div>
+  </footer>
+
+  <!-- SCRIPT JS -->
+  <script src="../../static/script/contact.js"></script>
+  <script src="../../static/script/langue.js"></script>
+
+</html>

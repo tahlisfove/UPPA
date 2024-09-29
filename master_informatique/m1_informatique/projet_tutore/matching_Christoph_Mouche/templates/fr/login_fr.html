@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <!-- HEAD -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITRE -->
+    <title>Connexion - MatchifyJobs</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/logo.png') }}"/>
+    
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/login.css') }}">
+  </head>
+
+  <!-- BODY -->
+  <body>
+    <div class="login-container">
+      <div id="loginForm" style="display: none;">.</div>
+      <p id="titre_connection"><img id="logo_login" src="../../static/img/logo.png" alt="Logo"><br>MatchifyJobs</p>
+      <form id="loginFormFr">
+        <p id="errorMessage" class="error-message hidden"></p>
+        <div class="input-group">
+          <img src="../../static/img/user.png" id="loginImg" alt="Icône utilisateur">
+          <input type="text" id="emailID" autocomplete='off' placeholder="Identifiant" required>
+        </div>
+        <div class="input-group">
+          <img src="../../static/img/lock.png" alt="Icône utilisateur">
+          <input type="password" id="password" autocomplete='off' placeholder="Mot de passe" required>
+        </div>
+        <button type="submit" id="loginButton">CONNEXION</button>
+        <a id="forgotPassword">Mot de passe oublié ?</a>
+      </form>
+    </div>
+    <div class="additional-links">
+      <a id="activateAccount">Activer votre compte</a>
+    </div>
+  </body>
+
+  <!-- SCRIPT JS -->
+  <script src="../../static/script/login.js"></script>
+  
+</html>

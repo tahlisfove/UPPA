@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- HEAD -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITRE -->
+    <title>About us - MatchifyJobs</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/logo.png') }}"/>
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/header.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/buttons.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/us.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/footer.css') }}">
+  </head>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo_container_head">
+      <a class="logo_link" href="/"><img class="match_logo_header" src="../../static/img/logo.png" alt="Logo"></a>
+      <a class="logo_link" href="/"><span id="logo">MatchifyJobs</span></a>
+    </div>
+    <div class="header_div">
+      <a class="header_link" href="/">Welcome</a>
+      <a class="header_link" href="/login">Platform</a>
+      <a class="header_link" href="/challenges">Challenges</a>
+      <a id="about_us" class="header_link page_actuelle" href="">About Us</a>
+      <button id="button_logout" onclick="window.location.href='/login'">Log In</button>
+      <div class="dropdown">
+        <div id="debut" class="dl">
+          <div>
+            <button class="dropbtn" onclick="toggleFin(this)">
+              <img class="selection_langue" id="english-flag" src="../../static/img/drapeau_en.png" alt="English Flag">
+            </button>
+          </div>
+          <div class="lang"> En</div>
+        </div>
+        <div id="fin" class="dl">
+          <div>
+            <button onclick="redirectToFrenchUs()" class="dropfinbtn">
+              <img class="selection_langue" id="french-flag" src="../../static/img/drapeau_fr.png" href="/us_fr" alt="English Flag">
+            </button>
+          </div>
+          <div class="lang"> Fr</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="us_main">
+    <div class="left-section">
+      <p class="titre">About us</p>
+      <p class="sous_titre">Meet the faces behind the brand.</p>
+    </div>
+    <div id="right_section_us">
+      <div class="histoire">
+        <section class="description">
+          <strong>Company Description</strong>
+          <br>MatchifyJobs is an emerging company specializing in human resources, determined to revolutionize recruitment using cutting-edge technologies such as artificial intelligence and data analytics. Our mission is to transform the recruitment process by leveraging advanced technologies like artificial intelligence and data analytics to help companies find the best talents. We firmly believe that every company deserves the best employees to thrive, which is why we strive to provide tailor-made recruitment solutions that meet the specific needs of each client. For any inquiries, feel free to contact us via email at <a class="mail" href="mailto:contact@matchifyjobs.com">contact@matchifyjobs.com</a>.
+        </section>        
+      </div>
+      <section class="team">
+        <h2>Our leaderhip team</h2>
+        <div class="team_members">
+          <figure class="other_team"> . . . </figure>
+          <figure class="figure_team">
+            <a href="https://www.linkedin.com/in/samuel-christoph-242800209/"><img src="../../static/img/samuel.jpg" alt="PDG1"></a>
+            <figcaption>Samuel Christoph</figcaption>
+            <p class="status">CEO & Founder</p>
+          </figure>
+          <figure class="other_team"> . . . </figure>
+          <figure class="figure_team">
+            <a href="https://www.linkedin.com/in/valentin-mouche-029a83278/"><img src="../../static/img/valentin.jpg" alt="PDG2"></a>
+            <figcaption>Valentin Mouche</figcaption>
+            <p class="status">COO & Co-founder</p>
+          </figure>
+          <figure class="other_team"> . . . </figure>
+        </div>
+      </section>
+      <div class="histoire">
+        <section class="description">
+          <div class="histoire">
+            <strong>History of MatchifyJobs</strong>
+            <br>MatchifyJobs was founded in 2024 by Samuel Christoph and Valentin Mouche, two friends driven by a common passion: to reinvent the recruitment landscape through technology. Their entrepreneurial journey began modestly, but with an unwavering belief in the transformative potential of artificial intelligence and data analytics to revolutionize recruitment. Over the months, their passion and dedication attracted the attention of early users and companies, enticed by the promise of simplifying and optimizing the talent search process. Although young, MatchifyJobs has already begun to sow the seeds of innovation and efficiency in the recruitment field. Guided by an ambitious vision, they launched MatchifyJobs with a mission to make recruitment more effective, transparent, and accessible.
+          </div>
+          <div class="histoire">
+            <strong>Growth and Recognition</strong>
+            <br>The growth of MatchifyJobs has been steady, fueled by a user-centric philosophy and a relentless pursuit of improvement. Although recent in the market, the company has quickly caught the attention of HR professionals and businesses seeking more effective recruitment methods. Positive feedback and early successes have paved the way for increasing recognition within the industry.
+          </div>
+          <div class="histoire">
+            <strong>Today and Future</strong>
+            <br>Today, MatchifyJobs is becoming a familiar name in the recruitment world, although its story is still being written. With a dedicated team and cutting-edge technology, the company is gearing up to expand its impact and solidify its position in the global recruitment market. While matching is currently available only in English, the interest shown by businesses and the initial positive feedback testify to MatchifyJobs' immense potential to meet the needs of the global market.
+          </div>
+        </section>        
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="logo_container_foot">
+      <img class="match_logo_footer" src="../../static/img/logo.png" alt="Logo">
+      <span id="copyright">Copyright &copy; 2024 MatchifyJobs - All rights reserved.</span>
+    </div>
+    <div class="footer_div">
+      <a class="footer_logo" href="https://www.instagram.com/matchifyjobs/"><img src="../../static/img/logo_instagram.png" alt="Instagram"></a>
+      <a class="footer_logo" href="https://twitter.com/matchifyjobs/"><img src="../../static/img/logo_x.png" alt="X"></a>
+      <a class="footer_logo" href="https://www.linkedin.com/company/matchifyjobs/"><img src="../../static/img/logo_linkedin.png" alt="LinkedIn"></a>
+      <span id="separator"><b>|</b></span>
+      <a class="footer_link" href="/legal">Legal Notice</a>
+      <a class="footer_link" href="/faq">FAQ</a>
+      <a class="footer_link" href="/contact">Contact Us</a>
+    </div>
+  </footer>
+
+  <!-- SCRIPT JS -->
+  <script src="../../static/script/langue.js"></script>
+
+</html>

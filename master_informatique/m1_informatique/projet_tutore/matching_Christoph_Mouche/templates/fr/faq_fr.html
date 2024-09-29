@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <!-- HEAD -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITRE -->
+    <title>Questions fréquemment posées - MatchifyJobs</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/logo.png') }}"/>
+    
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/header.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/buttons.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/faq.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/footer.css') }}">
+  </head>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo_container_head">
+      <a class="logo_link" href="/welcome_fr"><img class="match_logo_header" src="../../static/img/logo.png" alt="Logo"></a>
+      <a class="logo_link" href="/welcome_fr"><span id="logo">MatchifyJobs</span></a>
+    </div>
+    <div class="header_div">
+      <a class="header_link" href="/welcome_fr">Accueil</a>
+      <a class="header_link" href="/login_fr">Plateforme</a>
+      <a class="header_link" href="/challenges_fr">Challenges</a>
+      <a id="about_us" class="header_link" href="/us_fr">A Propos</a>
+      <button id="button_logout" onclick="window.location.href='/login_fr'">Connexion</button>
+      <div class="dropdown">
+        <div id="debut" class="dl">
+          <div>
+            <button class="dropbtn" onclick="toggleFin(this)">
+              <img class="selection_langue" id="frecnh-flag" src="../../static/img/drapeau_fr.png" alt="Drapeau français">
+            </button>
+          </div>
+          <div class="lang"> Fr</div>
+        </div>
+        <div id="fin" class="dl">
+          <div>
+            <button onclick="redirectToEnglishFaq()" class="dropfinbtn">
+              <img class="selection_langue" id="english-flag" src="../../static/img/drapeau_en.png" href="/faq" alt="Drapeau anglais">
+            </button>
+          </div>
+          <div class="lang"> En</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main id="faq_main">
+    <div class="left-section">
+      <p class="titre">Foire aux questions</p>
+      <p class="sous_titre">Question persistante ? <a class="mail" href="/contact">Notre équipe est là pour vous aider !</a></p>
+    </div>
+    <div id="right_section_faq">
+      <details id="question1">
+        <summary>Quel type de fichiers de CV sont pris en charge?<span class="plus_symbol"></span></summary>
+        <p class="question">Actuellement, seuls les fichiers PDF sont pris en charge. Assurez-vous que vos fichiers de CV sont convertis au format PDF avant de télécharger le dossier .zip ou le fichier .pdf sur notre plateforme.</p>
+      </details>
+      <details id="question2">
+        <summary>Combien de fichiers de CV puis-je télécharger à la fois dans un seul dossier compressé (ZIP)?<span class="plus_symbol"></span></summary>
+        <p class="question">Il n'y a pas de limite au nombre de fichiers de CV que vous pouvez télécharger dans un seul dossier compressé (ZIP), n'hésitez pas à en télécharger autant que vous en avez besoin.</p>
+      </details>
+      <details id="question3">
+        <summary>Comment fonctionne le processus de correspondance entre les candidats et les offres d'emploi?<span class="plus_symbol"></span></summary>
+        <p class="question">Après avoir sélectionné un poste ouvert dans notre liste et avoir complété la section texte facultative, notre algorithme d'IA analysera les informations extraites des fichiers de CV par rapport à l'offre d'emploi pour calculer le pourcentage de similarité. Cela donne une liste des 8 meilleurs candidats potentiels pour le poste donné.</p>
+      </details>
+      <details id="question4">
+        <summary>Y a-t-il une limite concernant le nombre de fois que l'on peut tenter une correspondance?<span class="plus_symbol"></span></summary>
+        <p class="question">Non, vous pouvez initier le processus de correspondance aussi souvent que nécessaire, sans limitation.</p>
+      </details>
+      <details id="question5">
+        <summary>Puis-je voir les scores de similarité individuels pour chaque candidat après la correspondance?<span class="plus_symbol"></span></summary>
+        <p class="question">Non, seuls les 8 meilleurs candidats avec les pourcentages de correspondance les plus élevés sont affichés. Cependant, les scores de similarité individuels pour chaque candidat seront bientôt disponibles.</p>
+      </details>
+      <details id="question6">
+        <summary>Est-il possible d'ajouter une profession aux choix de sélection disponibles?<span class="plus_symbol"></span></summary>
+        <p class="question">Non, la liste des professions est mise à jour via un site web gouvernemental chaque mois et est spécifique à chaque pays. L'ajout n'est pas disponible. Cependant, si vous souhaitez correspondre à une profession qui ne figure pas dans la liste, choisissez l'option ".Autre" et "Personnalisé", puis saisissez dans la zone d'informations supplémentaires le nom et la description complète correspondant à la profession désirée.</p>
+      </details>      
+      <details id="question7">
+        <summary>Quels détails supplémentaires peuvent être saisis dans la zone de texte avant la correspondance?<span class="plus_symbol"></span></summary>
+        <p class="question">Le champ de texte permet aux utilisateurs de spécifier des aspects importants, des exigences spécifiques ou des notes internes liées au poste ouvert. Ces entrées seront prises en compte dans le processus de correspondance.</p>
+      </details>
+      <details id="question8">
+        <summary>En ce qui concerne la confidentialité et la sécurité, comment les CV stockés sont-ils gérés?<span class="plus_symbol"></span></summary>
+        <p class="question">Nous prenons très au sérieux la confidentialité et la sécurité des données, tous les fichiers de CV sont conservés cryptés sur des serveurs sécurisés accessibles uniquement par le personnel RH autorisé au sein de votre organisation.</p>
+      </details>
+      <details id="question9">
+        <summary>Que faut-il faire si l'on est insatisfait du résultat initial de la correspondance?<span class="plus_symbol"></span></summary>
+        <p class="question">Modifiez la description du poste en ajoutant des informations supplémentaires conformément au profil de candidat désiré, puis réinitialisez le processus de correspondance pour obtenir des résultats affinés.</p>
+      </details> 
+      <details id="question10">
+        <summary>Comment MatchifyJobs garantit-il l'équité dans le processus de recrutement?<span class="plus_symbol"></span></summary>
+        <p class="question">MatchifyJobs s'engage à promouvoir l'équité et l'inclusion dans le recrutement. Notre algorithme est conçu pour éliminer les biais potentiels et promouvoir une sélection objective des candidats basée uniquement sur les compétences et la pertinence pour le poste.</p>
+      </details>
+      <details id="question11">
+        <summary>Est-il possible de personnaliser les critères de recherche lors du processus de correspondance?<span class="plus_symbol"></span></summary>
+        <p class="question">Oui, notre plateforme offre une flexibilité totale dans la personnalisation des critères de recherche. Vous pouvez définir des critères spécifiques tels que l'expérience, l'éducation, les compétences, etc., pour obtenir des résultats plus précis.</p>
+      </details>
+      <details id="question12">
+        <summary>Comment puis-je contacter l'équipe de support de MatchifyJobs en cas de problèmes ou de questions?<span class="plus_symbol"></span></summary>
+        <p class="question">Vous pouvez contacter notre équipe de support via notre formulaire de contact sur notre site web, ou par e-mail à <a class="mail" href="mailto:support@matchifyjobs.com">support@matchifyjobs.com.</a></p>
+      </details>
+      <details id="question13">
+        <summary>Quelles langues sont prises en charge sur la plateforme MatchifyJobs?<span class="plus_symbol"></span></summary>
+        <p class="question">Actuellement, MatchifyJobs ne prend en charge que l'anglais. Nous travaillons également sur l'ajout de nouvelles langues comme le français pour mieux servir nos utilisateurs. Cependant, le site est disponible en anglais et en français pour faciliter une meilleure compréhension parmi les utilisateurs.</p>
+      </details>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="logo_container_foot">
+      <img class="match_logo_footer" src="../../static/img/logo.png" alt="Logo">
+      <span id="copyright">Copyright &copy; 2024 MatchifyJobs - Tous droits réservés.</span>
+    </div>
+    <div class="footer_div">
+      <a class="footer_logo" href="https://www.instagram.com/matchifyjobs/"><img src="../../static/img/logo_instagram.png" alt="Instagram"></a>
+      <a class="footer_logo" href="https://twitter.com/matchifyjobs/"><img src="../../static/img/logo_x.png" alt="X"></a>
+      <a class="footer_logo" href="https://www.linkedin.com/company/matchifyjobs/"><img src="../../static/img/logo_linkedin.png" alt="LinkedIn"></a>
+      <span id="separator"><b>|</b></span>
+      <a class="footer_link" href="/legal_fr">Mentions légales</a>
+      <a class="footer_link" href="">FAQ</a>
+      <a class="footer_link" href="/contact_fr">Nous contacter</a>
+    </div>
+  </footer>
+
+  <!-- SCRIPT JS -->
+  <script src="../../static/script/langue.js"></script>
+
+</html>

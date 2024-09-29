@@ -1,0 +1,227 @@
+/* paramétres main de la page */
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: #f9f9f9;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.5;
+}
+ 
+/* paramétres body de la page */
+body {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+/* pour mettre du texte en bleu */
+.bleu {
+  font-weight: normal;
+  color: #4c849f;
+}
+
+/* titre accrocheur de la page */
+.titre {
+  font-family: Gilroy, sans-serif;
+  font-size: 90px;
+  margin: 40px;
+  margin-top: 100px;
+}  
+  
+/* sous-titre accrocheur de la page */
+.sous_titre{
+  font-style: italic;
+  text-align: right;
+  margin: 10px;
+  margin-right: 190px;
+  font-size: 26px;
+}
+
+/* contenu des div avec drapeau */
+.drap_text {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;  
+}
+
+/* titre avant les étapes de matching */
+#titre_explication {
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  padding-bottom: 40px;
+  margin-top: 40px;
+}
+
+/* div des étapes de matching */
+.etapes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 190px;
+  margin-right: 190px;
+  padding: 10px;
+}
+  
+/* premiée étape du matching */
+#etape1 {
+  margin-top: 10px;
+}
+  
+/* div secondaire 3 points */
+#right_section_welcome {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: #f9f9f9;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+/* titre pourquoi mj */
+.pqMJ {
+  padding: 40px;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  margin-top: 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+  
+/* texte explicatif des étapes et conseils */
+.explications {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-color: #f9f9f9;
+  border-top: 1px solid rgba(61, 15, 15, 0.2);
+}
+
+/* images descriptives des étapes */
+.img_explication {
+  width: 450px;
+  height: auto;
+  margin: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: #f9f9f9(159, 114, 114);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+/* div des drapeaux pour les étapes */
+.drapeau {
+  width: 48px;
+  height: 70px;
+  background-color: #2c8bba;
+  padding-top: 10px;
+  color: #f9f9f9;
+  text-align: center;
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* div comprenant titre et description des étapes */
+.div_text {
+  margin-top:-10px ;
+  margin-left: 20px;
+}
+
+/* div premiére étape du matching */
+#divt1 {
+    padding-right: 20px;
+}
+
+/* div principale titre slogan image */
+.welcome_section {
+  background-color: transparent;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+/* div de l'image principale */
+.divimg {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-bottom-left-radius: 100%;
+}
+
+/* phrase slogan */
+#phrase_bt {
+  text-align: center;
+  width: 100%;
+}
+
+/* div titre pourquoi mj */
+.pourquoi {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+/* div des points survolée */
+.pts {
+  margin: 30px;
+  width: 30%;
+  background-color: #f9f9f9(195, 185, 161);
+  border: 1px solid rgb(144, 143, 143);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+/* texte des points */
+.pts p {
+  padding: 20px;
+}
+
+/* div des points survolée */
+.pts:hover  {
+  background-color: #b3d7e9;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+
+/* sélection du mot tournant */
+.animate_text {
+  display: inline-block;
+  animation: rotateText 2s linear infinite;
+}
+
+/* div des différentes étapes du matching */
+.petap {
+  text-align: justify;
+  font-size: 17px;
+}
+
+/* texte des différentes étapes du matching */
+.petap p {
+  display: inline-block;
+}
+
+/* image d'accueil du site */
+#photoaccueil {
+  width: 700px;
+  margin-bottom: 30px;
+  border-bottom-left-radius: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* animation pour tourner un mot sur lui même */
+@keyframes rotateText {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}

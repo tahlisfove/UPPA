@@ -1,0 +1,52 @@
+/* html des pages */
+html {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* body des pages */
+body {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f9f9f9;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+}
+
+/* disposition principales des mains */
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+/* section de gauche pour les pages */
+.left-section {
+  width: 30%;
+  background-color: #f9f9f9; 
+  padding: 10px;
+}
+
+/* titre des pages sur la gauche */
+.titre {
+  font-size: 80px;
+  margin: 39px;
+}
+
+/* sous-titre pages sur la gauche */
+.sous_titre{
+  margin: 46px;
+}
+
+/* couleur bleu pour les adresses ou liens clicable */
+.mail {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* ligne lorsque survolé */
+.mail:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,307 @@
+[
+    {
+        "id": "da9cc404ac7bfd84",
+        "type": "tab",
+        "label": "Flux 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "30d311a29399b565",
+        "type": "inject",
+        "z": "da9cc404ac7bfd84",
+        "name": "Sensor6/temp/21.6",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "300",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Sensor6/temp/21.6",
+        "payloadType": "str",
+        "x": 160,
+        "y": 100,
+        "wires": [
+            [
+                "53bf670f2fda15d9"
+            ]
+        ]
+    },
+    {
+        "id": "d704662597f42e95",
+        "type": "function",
+        "z": "da9cc404ac7bfd84",
+        "name": "function",
+        "func": "// Divise la chaîne en utilisant le séparateur \"/\"\nvar separator = '/';\nvar messageParts = msg.payload.split(separator);\n\n// Vérifie si le message est correctement formaté\nif (messageParts.length === 3) {\n    // Extrait la troisième partie (21.6)\n    var temperatureValue = messageParts[2];\n\n    // Crée le nouveau sujet MQTT\n    msg.topic = \"UPPA/Duboue/S25/realtemp\";\n\n    // Utilise la valeur de température extraite comme payload\n    msg.payload = temperatureValue;\n} else {\n    // Gérer les messages mal formatés (enregistrez-les ou affichez une erreur)\n    node.warn(\"Message mal formaté : \" + msg.payload);\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 200,
+        "wires": [
+            [
+                "51dd50ebfd678357"
+            ]
+        ]
+    },
+    {
+        "id": "51dd50ebfd678357",
+        "type": "function",
+        "z": "da9cc404ac7bfd84",
+        "name": "decrease temperature",
+        "func": "// Convertit le payload en nombre\nvar receivedTemperature = parseFloat(msg.payload);\n\n// Réduit la valeur de 1.8\nvar modifiedTemperature = receivedTemperature - 1.8;\n\n// Met à jour le payload avec la valeur réduite\nmsg.payload = modifiedTemperature;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 300,
+        "wires": [
+            [
+                "a1fb6d54fba0d12c",
+                "7b0cc4ad4cbcabef"
+            ]
+        ]
+    },
+    {
+        "id": "7b0cc4ad4cbcabef",
+        "type": "thingspeak42",
+        "z": "da9cc404ac7bfd84",
+        "name": "ThingSpeak LoRa test channel",
+        "delay": "2",
+        "topic1": "",
+        "topic2": "",
+        "topic3": "",
+        "topic4": "12",
+        "topic5": "",
+        "topic6": "",
+        "topic7": "",
+        "topic8": "",
+        "endpoint": "https://thingspeak.com",
+        "x": 710,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "a1fb6d54fba0d12c",
+        "type": "mqtt out",
+        "z": "da9cc404ac7bfd84",
+        "name": "",
+        "topic": "UPPA/Duboue/S25/realtemp",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "c53700edad899095",
+        "x": 700,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "53bf670f2fda15d9",
+        "type": "change",
+        "z": "da9cc404ac7bfd84",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "UPPA/Duboue/S25",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "realtemp",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 100,
+        "wires": [
+            [
+                "d704662597f42e95"
+            ]
+        ]
+    },
+    {
+        "id": "ea55e3828828ea56",
+        "type": "function",
+        "z": "da9cc404ac7bfd84",
+        "name": "function",
+        "func": "// Divise la chaîne en utilisant le séparateur \"/\"\nvar separator = '/';\nvar messageParts = msg.payload.split(separator);\n\n// Vérifie si le message est correctement formaté\nif (messageParts.length === 3) {\n    // Extrait la troisième partie (21.6)\n    var temperatureValue = messageParts[2];\n\n    // Crée le nouveau sujet MQTT\n    msg.topic = \"UPPA/Duboue/S25/realtemp\";\n\n    // Utilise la valeur de température extraite comme payload\n    msg.payload = temperatureValue;\n} else {\n    // Gérer les messages mal formatés (enregistrez-les ou affichez une erreur)\n    node.warn(\"Message mal formaté : \" + msg.payload);\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 580,
+        "wires": [
+            [
+                "60f88f2a6af99ff0"
+            ]
+        ]
+    },
+    {
+        "id": "60f88f2a6af99ff0",
+        "type": "function",
+        "z": "da9cc404ac7bfd84",
+        "name": "decrease temperature",
+        "func": "// Convertit le payload en nombre\nvar receivedTemperature = parseFloat(msg.payload);\n\n// Réduit la valeur de 1.8\nvar modifiedTemperature = receivedTemperature - 1.8;\n\n// Met à jour le payload avec la valeur réduite\nmsg.payload = modifiedTemperature;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 680,
+        "wires": [
+            [
+                "6e29eeab8cbfd7c0",
+                "a848dd8707d06c17"
+            ]
+        ]
+    },
+    {
+        "id": "a848dd8707d06c17",
+        "type": "thingspeak42",
+        "z": "da9cc404ac7bfd84",
+        "name": "ThingSpeak LoRa test channel",
+        "delay": "2",
+        "topic1": "",
+        "topic2": "",
+        "topic3": "",
+        "topic4": "12",
+        "topic5": "",
+        "topic6": "",
+        "topic7": "",
+        "topic8": "",
+        "endpoint": "https://thingspeak.com",
+        "x": 670,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "6e29eeab8cbfd7c0",
+        "type": "mqtt out",
+        "z": "da9cc404ac7bfd84",
+        "name": "",
+        "topic": "UPPA/Duboue/S24/realtemp",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "c53700edad899095",
+        "x": 660,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "0b93d3aede274cd9",
+        "type": "change",
+        "z": "da9cc404ac7bfd84",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "UPPA/Duboue/S24",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "realtemp",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 480,
+        "wires": [
+            [
+                "ea55e3828828ea56"
+            ]
+        ]
+    },
+    {
+        "id": "e323c7ec5258bad6",
+        "type": "tail",
+        "z": "da9cc404ac7bfd84",
+        "name": "",
+        "filetype": "text",
+        "split": "[\\r]{0,1}\\n",
+        "filename": "nodered.txt",
+        "inputs": 0,
+        "x": 100,
+        "y": 480,
+        "wires": [
+            [
+                "0b93d3aede274cd9"
+            ]
+        ]
+    },
+    {
+        "id": "c53700edad899095",
+        "type": "mqtt-broker",
+        "name": "MQTT",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]

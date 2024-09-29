@@ -1,0 +1,3818 @@
+[
+    {
+        "id": "7f6877d269488868",
+        "type": "tab",
+        "label": "ACCUEIL",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a7bd5c8eefd0dc08",
+        "type": "tab",
+        "label": "METEO",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "0235ec4cf042c9ac",
+        "type": "tab",
+        "label": "ADHERER",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a9df3cbe9f09e566",
+        "type": "group",
+        "z": "7f6877d269488868",
+        "name": "navigation",
+        "style": {
+            "label": true,
+            "stroke": "#d1d1d1",
+            "color": "#777777",
+            "label-position": "se"
+        },
+        "nodes": [
+            "f7bbfe8603b71448",
+            "522235bb5b1376fc",
+            "7bd4362f05513f9d",
+            "9668dacf0cf994bb",
+            "550a46d6fc146aac"
+        ],
+        "x": 834,
+        "y": 39,
+        "w": 412,
+        "h": 170
+    },
+    {
+        "id": "1c2e44db64b75061",
+        "type": "group",
+        "z": "7f6877d269488868",
+        "name": "top",
+        "style": {
+            "label": true,
+            "stroke": "#d1d1d1",
+            "label-position": "se",
+            "color": "#777777"
+        },
+        "nodes": [
+            "008f9de6c8b7ed2e",
+            "f47dc1eb551dd3c9",
+            "80ef0702c7d8fb30",
+            "37d4393822a5342f",
+            "e959fdc68f3cdeaa",
+            "527e4b5fc85044f2"
+        ],
+        "x": 34,
+        "y": 959,
+        "w": 772,
+        "h": 170
+    },
+    {
+        "id": "138053fe73163e0b",
+        "type": "group",
+        "z": "7f6877d269488868",
+        "name": "style",
+        "style": {
+            "label": true,
+            "stroke": "#d1d1d1",
+            "label-position": "se",
+            "color": "#777777"
+        },
+        "nodes": [
+            "25b3c75065acb386"
+        ],
+        "x": 654,
+        "y": 39,
+        "w": 172,
+        "h": 90
+    },
+    {
+        "id": "9f92036da1f808b2",
+        "type": "group",
+        "z": "7f6877d269488868",
+        "name": "lumiere",
+        "style": {
+            "label": true,
+            "stroke": "#d1d1d1",
+            "label-position": "se",
+            "color": "#777777"
+        },
+        "nodes": [
+            "1b817e2e489e1614",
+            "08308b3faa648e1a",
+            "8c6dd0353da34309",
+            "7ad1a879d793963e",
+            "2ea4fe4c729c2cc2"
+        ],
+        "x": 34,
+        "y": 1159,
+        "w": 752,
+        "h": 130
+    },
+    {
+        "id": "e549091de0ca2265",
+        "type": "group",
+        "z": "7f6877d269488868",
+        "name": "crowd_advice",
+        "style": {
+            "label": true,
+            "stroke": "#d1d1d1",
+            "label-position": "se",
+            "color": "#777777"
+        },
+        "nodes": [
+            "0f34cb8fd9436656",
+            "2693d65b1dec77d4",
+            "4d6f080eb0b7c2e5",
+            "532bd2152978b49b",
+            "ebe5377fb801b442",
+            "587108d9b6172cbf",
+            "1771f2e5e64ffa7a",
+            "35e8ee34c02ede4e",
+            "c8fe34c5bdbd4437",
+            "ce988c084539044e",
+            "a2e68b883b97d522"
+        ],
+        "x": 34,
+        "y": 259,
+        "w": 1212,
+        "h": 210
+    },
+    {
+        "id": "3d3d40f75a57f790",
+        "type": "group",
+        "z": "a7bd5c8eefd0dc08",
+        "name": "navigation",
+        "style": {
+            "stroke": "#d1d1d1",
+            "label": true,
+            "label-position": "se",
+            "color": "#777777"
+        },
+        "nodes": [
+            "0823e92bc4b613d6",
+            "5d845aa425b79536",
+            "332559230b0b065d",
+            "8290e2e44ec1c221",
+            "2f0b21505ca0bd2f"
+        ],
+        "x": 54,
+        "y": 559
+    },
+    {
+        "id": "302b5277cfcaa22c",
+        "type": "group",
+        "z": "a7bd5c8eefd0dc08",
+        "name": "gauges_graphiques",
+        "style": {
+            "stroke": "#d1d1d1",
+            "label": true,
+            "label-position": "se",
+            "color": "#777777"
+        },
+        "nodes": [
+            "0a8d1996cb160aca",
+            "dba054394ee126ad",
+            "96f4dff5bfa7fb16",
+            "910bf1009d7a962a",
+            "175a7110dfe5fe68",
+            "112d77dbc4df3bea",
+            "a08a54033292f1db",
+            "e9d35691d1338232",
+            "d53947fc5ee975b2",
+            "98e753cf9f18eaad",
+            "8fd00e9e1340d4d3",
+            "bde7ebc69f6e7e81",
+            "70998692380309a6"
+        ],
+        "x": 34,
+        "y": 39
+    },
+    {
+        "id": "b57b76200458754c",
+        "type": "group",
+        "z": "a7bd5c8eefd0dc08",
+        "name": "prevision",
+        "style": {
+            "stroke": "#d1d1d1",
+            "label": true,
+            "label-position": "se",
+            "color": "#777777"
+        },
+        "nodes": [
+            "9c3cc16a3fcc602d",
+            "68df16f9a919515b",
+            "e6a93ea8c5043e72",
+            "a28de86782c033d6",
+            "e1a3e5fad241b85e",
+            "454592e2d8d4fdc4",
+            "201c587fce0722b4",
+            "5ad8c80da497f1dc",
+            "6c9fec01b3068b80",
+            "f96890502a8eecbd",
+            "6f74d2c231237282"
+        ],
+        "x": 34,
+        "y": 319
+    },
+    {
+        "id": "2d5d9e7ee11c0fdc",
+        "type": "group",
+        "z": "7f6877d269488868",
+        "name": "meteo",
+        "style": {
+            "stroke": "#d1d1d1",
+            "label": true,
+            "label-position": "se",
+            "color": "#777777"
+        },
+        "nodes": [
+            "5d64a0ed04a4d44d",
+            "3c31313edac399a1",
+            "4c4abfa908fab02b",
+            "7e424ec3c5325c30",
+            "6be14127811d36f0",
+            "d6c2663198089a7b",
+            "3e51a964a76a9620",
+            "3a6a1b87cdbbf213",
+            "f06963ae7c5f8d81",
+            "20f002073b23b7bf"
+        ],
+        "x": 34,
+        "y": 499,
+        "w": 852,
+        "h": 210
+    },
+    {
+        "id": "2ac4640d308b127a",
+        "type": "group",
+        "z": "7f6877d269488868",
+        "name": "description",
+        "style": {
+            "stroke": "#d1d1d1",
+            "label": true,
+            "label-position": "se",
+            "color": "#777777"
+        },
+        "nodes": [
+            "5547998deb81dedc",
+            "3f28846bf56749ca",
+            "9a781d933f96080b",
+            "d8db407a7fcf8824",
+            "9f4228e4225fe029",
+            "28cb6231b718b81b"
+        ],
+        "x": 34,
+        "y": 739,
+        "w": 772,
+        "h": 190
+    },
+    {
+        "id": "1dcf200a5334cc32",
+        "type": "group",
+        "z": "a7bd5c8eefd0dc08",
+        "name": "actualise",
+        "style": {
+            "stroke": "#d1d1d1",
+            "label": true,
+            "label-position": "se",
+            "color": "#777777"
+        },
+        "nodes": [
+            "bf56a25352bac590",
+            "d13c9885bc257c2d"
+        ],
+        "x": 514,
+        "y": 559
+    },
+    {
+        "id": "3be5a2a5811ba996",
+        "type": "group",
+        "z": "7f6877d269488868",
+        "name": "entree_xml",
+        "style": {
+            "stroke": "#d1d1d1",
+            "label": true,
+            "label-position": "se",
+            "color": "#777777"
+        },
+        "nodes": [
+            "42920939ac0fc397",
+            "3b878000e7fd74c2",
+            "1387ca0db9894aec",
+            "5535ca0152ef44c5",
+            "a91444d0d1d7478b"
+        ],
+        "x": 34,
+        "y": 39,
+        "w": 522,
+        "h": 150
+    },
+    {
+        "id": "c8c43603f62e0eb4",
+        "type": "group",
+        "z": "0235ec4cf042c9ac",
+        "name": "form",
+        "style": {
+            "stroke": "#d1d1d1",
+            "label": true,
+            "label-position": "se",
+            "color": "#777777"
+        },
+        "nodes": [
+            "c12e571e4a82d246",
+            "3148a12668d023a7",
+            "1fc7bb94c8dc7fd5",
+            "aaf1d02c7066d5a2",
+            "c2da46112b4573ee",
+            "b2a8103671e8ae21"
+        ],
+        "x": 34,
+        "y": 199
+    },
+    {
+        "id": "c8a25a87695a8288",
+        "type": "group",
+        "z": "0235ec4cf042c9ac",
+        "name": "navigation",
+        "style": {
+            "stroke": "#d1d1d1",
+            "label": true,
+            "label-position": "se",
+            "color": "#777777"
+        },
+        "nodes": [
+            "7e14a1b6ced02403",
+            "0f7d22bfae0dd090",
+            "d4796b05345f8f30",
+            "ab5625506b37767a"
+        ],
+        "x": 34,
+        "y": 639
+    },
+    {
+        "id": "9c9bd10b6a85a48b",
+        "type": "group",
+        "z": "0235ec4cf042c9ac",
+        "name": "moins16",
+        "style": {
+            "stroke": "#d1d1d1",
+            "label": true,
+            "label-position": "se",
+            "color": "#777777"
+        },
+        "nodes": [
+            "1d5585ff8ab93206",
+            "fa515ce28aca98a1",
+            "d351173d9f795da1"
+        ],
+        "x": 34,
+        "y": 399
+    },
+    {
+        "id": "c3b9902cd704d963",
+        "type": "group",
+        "z": "0235ec4cf042c9ac",
+        "name": "info_notif",
+        "style": {
+            "stroke": "#d1d1d1",
+            "label": true,
+            "label-position": "se",
+            "color": "#777777"
+        },
+        "nodes": [
+            "1bb64598a626d87e",
+            "4147928aefee8cb0"
+        ],
+        "x": 914,
+        "y": 39
+    },
+    {
+        "id": "d64014dd16bf715b",
+        "type": "group",
+        "z": "0235ec4cf042c9ac",
+        "name": "plus16",
+        "style": {
+            "stroke": "#d1d1d1",
+            "label": true,
+            "label-position": "se",
+            "color": "#777777"
+        },
+        "nodes": [
+            "d544e32dd190119d",
+            "962724d42f913c6d",
+            "04d3497e05d0754d"
+        ],
+        "x": 34,
+        "y": 519
+    },
+    {
+        "id": "f23aeecefb4b6db4",
+        "type": "group",
+        "z": "0235ec4cf042c9ac",
+        "name": "event",
+        "style": {
+            "stroke": "#d1d1d1",
+            "label": true,
+            "label-position": "se",
+            "color": "#777777"
+        },
+        "nodes": [
+            "39db0390c954c873",
+            "e8fbec9044ecbfe2"
+        ],
+        "x": 974,
+        "y": 139
+    },
+    {
+        "id": "4587b971c69b6aa9",
+        "type": "group",
+        "z": "0235ec4cf042c9ac",
+        "name": "note_skatepark",
+        "style": {
+            "stroke": "#d1d1d1",
+            "label": true,
+            "label-position": "se",
+            "color": "#777777"
+        },
+        "nodes": [
+            "2e5e6d92d0316aa1",
+            "192acf2968b80223",
+            "5e92aaee86c9538d",
+            "a78d8f1be5367889",
+            "f97b79c092021fea",
+            "41f5ddbbdf1f944a"
+        ],
+        "x": 34,
+        "y": 39
+    },
+    {
+        "id": "2de4bb8f125227fc",
+        "type": "group",
+        "z": "0235ec4cf042c9ac",
+        "name": "formulaire_html",
+        "style": {
+            "stroke": "#d1d1d1",
+            "label": true,
+            "label-position": "se",
+            "color": "#777777"
+        },
+        "nodes": [
+            "c27dcc73026945e8",
+            "454aa75b3bb3a190",
+            "09659e460c52998d"
+        ],
+        "x": 754,
+        "y": 719
+    },
+    {
+        "id": "b6188827147246ea",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "Times New Roman,Times,serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#62a0ea",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#62a0ea",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#62a0ea",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#a5c9f3",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#62a0ea",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "mouse",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "fe523db1acbfe9e3",
+        "type": "ui_group",
+        "name": "navigation",
+        "tab": "467191e3096b62df",
+        "order": 8,
+        "disp": false,
+        "width": 18,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7624dccab3de5575",
+        "type": "ui_group",
+        "name": "navigation",
+        "tab": "1719063625aeeae4",
+        "order": 8,
+        "disp": false,
+        "width": "18",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "467191e3096b62df",
+        "type": "ui_tab",
+        "name": "ACCUEIL",
+        "icon": "home",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1719063625aeeae4",
+        "type": "ui_tab",
+        "name": "METEO",
+        "icon": "wb_sunny",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a742c958d11133f0",
+        "type": "ui_group",
+        "name": "description",
+        "tab": "467191e3096b62df",
+        "order": 3,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "987497a273939ca2",
+        "type": "ui_group",
+        "name": "actualise",
+        "tab": "1719063625aeeae4",
+        "order": 3,
+        "disp": false,
+        "width": "2",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3e91c8c2e214db8b",
+        "type": "ui_group",
+        "name": "meteo",
+        "tab": "467191e3096b62df",
+        "order": 2,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "528c3f7a41e72227",
+        "type": "ui_group",
+        "name": "lumiere",
+        "tab": "467191e3096b62df",
+        "order": 6,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "87c79daab8a57b59",
+        "type": "ui_group",
+        "name": "condition",
+        "tab": "467191e3096b62df",
+        "order": 4,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "66ea85c9d2b97586",
+        "type": "ui_group",
+        "name": "affluence",
+        "tab": "467191e3096b62df",
+        "order": 5,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e629f3518270d85c",
+        "type": "ui_group",
+        "name": "gauge_temperature",
+        "tab": "1719063625aeeae4",
+        "order": 5,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8fd907f852a209e6",
+        "type": "ui_group",
+        "name": "gauge_humidite",
+        "tab": "1719063625aeeae4",
+        "order": 6,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a0e97bdd1b0d4d2a",
+        "type": "ui_group",
+        "name": "gauge_vent",
+        "tab": "1719063625aeeae4",
+        "order": 7,
+        "disp": false,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c5338a79181a3355",
+        "type": "ui_group",
+        "name": "graph_temperature",
+        "tab": "1719063625aeeae4",
+        "order": 2,
+        "disp": false,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7af1bbabcd59859a",
+        "type": "ui_group",
+        "name": "graph_humidite",
+        "tab": "1719063625aeeae4",
+        "order": 4,
+        "disp": false,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "904e23dfd4c92f3b",
+        "type": "ui_group",
+        "name": "prevision",
+        "tab": "1719063625aeeae4",
+        "order": 1,
+        "disp": false,
+        "width": "18",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d5f419590ace8a7a",
+        "type": "ui_group",
+        "name": "top",
+        "tab": "467191e3096b62df",
+        "order": 1,
+        "disp": false,
+        "width": "18",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2edee76ed1961572",
+        "type": "ui_group",
+        "name": "conseil",
+        "tab": "467191e3096b62df",
+        "order": 7,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c11bab59d5178c98",
+        "type": "mqtt-broker",
+        "name": "MQTT ",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "9dfc3b1de7c1bd8e",
+        "type": "ui_group",
+        "name": "form",
+        "tab": "8e0c3e4775408356",
+        "order": 4,
+        "disp": false,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6abd56180fd4dc52",
+        "type": "ui_group",
+        "name": "moins16",
+        "tab": "8e0c3e4775408356",
+        "order": 6,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d13ba31fc9308041",
+        "type": "ui_group",
+        "name": "navigation",
+        "tab": "8e0c3e4775408356",
+        "order": 11,
+        "disp": false,
+        "width": "18",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8e0c3e4775408356",
+        "type": "ui_tab",
+        "name": "ADHERER",
+        "icon": "notifications",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "0f10d6d7714474a7",
+        "type": "ui_group",
+        "name": "plus16",
+        "tab": "8e0c3e4775408356",
+        "order": 7,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2c320f893345b95d",
+        "type": "ui_spacer",
+        "z": "7f6877d269488868",
+        "name": "spacer",
+        "group": "d5f419590ace8a7a",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "1c05acb3d269e2d6",
+        "type": "ui_spacer",
+        "z": "7f6877d269488868",
+        "name": "spacer",
+        "group": "d5f419590ace8a7a",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "41496ae8dc214675",
+        "type": "ui_spacer",
+        "z": "7f6877d269488868",
+        "name": "spacer",
+        "group": "d5f419590ace8a7a",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "44aabd307f232057",
+        "type": "ui_spacer",
+        "z": "7f6877d269488868",
+        "name": "spacer",
+        "group": "d5f419590ace8a7a",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4eccb7e8efa9306b",
+        "type": "ui_spacer",
+        "z": "7f6877d269488868",
+        "name": "spacer",
+        "group": "d5f419590ace8a7a",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "43aad01351ea5960",
+        "type": "ui_spacer",
+        "z": "7f6877d269488868",
+        "name": "spacer",
+        "group": "d5f419590ace8a7a",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d185d28ebccb2606",
+        "type": "ui_spacer",
+        "z": "7f6877d269488868",
+        "name": "spacer",
+        "group": "d5f419590ace8a7a",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "913d19f4079dbbd1",
+        "type": "ui_spacer",
+        "z": "7f6877d269488868",
+        "name": "spacer",
+        "group": "d5f419590ace8a7a",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8f7804ec07531e94",
+        "type": "ui_spacer",
+        "z": "7f6877d269488868",
+        "name": "spacer",
+        "group": "fe523db1acbfe9e3",
+        "order": 1,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "bac42e7d1948d522",
+        "type": "ui_spacer",
+        "z": "7f6877d269488868",
+        "name": "spacer",
+        "group": "fe523db1acbfe9e3",
+        "order": 5,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "ae81a3f65e8e43d0",
+        "type": "ui_group",
+        "name": "note",
+        "tab": "8e0c3e4775408356",
+        "order": 8,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "443a521dd1b2f8af",
+        "type": "ui_group",
+        "name": "event",
+        "tab": "8e0c3e4775408356",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e445c8b22395bbb2",
+        "type": "ui_spacer",
+        "z": "0235ec4cf042c9ac",
+        "name": "spacer",
+        "group": "904e23dfd4c92f3b",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "52050cee6525ddbb",
+        "type": "ui_spacer",
+        "z": "0235ec4cf042c9ac",
+        "name": "spacer",
+        "group": "904e23dfd4c92f3b",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "1139c1db3f77a6b2",
+        "type": "ui_spacer",
+        "z": "0235ec4cf042c9ac",
+        "name": "spacer",
+        "group": "904e23dfd4c92f3b",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e9e5453afbeada0b",
+        "type": "ui_spacer",
+        "z": "0235ec4cf042c9ac",
+        "name": "spacer",
+        "group": "904e23dfd4c92f3b",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "54056bc23acca1fb",
+        "type": "ui_spacer",
+        "z": "0235ec4cf042c9ac",
+        "name": "spacer",
+        "group": "904e23dfd4c92f3b",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "470887285e3bfed3",
+        "type": "ui_spacer",
+        "z": "0235ec4cf042c9ac",
+        "name": "spacer",
+        "group": "904e23dfd4c92f3b",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "315b89ad5fb7a559",
+        "type": "ui_spacer",
+        "z": "0235ec4cf042c9ac",
+        "name": "spacer",
+        "group": "904e23dfd4c92f3b",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6d3de693efc2367f",
+        "type": "ui_spacer",
+        "z": "0235ec4cf042c9ac",
+        "name": "spacer",
+        "group": "904e23dfd4c92f3b",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f7de823bd992a32f",
+        "type": "ui_spacer",
+        "z": "0235ec4cf042c9ac",
+        "name": "spacer",
+        "group": "904e23dfd4c92f3b",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "57f79a374da9210c",
+        "type": "ui_spacer",
+        "z": "0235ec4cf042c9ac",
+        "name": "spacer",
+        "group": "904e23dfd4c92f3b",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "13cde00513bd8991",
+        "type": "ui_spacer",
+        "z": "0235ec4cf042c9ac",
+        "name": "spacer",
+        "group": "8fd907f852a209e6",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8747fc481381cdf4",
+        "type": "ui_spacer",
+        "z": "0235ec4cf042c9ac",
+        "name": "spacer",
+        "group": "8fd907f852a209e6",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5768b1aa74014aea",
+        "type": "ui_spacer",
+        "z": "0235ec4cf042c9ac",
+        "name": "spacer",
+        "group": "8fd907f852a209e6",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "1b49e65b3ee284fa",
+        "type": "ui_spacer",
+        "z": "0235ec4cf042c9ac",
+        "name": "spacer",
+        "group": "8fd907f852a209e6",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6072f3072e9e6eb5",
+        "type": "ui_spacer",
+        "z": "0235ec4cf042c9ac",
+        "name": "spacer",
+        "group": "8fd907f852a209e6",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c8d565246ca07d11",
+        "type": "ui_spacer",
+        "z": "0235ec4cf042c9ac",
+        "name": "spacer",
+        "group": "8fd907f852a209e6",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "231f7b072278a0cb",
+        "type": "ui_spacer",
+        "z": "0235ec4cf042c9ac",
+        "name": "spacer",
+        "group": "7624dccab3de5575",
+        "order": 1,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "0aab3b0f80378254",
+        "type": "ui_spacer",
+        "z": "0235ec4cf042c9ac",
+        "name": "spacer",
+        "group": "7624dccab3de5575",
+        "order": 5,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "0881ac6380d29636",
+        "type": "ui_spacer",
+        "z": "7f6877d269488868",
+        "name": "spacer",
+        "group": "9dfc3b1de7c1bd8e",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b0164b2552d02b7d",
+        "type": "ui_spacer",
+        "z": "7f6877d269488868",
+        "name": "spacer",
+        "group": "9dfc3b1de7c1bd8e",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "693f26484030e987",
+        "type": "ui_spacer",
+        "z": "7f6877d269488868",
+        "name": "spacer",
+        "group": "ae81a3f65e8e43d0",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c513a4a24ac55195",
+        "type": "ui_spacer",
+        "z": "7f6877d269488868",
+        "name": "spacer",
+        "group": "ae81a3f65e8e43d0",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7962440279b5e18a",
+        "type": "ui_spacer",
+        "z": "7f6877d269488868",
+        "name": "spacer",
+        "group": "ae81a3f65e8e43d0",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9d88b0fa3c755f6f",
+        "type": "ui_spacer",
+        "z": "7f6877d269488868",
+        "name": "spacer",
+        "group": "ae81a3f65e8e43d0",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2a74ab9197dd31dd",
+        "type": "ui_spacer",
+        "z": "7f6877d269488868",
+        "name": "spacer",
+        "group": "d13ba31fc9308041",
+        "order": 1,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "1e1b6d4a1331f2b6",
+        "type": "ui_spacer",
+        "z": "7f6877d269488868",
+        "name": "spacer",
+        "group": "d13ba31fc9308041",
+        "order": 5,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "008f9de6c8b7ed2e",
+        "type": "http request",
+        "z": "7f6877d269488868",
+        "g": "1c2e44db64b75061",
+        "name": "OpenWeather",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://api.openweathermap.org/data/2.5/weather?q=Lescar,fr&appid=6d663ce00320df325d7ddc3564de9b48",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 320,
+        "y": 1040,
+        "wires": [
+            [
+                "f47dc1eb551dd3c9"
+            ]
+        ]
+    },
+    {
+        "id": "f47dc1eb551dd3c9",
+        "type": "function",
+        "z": "7f6877d269488868",
+        "g": "1c2e44db64b75061",
+        "name": "traitement_jour",
+        "func": "var date = new Date(msg.payload.sys.sunrise * 1000);\nvar hours = date.getHours();\nvar minutes = \"0\" + date.getMinutes();\nvar sunriseTime = hours + ':' + minutes.substr(-2);\n\nvar date2 = new Date(msg.payload.sys.sunset * 1000);\nvar hours2 = date2.getHours();\nvar minutes2 = \"0\" + date2.getMinutes();\nvar sunsetTime = hours2 + ':' + minutes2.substr(-2);\n\nvar currentDate = new Date();\nvar day = currentDate.getDate();\nvar month = currentDate.getMonth() + 1;\nvar year = currentDate.getFullYear();\nvar fullDate = day + ' ' + month + ' ' + year;\n\nvar days = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'];\nvar months = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'];\nvar currentDay = currentDate.getDay();\nvar currentMonth = currentDate.getMonth();\nvar formattedDate = days[currentDay] + ' ' + day + ' ' + months[currentMonth] + ' ' + year;\nvar formattedTime = currentDate.getHours() + ':' + (\"0\" + currentDate.getMinutes()).substr(-2) + ':' + (\"0\" + currentDate.getSeconds()).substr(-2);\n\nmsg.payload = {\n    sunrise: sunriseTime,\n    sunset: sunsetTime,\n    currentDate: formattedDate,\n    currentTime: formattedTime\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 1040,
+        "wires": [
+            [
+                "80ef0702c7d8fb30",
+                "37d4393822a5342f",
+                "e959fdc68f3cdeaa"
+            ]
+        ]
+    },
+    {
+        "id": "80ef0702c7d8fb30",
+        "type": "ui_template",
+        "z": "7f6877d269488868",
+        "g": "1c2e44db64b75061",
+        "group": "d5f419590ace8a7a",
+        "name": "sunrise",
+        "order": 2,
+        "width": 3,
+        "height": 2,
+        "format": "<div style=\"text-align: center; margin: auto; width: 50%;\">\n  <p style=\"font-size: smaller;\">\n    <img src=\"https://github.com/tahlisfove/IoT/blob/main/img/sunrise.png?raw=true\" style=\"display: block; margin: 0 auto; width: 25px; height: 25px;\"/>{{msg.payload.sunrise}}\n  </p>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 720,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "37d4393822a5342f",
+        "type": "ui_template",
+        "z": "7f6877d269488868",
+        "g": "1c2e44db64b75061",
+        "group": "d5f419590ace8a7a",
+        "name": "date",
+        "order": 4,
+        "width": 8,
+        "height": 2,
+        "format": "<div style=\"font-weight: bold; text-align: center; margin: auto; width: 70%;\">\n  <p style=\"font-size: larger;\">{{msg.payload.currentDate}}</p>\n  <p style=\"font-size: 35px;\">{{msg.payload.currentTime}}</p>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 710,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e959fdc68f3cdeaa",
+        "type": "ui_template",
+        "z": "7f6877d269488868",
+        "g": "1c2e44db64b75061",
+        "group": "d5f419590ace8a7a",
+        "name": "sunset",
+        "order": 6,
+        "width": 3,
+        "height": 2,
+        "format": "<div style=\"text-align: center; margin: auto; width: 50%;\">\n  <p style=\"font-size: smaller;\">\n    <img src=\"https://github.com/tahlisfove/IoT/blob/main/img/sunset.png?raw=true\" style=\"display: block; margin: 0 auto; width: 25px; height: 25px;\"> {{msg.payload.sunset}}\n  </p>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 710,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "527e4b5fc85044f2",
+        "type": "inject",
+        "z": "7f6877d269488868",
+        "g": "1c2e44db64b75061",
+        "name": "seconde",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 1040,
+        "wires": [
+            [
+                "008f9de6c8b7ed2e"
+            ]
+        ]
+    },
+    {
+        "id": "f7bbfe8603b71448",
+        "type": "ui_button",
+        "z": "7f6877d269488868",
+        "g": "a9df3cbe9f09e566",
+        "name": "ACCUEIL",
+        "group": "fe523db1acbfe9e3",
+        "order": 2,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "ACCUEIL",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "rgba(255, 255, 255, 0)",
+        "className": "",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 920,
+        "y": 80,
+        "wires": [
+            [
+                "9668dacf0cf994bb"
+            ]
+        ]
+    },
+    {
+        "id": "522235bb5b1376fc",
+        "type": "ui_button",
+        "z": "7f6877d269488868",
+        "g": "a9df3cbe9f09e566",
+        "name": "METEO",
+        "group": "fe523db1acbfe9e3",
+        "order": 3,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "METEO",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "rgba(255, 255, 255, 0)",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 920,
+        "y": 120,
+        "wires": [
+            [
+                "9668dacf0cf994bb"
+            ]
+        ]
+    },
+    {
+        "id": "7bd4362f05513f9d",
+        "type": "ui_button",
+        "z": "7f6877d269488868",
+        "g": "a9df3cbe9f09e566",
+        "name": "ADHERER",
+        "group": "fe523db1acbfe9e3",
+        "order": 4,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "ADHERER",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "rgba(255, 255, 255, 0)",
+        "className": "",
+        "icon": "",
+        "payload": "2",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 930,
+        "y": 160,
+        "wires": [
+            [
+                "9668dacf0cf994bb"
+            ]
+        ]
+    },
+    {
+        "id": "9668dacf0cf994bb",
+        "type": "ui_ui_control",
+        "z": "7f6877d269488868",
+        "g": "a9df3cbe9f09e566",
+        "name": "",
+        "events": "all",
+        "x": 1100,
+        "y": 120,
+        "wires": [
+            [
+                "550a46d6fc146aac"
+            ]
+        ]
+    },
+    {
+        "id": "1b817e2e489e1614",
+        "type": "function",
+        "z": "7f6877d269488868",
+        "g": "9f92036da1f808b2",
+        "name": "traitement_lumiere",
+        "func": "var currentTimeStamp = Math.floor(Date.now() / 1000);\n\nvar midnightTimeStamp = new Date();\nmidnightTimeStamp.setHours(0, 0, 0, 0);\n\nvar sunsetTime = msg.payload.sys.sunset;\nvar sunsetDate = new Date(sunsetTime * 1000);\n\nif (currentTimeStamp > sunsetTime) {\n  msg.payload = { isNight: true };\n  \n} else {\n  msg.payload = { isNight: false, currentTimeStamp };\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 1240,
+        "wires": [
+            [
+                "08308b3faa648e1a"
+            ]
+        ]
+    },
+    {
+        "id": "08308b3faa648e1a",
+        "type": "ui_template",
+        "z": "7f6877d269488868",
+        "g": "9f92036da1f808b2",
+        "group": "528c3f7a41e72227",
+        "name": "light",
+        "order": 1,
+        "width": 6,
+        "height": 3,
+        "format": "<div class='nr-dashboard-template visible' style='display: flex; justify-content: center; align-items: center; height: 100%;'>\n    <button class='light-button' ng-class=\"{'night-mode': msg.payload.isNight}\" style='border: none; border-radius: 20px; padding: 10px; display: flex; justify-content: space-between; align-items: center;'>\n        <img src='https://github.com/tahlisfove/IoT/blob/main/img/on.png?raw=true' style='width: 30px; height: 30px; margin-right: 10px;'>\n        <span style=\"color: white;\">\n            <b>{{msg.payload.isNight ? 'Light - ON' : 'Light - OFF'}}</b>\n        </span>\n    </button>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 710,
+        "y": 1240,
+        "wires": [
+            []
+        ],
+        "inputLabels": [
+            "payload"
+        ]
+    },
+    {
+        "id": "0f34cb8fd9436656",
+        "type": "function",
+        "z": "7f6877d269488868",
+        "g": "e549091de0ca2265",
+        "name": "nombre_entier",
+        "func": "msg.crowd = Math.floor(Math.random() * 40);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 360,
+        "wires": [
+            [
+                "2693d65b1dec77d4"
+            ]
+        ]
+    },
+    {
+        "id": "2693d65b1dec77d4",
+        "type": "http request",
+        "z": "7f6877d269488868",
+        "g": "e549091de0ca2265",
+        "name": "OpenWeather",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://api.openweathermap.org/data/2.5/weather?q=Lescar,fr&appid=6d663ce00320df325d7ddc3564de9b48",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 520,
+        "y": 360,
+        "wires": [
+            [
+                "4d6f080eb0b7c2e5"
+            ]
+        ]
+    },
+    {
+        "id": "4d6f080eb0b7c2e5",
+        "type": "function",
+        "z": "7f6877d269488868",
+        "g": "e549091de0ca2265",
+        "name": "traitement_conditions",
+        "func": "var humidity = msg.payload.main.humidity;\n//var humidity = 95;\n//var humidity = 50;\nvar temperature = msg.payload.main.temp - 273.15;\n//var temperature = 0;\n//var temperature = 20;\n//var temperature = 40;\nvar weatherCondition = msg.payload.weather[0].main;\n//const weatherCondition = \"Rain\";\n//const weatherCondition = \"Sun\";\nvar windSpeed = msg.payload.wind.speed;\n//var windSpeed = 5;\n//var windSpeed = 20;\nvar crowd = msg.crowd;\n//var crowd = 5;\n//var crowd = 30;\n\nlet backgroundColor = 'rgba(242, 241, 241, 0.8)';\nlet recommendation = 'Vous pouvez skater, profitez-en!';\nlet reasons = [];\n\nif (weatherCondition === 'Rain') {\n    crowd = 0;\n    humidity = 0;\n    recommendation = 'Il est déconseillé de skater maintenant,';\n    reasons.push('il pleut actuellement');\n    backgroundColor = 'rgba(50, 50, 50, 0.8)';\n}\n\nif (humidity > 90) {\n    crowd = 0;\n    recommendation = 'Il est déconseillé de skater maintenant,';\n    reasons.push('le sol du skatepark risque d\\'être mouillé');\n    backgroundColor = 'rgba(50, 50, 50, 0.8)';\n}\n\nif (temperature > 35) {\n    recommendation = 'Il est conseillé de skater avec prudence,';\n    reasons.push('risque d\\'insolation');\n    backgroundColor = 'rgba(141, 140, 140, 0.8)';\n}\n\nif (temperature < 5) {\n    recommendation = 'Il est conseillé de skater avec prudence,';\n    reasons.push('couvrez-vous');\n    backgroundColor = 'rgba(141, 140, 140, 0.8)';\n}\n\nif (windSpeed > 15) {\n    recommendation = 'Il est conseillé de skater avec prudence,';\n    reasons.push('le vent est trop élevé');\n    backgroundColor = 'rgba(141, 140, 140, 0.8)';\n}\n\nif (crowd > 25) {\n    recommendation = 'Il est conseillé de skater avec prudence,';\n    reasons.push('affluence élevée');\n    backgroundColor = 'rgba(141, 140, 140, 0.8)';\n}\n\nif (weatherCondition === 'Rain' || humidity > 90) {\n    recommendation = 'Il est déconseillé de skater maintenant,';\n    backgroundColor = 'rgba(50, 50, 50, 0.8)'; \n}\n\nif (reasons.length > 0) {\n    msg.payload = {\n        recommendation: recommendation,\n        reasons: reasons.join(', ').replace(/,([^,]*)$/, ' et$1') + '.',\n        crowd: crowd,\n        backgroundColor: backgroundColor\n    };\n} else {\n    msg.payload = {\n        recommendation: recommendation,\n        reasons: '',\n        crowd: crowd,\n        backgroundColor: backgroundColor\n    };\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 360,
+        "wires": [
+            [
+                "532bd2152978b49b",
+                "1771f2e5e64ffa7a",
+                "35e8ee34c02ede4e",
+                "ce988c084539044e"
+            ]
+        ]
+    },
+    {
+        "id": "532bd2152978b49b",
+        "type": "ui_gauge",
+        "z": "7f6877d269488868",
+        "g": "e549091de0ca2265",
+        "name": "affluence",
+        "group": "66ea85c9d2b97586",
+        "order": 1,
+        "width": 6,
+        "height": 3,
+        "gtype": "gage",
+        "title": "affluence en direct",
+        "label": "personnes",
+        "format": "{{msg.payload.crowd}}",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#4e9a06",
+            "#b97b44",
+            "#bc4848"
+        ],
+        "seg1": "15",
+        "seg2": "25",
+        "diff": false,
+        "className": "",
+        "x": 935,
+        "y": 340,
+        "wires": [],
+        "icon": "font-awesome/fa-child",
+        "l": false
+    },
+    {
+        "id": "ebe5377fb801b442",
+        "type": "ui_template",
+        "z": "7f6877d269488868",
+        "g": "e549091de0ca2265",
+        "group": "2edee76ed1961572",
+        "name": "crowd",
+        "order": 1,
+        "width": 6,
+        "height": 2,
+        "format": "<div>\n    <p ng-if=\"msg.payload.crowd <= 15\" style=\"margin: 10px; font-size: 14px;\">\n        Le skatepark est actuellement peu fréquenté, offrant un espace tranquille pour pratiquer en toute liberté.\n    </p>\n    <p ng-if=\"msg.payload.crowd > 15 && msg.payload.crowd <= 25\" style=\"margin: 10px; font-size: 14px;\">\n        L'affluence est modérée, vous pouvez vous attendre à voir quelques personnes sans que ce soit trop bondé.\n    </p>\n    <p ng-if=\"msg.payload.crowd > 25\" style=\"margin: 10px; font-size: 14px;\">\n        Le skatepark est très fréquenté en ce moment, il peut être difficile de trouver de l'espace pour skater confortablement.\n    </p>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 970,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "587108d9b6172cbf",
+        "type": "inject",
+        "z": "7f6877d269488868",
+        "g": "e549091de0ca2265",
+        "name": "minute",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "300",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 360,
+        "wires": [
+            [
+                "0f34cb8fd9436656"
+            ]
+        ]
+    },
+    {
+        "id": "8c6dd0353da34309",
+        "type": "http request",
+        "z": "7f6877d269488868",
+        "g": "9f92036da1f808b2",
+        "name": "OpenWeather",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://api.openweathermap.org/data/2.5/weather?q=Lescar,fr&appid=6d663ce00320df325d7ddc3564de9b48",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 320,
+        "y": 1240,
+        "wires": [
+            [
+                "1b817e2e489e1614"
+            ]
+        ]
+    },
+    {
+        "id": "7ad1a879d793963e",
+        "type": "inject",
+        "z": "7f6877d269488868",
+        "g": "9f92036da1f808b2",
+        "name": "minute",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 1240,
+        "wires": [
+            [
+                "8c6dd0353da34309"
+            ]
+        ]
+    },
+    {
+        "id": "1771f2e5e64ffa7a",
+        "type": "delay",
+        "z": "7f6877d269488868",
+        "g": "e549091de0ca2265",
+        "name": "delay",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 830,
+        "y": 420,
+        "wires": [
+            [
+                "ebe5377fb801b442"
+            ]
+        ]
+    },
+    {
+        "id": "c8fe34c5bdbd4437",
+        "type": "mqtt out",
+        "z": "7f6877d269488868",
+        "g": "e549091de0ca2265",
+        "name": "",
+        "topic": "skatepark/message",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "c11bab59d5178c98",
+        "x": 1130,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "35e8ee34c02ede4e",
+        "type": "function",
+        "z": "7f6877d269488868",
+        "g": "e549091de0ca2265",
+        "name": "affichage_mqtt",
+        "func": "var jsonString1 = JSON.stringify(msg.payload.recommendation);\nvar resultString1 = jsonString1.replace(/[\"]/g, ' ');\n\nvar resultString = resultString1;\nmsg.payload = resultString;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 300,
+        "wires": [
+            [
+                "c8fe34c5bdbd4437"
+            ]
+        ]
+    },
+    {
+        "id": "550a46d6fc146aac",
+        "type": "link out",
+        "z": "7f6877d269488868",
+        "g": "a9df3cbe9f09e566",
+        "name": "out_refreash1",
+        "mode": "link",
+        "links": [
+            "2ea4fe4c729c2cc2",
+            "3a6a1b87cdbbf213",
+            "f06963ae7c5f8d81"
+        ],
+        "x": 1205,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "2ea4fe4c729c2cc2",
+        "type": "link in",
+        "z": "7f6877d269488868",
+        "g": "9f92036da1f808b2",
+        "name": "in_lumiere",
+        "links": [
+            "550a46d6fc146aac",
+            "a91444d0d1d7478b"
+        ],
+        "x": 185,
+        "y": 1200,
+        "wires": [
+            [
+                "8c6dd0353da34309"
+            ]
+        ]
+    },
+    {
+        "id": "5d64a0ed04a4d44d",
+        "type": "inject",
+        "z": "7f6877d269488868",
+        "g": "2d5d9e7ee11c0fdc",
+        "name": "minutes",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "*/1 0-23 * * *",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 600,
+        "wires": [
+            [
+                "7e424ec3c5325c30",
+                "6be14127811d36f0"
+            ]
+        ]
+    },
+    {
+        "id": "3c31313edac399a1",
+        "type": "ui_template",
+        "z": "7f6877d269488868",
+        "g": "2d5d9e7ee11c0fdc",
+        "group": "3e91c8c2e214db8b",
+        "name": "day_forecast",
+        "order": 3,
+        "width": 6,
+        "height": 6,
+        "format": "<div style=\"text-align: center;\">\n  <table style=\"margin: 0 auto; border-collapse: collapse; /* Fusionne les bordures */\">\n    <h3 style=\"text-align: center; margin: 5px 0;\">\n      Évolution météorologique</h3>\n      <tr ng-repeat=\"entry in msg.payload\" style=\"text-align: center;\">\n        <td style=\"padding: 8px; margin: 0;\">\n          {{entry.time}}\n        </td>\n        <td style=\"padding: 8px; margin: 0;\">\n          {{entry.temperatureMin}}°C\n        </td>\n        <td style=\"padding: 8px; margin: 0;\">\n          <img ng-src=\"{{ entry.iconUrl }}\" style=\"width:50px;height:50px;\">\n        </td>\n      </tr>\n  </table>\n</div>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 790,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4c4abfa908fab02b",
+        "type": "function",
+        "z": "7f6877d269488868",
+        "g": "2d5d9e7ee11c0fdc",
+        "name": "traitement_previsions",
+        "func": "const forecastData = msg.payload.list;\nconst displayData = [];\n\nforecastData.slice(0, 4).forEach(entry => {\n    if (entry.main && entry.main.temp_min) {\n        const temperatureMin = (entry.main.temp_min - 273.15).toFixed(1);\n\n        let iconUrl = '';\n\n        if (entry.weather && entry.weather[0] && entry.weather[0].icon) {\n            iconUrl = `https://openweathermap.org/img/w/${entry.weather[0].icon}.png`;\n        }\n\n        const formattedTime = new Date(entry.dt * 1000)\n            .toLocaleTimeString('fr-FR', { hour: 'numeric', hour12: false })\n            .replace(':', 'h')\n            .replace(/\\s/g, '');\n\n        displayData.push({time:formattedTime, temperatureMin:parseFloat(temperatureMin), iconUrl:iconUrl});\n    }\n});\n\nmsg.payload = displayData;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 560,
+        "wires": [
+            [
+                "3c31313edac399a1"
+            ]
+        ]
+    },
+    {
+        "id": "7e424ec3c5325c30",
+        "type": "http request",
+        "z": "7f6877d269488868",
+        "g": "2d5d9e7ee11c0fdc",
+        "name": "OpenWeatherForecast",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://api.openweathermap.org/data/2.5/forecast?q=Lescar,fr&cnt=5&appid=6d663ce00320df325d7ddc3564de9b48",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 340,
+        "y": 560,
+        "wires": [
+            [
+                "4c4abfa908fab02b"
+            ]
+        ]
+    },
+    {
+        "id": "6be14127811d36f0",
+        "type": "http request",
+        "z": "7f6877d269488868",
+        "g": "2d5d9e7ee11c0fdc",
+        "name": "OpenWeather",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://api.openweathermap.org/data/2.5/weather?q=Lescar,fr&appid=6d663ce00320df325d7ddc3564de9b48",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 320,
+        "y": 640,
+        "wires": [
+            [
+                "20f002073b23b7bf"
+            ]
+        ]
+    },
+    {
+        "id": "d6c2663198089a7b",
+        "type": "ui_template",
+        "z": "7f6877d269488868",
+        "g": "2d5d9e7ee11c0fdc",
+        "group": "3e91c8c2e214db8b",
+        "name": "actual_meteo",
+        "order": 2,
+        "width": 3,
+        "height": 3,
+        "format": "<div style=\"position: absolute; top: 45px; left: 15px;\">\n  <p style=\"margin: 0;\">\n    <img src=\"https://github.com/tahlisfove/IoT/blob/main/img/temp.png?raw=true\" style=\"width: 20px; height: auto;\">\n    {{msg.payload.meteo.temperature}}°C\n  </p>\n  <p style=\"margin: 3px 0;\">\n    <img src=\"https://github.com/tahlisfove/IoT/blob/main/img/humidity.png?raw=true\" style=\"width: 20px; height: auto;\">\n    {{msg.payload.meteo.humidite}}%\n  </p>\n  <p style=\"margin: 3px 0;\">\n    <img src=\"https://github.com/tahlisfove/IoT/blob/main/img/wind.png?raw=true\" style=\"width: 20px; height: auto;\">\n    {{msg.payload.meteo.vent}} m/s\n  </p>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 760,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3e51a964a76a9620",
+        "type": "ui_template",
+        "z": "7f6877d269488868",
+        "g": "2d5d9e7ee11c0fdc",
+        "group": "3e91c8c2e214db8b",
+        "name": "actual_photo",
+        "order": 1,
+        "width": 3,
+        "height": 3,
+        "format": "<button id=\"button_weather\" style=\"background-image: url('{{msg.payload.meteo.imageURL}}');\";></button>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 750,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3a6a1b87cdbbf213",
+        "type": "link in",
+        "z": "7f6877d269488868",
+        "g": "2d5d9e7ee11c0fdc",
+        "name": "in_prevision",
+        "links": [
+            "550a46d6fc146aac",
+            "a91444d0d1d7478b"
+        ],
+        "x": 125,
+        "y": 540,
+        "wires": [
+            [
+                "7e424ec3c5325c30"
+            ]
+        ]
+    },
+    {
+        "id": "f06963ae7c5f8d81",
+        "type": "link in",
+        "z": "7f6877d269488868",
+        "g": "2d5d9e7ee11c0fdc",
+        "name": "in_meteo",
+        "links": [
+            "550a46d6fc146aac",
+            "a91444d0d1d7478b"
+        ],
+        "x": 125,
+        "y": 660,
+        "wires": [
+            [
+                "6be14127811d36f0"
+            ]
+        ]
+    },
+    {
+        "id": "5547998deb81dedc",
+        "type": "xml",
+        "z": "7f6877d269488868",
+        "g": "2ac4640d308b127a",
+        "name": "analyse",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 180,
+        "y": 840,
+        "wires": [
+            [
+                "3f28846bf56749ca"
+            ]
+        ]
+    },
+    {
+        "id": "3f28846bf56749ca",
+        "type": "function",
+        "z": "7f6877d269488868",
+        "g": "2ac4640d308b127a",
+        "name": "traitement_description",
+        "func": "var skatepark = msg.payload.skateparks.skatepark[0];\n\nvar formattedData = {\n    title: skatepark.title[0],\n    image: skatepark.image[0],\n    description: skatepark.description[0],\n    address: skatepark.address[0],\n    latitude: Number(skatepark.latitude[0]),\n    longitude: Number(skatepark.longitude[0]),\n    eventimage: skatepark.eventimage[0],\n    eventdescription: skatepark.eventdescription[0],\n    email: skatepark.email[0],\n};\n\nmsg.payload = formattedData;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 840,
+        "wires": [
+            [
+                "9a781d933f96080b",
+                "d8db407a7fcf8824",
+                "28cb6231b718b81b"
+            ]
+        ]
+    },
+    {
+        "id": "9a781d933f96080b",
+        "type": "ui_template",
+        "z": "7f6877d269488868",
+        "g": "2ac4640d308b127a",
+        "group": "a742c958d11133f0",
+        "name": "skatepark_adress",
+        "order": 2,
+        "width": 6,
+        "height": 5,
+        "format": "<div class=\"nr-dashboard-template visible\" style=\"position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;\">\n    <div id=\"map\" style=\"width: 120px; height: 160px;\"></div>\n    <script src=\"https://unpkg.com/leaflet@1.7.1/dist/leaflet.js\"></script>\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.7.1/dist/leaflet.css\" />\n    <script>\n        \n        var latitude = 43.33268403112534;\n        var longitude = -0.4335628116439437;\n        var mymap = L.map('map').setView([latitude, longitude], 14);\n\n        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }).addTo(mymap);\n        L.marker([latitude, longitude]).addTo(mymap);\n\n    </script>\n    <div class=\"nr-dashboard-text _md layout-row layout-align-space-between-center nr-dashboard-widget-visible\" style=\"display: inline-block; font-size: 14px; text-align: center;\">\n        <p style=\"margin: 15px;\">\n            <img src=\"https://github.com/tahlisfove/IoT/blob/main/img/location.png?raw=true\" style=\"width: 10px; height: auto;\"> {{msg.payload.address}}\n        </p>\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 670,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d8db407a7fcf8824",
+        "type": "ui_template",
+        "z": "7f6877d269488868",
+        "g": "2ac4640d308b127a",
+        "group": "a742c958d11133f0",
+        "name": "skatepark_name",
+        "order": 1,
+        "width": 6,
+        "height": 7,
+        "format": "<div class=\"nr-dashboard-template visible\" style=\"position: relative; display: flex; justify-content: center;\">\n    <div class=\"nr-dashboard-text _md layout-row layout-align-space-between-center nr-dashboard-widget-visible\" style=\"text-align: center; margin-top: 25px; font-size: 18px; display: flex; flex-direction: column; align-items: center;\">\n        <p style=\"display: inline-block; font-size: 20px; text-align: center;\">\n            <b>\n                {{msg.payload.title}}\n            </b>\n        </p>\n    </div>\n</div>\n<div class=\"nr-dashboard-template visible\" style=\"display: flex; justify-content: center; align-items: center;\">\n    <img src=\"{{msg.payload.image}}\" style=\"width: 210px; height: 130px; margin: 15px;\">\n</div>\n<p style='padding: 0 15px;font-size: 14px;'>\n    {{msg.payload.description}}\n</p>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 660,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ce988c084539044e",
+        "type": "ui_template",
+        "z": "7f6877d269488868",
+        "g": "e549091de0ca2265",
+        "group": "87c79daab8a57b59",
+        "name": "skate_advice",
+        "order": 1,
+        "width": 6,
+        "height": 6,
+        "format": "<div id=\"div_advise\" class='nr-dashboard-template visible' style='display: flex; justify-content: center; align-items: center; height: 100%;'>\n    <button style=\"border: none; border-radius: 15px; background-color: {{msg.payload.backgroundColor}}; padding: 10px; margin: 20px; height: 120px; width: 180px;\">\n        <img ng-src='https://github.com/tahlisfove/IoT/blob/main/img/conseils.png?raw=true' style='background-color: transparent; width: 140px; height: 80px;'>\n    </button>\n    <button style=\"border: none; border-radius: 15px; background-color: rgba(255, 255, 255, 0.2); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 10px;\">\n        <b style=\"font-size: 13px\"> \n            <p style=\"margin: 0;\">\n                {{msg.payload.recommendation}}\n            <span ng-if=\"msg.payload.reasons\"> \n                {{msg.payload.reasons}}\n            </span>\n            </p>\n        </b>\n    </button>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 990,
+        "y": 380,
+        "wires": [
+            []
+        ],
+        "inputLabels": [
+            "payload"
+        ]
+    },
+    {
+        "id": "20f002073b23b7bf",
+        "type": "function",
+        "z": "7f6877d269488868",
+        "g": "2d5d9e7ee11c0fdc",
+        "name": "traitement_conditions",
+        "func": "var temperatureKelvin = msg.payload.main.temp;\nvar temperatureCelsius = temperatureKelvin - 273.15;\n\nvar humidite = msg.payload.main.humidity;\nvar ventVitesse = msg.payload.wind.speed;\nvar heureActuelle = (new Date()).getHours();\n\nvar iconCode = msg.payload.weather[0].icon; \n\nvar sunriseTimestamp = msg.payload.sys.sunrise;\nvar sunsetTimestamp = msg.payload.sys.sunset;\nvar sunriseDate = new Date(sunriseTimestamp * 1000);\nvar sunsetDate = new Date(sunsetTimestamp * 1000);\n\nvar hoursSunrise = sunriseDate.getHours();\nvar minutesSunrise = \"0\" + sunriseDate.getMinutes();\nvar sunriseTime = hoursSunrise + ':' + minutesSunrise.substr(-2);\n\nvar hoursSunset = sunsetDate.getHours();\nvar minutesSunset = \"0\" + sunsetDate.getMinutes();\nvar sunsetTime = hoursSunset + ':' + minutesSunset.substr(-2);\n\nvar imageUrl = \"https://openweathermap.org/img/w/\" + iconCode + \".png\";\n\nmsg.payload = {\n    \"meteo\": {\n        \"temperature\": temperatureCelsius.toFixed(1),\n        \"humidite\": humidite,\n        \"vent\": ventVitesse,\n        \"lever_soleil\": sunriseTime,\n        \"coucher_soleil\": sunsetTime,\n        \"imageURL\": imageUrl\n    }\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 640,
+        "wires": [
+            [
+                "3e51a964a76a9620",
+                "d6c2663198089a7b"
+            ]
+        ]
+    },
+    {
+        "id": "25b3c75065acb386",
+        "type": "ui_template",
+        "z": "7f6877d269488868",
+        "g": "138053fe73163e0b",
+        "group": "",
+        "name": "style CSS",
+        "order": 4,
+        "width": 6,
+        "height": 3,
+        "format": "<style>\n    /* Définition du corps de la page */\n    body {\n        height: 50%;\n        font-weight: bold;\n        text-align: center;\n        background-image: url('https://github.com/tahlisfove/IoT/blob/main/img/fum.png?raw=true');\n        background-size: cover;\n        background-repeat: no-repeat;\n        -webkit-touch-callout: none;\n    }\n\n    /* Carte météo */\n    .weather-card {\n        height: 180px;\n        width: 180px;\n        flex: 1;\n        display: flex;\n        align-items: center;\n        background-color: rgba(255, 255, 255, 0.1);\n        padding: 15px;\n        border-radius: 10px;\n        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n        text-align: center;\n        margin: 10px 10px;\n    }\n\n    /* Bouton météo */\n    #button_weather {\n        background-size: 60%;\n        background-position: center;\n        background-repeat: no-repeat;\n        width: 100px;\n        height: 100px;\n        border: none;\n        box-sizing: border-box;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        border-radius: 15px;\n        background-color: rgba(255, 255, 255, 0.2);\n        padding: 0;\n    }\n\n    /* Bouton liste */\n    #button_list {\n        background-size: 60%;\n        background-position: center;\n        background-repeat: no-repeat;\n        width: 250px;\n        height: 250px;\n        border: none;\n        margin: 15px;\n        box-sizing: border-box;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        border-radius: 15px;\n        background-color: rgba(255, 255, 255, 0.2);\n        padding: 0;\n    }\n\n    /* Éléments dans la section d'accueil */\n    #Tab_Acceuil .masonry-container .masonry-brick {\n        width: 100%;\n        margin: 0 auto;\n    }\n\n    /* Élément de jauge d'humidité */\n    #METEO_gauge_humidite_cards {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    /* Éléments de navigation dans la section d'accueil */\n    #Accueil_navigation_cards {\n        background-color: rgba(0, 0, 0, 0);\n    }\n\n    /* Éléments d'affluence dans la section d'accueil */\n    #Accueil_affluence_cards {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    /* Conteneur de la carte Leaflet avec fonctionnalités tactiles */\n    .leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {\n        border-radius: 10px;\n    }\n\n    /* Bouton pour le mode lumière */\n    .light-button {\n        background-color: rgba(255, 255, 255, 0.2);\n        border: none;\n        border-radius: 20px;\n    }\n\n    /* Bouton pour le mode nuit */\n    .night-mode {\n        background-color: rgba(114, 159, 207);\n        border: none;\n        border-radius: 20px;\n    }\n\n    /* Styles spécifiques pour le thème du tableau de bord */\n    .nr-dashboard-theme .nr-dashboard-gauge-titlel {\n        font-size: larger;\n        font-weight: 500;\n        z-index: 1;\n        padding-bottom: 10px;\n        margin-top: 60px;\n    }\n\n    #METEO_gauge_vent,\n    #METEO_gauge_temperature_cards,\n    #METEO_gauge_humidite_cards,\n    #ACCUEIL_affluence_cards {\n        padding-bottom: 54px !important;\n    }\n\n    /* Classe conteneur */\n    .conteneur {\n        display: flex;\n    }\n\n    /* Styles pour une icône */\n    .icon {\n        height: 20px;\n        width: 20px;\n        margin-right: 4px;\n    }\n\n    /* Paragraphe dans la carte météo */\n    .weather-card p {\n        margin: 4px 0;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n    }\n\n    /* Styles spécifiques pour les modèles de tableau de bord visibles */\n    .nr-dashboard-template.visible {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        flex-direction: column;\n        text-align: center;\n    }\n\n    /* Paragraphe spécifique avec classe label */\n    p.label nr-dashboard-gauge-title nr-dashboard-gauge-titlel {\n        margin-top: 15px;\n    }\n\n    /* Styles spécifiques pour les éléments de type div */\n    div {\n        font-weight: bold;\n    }\n\n    /* Bouton dans le tableau de bord */\n    .nr-dashboard-button .md-button {\n        box-shadow: none !important;\n        font-weight: bold !important;\n    }\n\n    /* Éléments spécifiques du tableau de bord à espacement */\n    .nr-dashboard-spacer {\n        display: none !important;\n    }\n\n    /* Styles spécifiques pour les images */\n    img {\n        border-radius: 10px;\n    }\n\n    /* Styles pour le texte spécifique du widget visible */\n    .nr-dashboard-text._md.layout-row.layout-align-space-between-center.nr-dashboard-widget-visible {\n        text-align: center;\n    }\n\n    /* Groupe de navigation */\n    .navigation-group {\n        display: none;\n    }\n\n    /* Labels des boutons */\n    .button-labels {\n        display: flex;\n        justify-content: space-around;\n        align-items: center;\n        color: #ffffff;\n        font-size: 20px;\n    }\n\n    /* Contenu des boutons */\n    .nr-dashboard-button .md-button-content {\n        display: block;\n    }\n\n    /* Bouton dans le tableau de bord avec opacité réduite */\n    .nr-dashboard-button {\n        opacity: 0;\n    }\n\n    /* Conteneur de maçonnerie */\n    .masonry-container {\n        width: 58%;\n    }\n\n    /* Styles pour les paragraphes, titres et arrière-plans dans le tableau de bord */\n    .nr-dashboard-template p,\n    .nr-dashboard-template h1,\n    .nr-dashboard-template h2,\n    .nr-dashboard-template h3,\n    .nr-dashboard-template h4 {\n        color: #eeeeee !important;\n        background-color: transparent !important;\n    }\n\n    /* Styles pour l'arrière-plan global du tableau de bord */\n    .nr-dashboard-theme .nr-dashboard-template {\n        background-color: transparent !important;\n    }\n\n    /* Styles pour les éléments spécifiques du thème */\n    body.nr-dashboard-theme md-toolbar,\n    body.nr-dashboard-theme md-content md-card {\n        background-color: transparent !important;/\n        color: #FFFFFF !important;\n    }\n\n    /* Styles pour la barre latérale */\n    body.nr-dashboard-theme md-sidenav {\n        color: white !important;\n        background-color: rgba(0, 0, 0, 0) !important;\n    }\n\n    /* Styles pour certains éléments de lien et de bouton */\n    a.md-no-style,\n    button.md-no-style {\n        border-radius: 10px;\n    }\n\n    /* Styles pour les éléments de menu actifs */\n    .nr-menu-item-active div button {\n        border-right: 4px solid rgb(132, 125, 127);\n    }\n\n    /* Styles pour les éléments spécifiques dans la barre latérale */\n    body.nr-dashboard-theme md-sidenav div.md-list-item-inner {\n        color: white;\n        background-color: rgba(100, 95, 96, 1);\n        border-radius: 10px;\n    }\n\n    /* Styles pour les panneaux de cartes */\n    ui-card-panel {\n        background-color: rgba(255, 255, 255, 0.1) !important;\n        border-radius: 10px;\n    }\n\n    /* Styles pour les panneaux de cartes spécifiques au thème */\n    .nr-dashboard-theme ui-card-panel {\n        border: none !important;\n    }\n\n    /* Styles pour le titre des cartes dans le thème */\n    .nr-dashboard-theme ui-card-panel p.nr-dashboard-cardtitle {\n        color: rgba(255, 255, 255, 0.5) !important; \n    }\n\n    /* Styles pour les boutons spécifiques au thème */\n    .nr-dashboard-theme .nr-dashboard-button .md-button {\n        border-style: none;\n    }\n\n    /* Styles généraux pour les boutons */\n    .md-button {\n        border-radius: 10px;\n    }\n\n    /* Styles pour les menus déroulants spécifiques au thème */\n    .nr-dashboard-theme md-select-menu {\n        background-color: rgba(60, 85, 165, 1) !important;\n    }\n\n    /* Styles pour les options des menus déroulants */\n    .nr-dashboard-theme md-select-menu,\n    .nr-dashboard-theme md-select-menu md-option {\n        background-color: transparent !important;\n    }\n\n    /* Styles pour le conteneur des menus déroulants */\n    .nr-dashboard-theme .md-select-menu-container {\n        border-radius: 10px !important;\n        border: none !important;\n    }\n\n    /* Styles pour les options sélectionnées dans les menus déroulants */\n    .nr-dashboard-theme md-select-menu md-option[selected] {\n        color: white !important;\n        background-color: #1c9db8 !important;\n    }\n\n    /* Styles pour les images dans les cartes */\n    md-card>img,\n    md-card>md-card-header img,\n    md-card md-card-title-media img {\n        border-radius: 10px;\n    }\n\n    /* Styles pour le slider */\n    md-slider .md-thumb {\n        border-radius: 20px;\n        height: 20px;\n        position: absolute;\n        top: 14px;\n        transform: scale(.7);\n        transition: all .4s cubic-bezier(.25,.8,.25,1);\n        z-index: 1;\n        left: -17px !important;\n    }\n\n    /* Styles pour le placement du slider */\n    md-slider .md-slider-wrapper {\n        margin-top: -13px;\n    }\n\n    /* Styles pour placement du formulaire */\n    #ADHERER_form {\n        display: center !important;\n        justify-content: center !important;\n        align-items: center !important;\n    }\n\n    /* Éléments d'affluence dans la section d'accueil */\n    #ADHERER_note_cards {\n        display : block;\n    }\n\n    /* Styles pour placement du formulaire */\n    .nr-dashboard-form form {\n        padding: 0px 6px 0px 6px !important;\n        margin-top: 7px !important;\n    }\n\n    /* Styles pour les notifications en haut de page*/\n    md-toast.md-top {\n        background-color: rgba(255,255,255,0);\n    }\n\n    /* Styles pour les notifications en haut de page*/\n    md-toast .md-toast-content {\n        background-color: rgba(255,255,255, 0.1);\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "global",
+        "className": "",
+        "x": 740,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "42920939ac0fc397",
+        "type": "file in",
+        "z": "7f6877d269488868",
+        "g": "3be5a2a5811ba996",
+        "name": "skateparks_XML",
+        "filename": "/chemin/absolu/skateparks.xml",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 350,
+        "y": 80,
+        "wires": [
+            [
+                "3b878000e7fd74c2"
+            ]
+        ]
+    },
+    {
+        "id": "3b878000e7fd74c2",
+        "type": "link out",
+        "z": "7f6877d269488868",
+        "g": "3be5a2a5811ba996",
+        "name": "out_xml",
+        "mode": "link",
+        "links": [
+            "9f4228e4225fe029"
+        ],
+        "x": 515,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "9f4228e4225fe029",
+        "type": "link in",
+        "z": "7f6877d269488868",
+        "g": "2ac4640d308b127a",
+        "name": "in_xml",
+        "links": [
+            "3b878000e7fd74c2",
+            "3647c59eba8cfaeb"
+        ],
+        "x": 75,
+        "y": 840,
+        "wires": [
+            [
+                "5547998deb81dedc"
+            ]
+        ]
+    },
+    {
+        "id": "1387ca0db9894aec",
+        "type": "comment",
+        "z": "7f6877d269488868",
+        "g": "3be5a2a5811ba996",
+        "name": "copier le chemin absolu du fichier xml",
+        "info": "",
+        "x": 290,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "28cb6231b718b81b",
+        "type": "mqtt out",
+        "z": "7f6877d269488868",
+        "g": "2ac4640d308b127a",
+        "name": "",
+        "topic": "skatepark/event",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "c11bab59d5178c98",
+        "x": 700,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "5535ca0152ef44c5",
+        "type": "inject",
+        "z": "7f6877d269488868",
+        "g": "3be5a2a5811ba996",
+        "name": "inject_xml",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 80,
+        "wires": [
+            [
+                "42920939ac0fc397",
+                "a91444d0d1d7478b"
+            ]
+        ]
+    },
+    {
+        "id": "a91444d0d1d7478b",
+        "type": "link out",
+        "z": "7f6877d269488868",
+        "g": "3be5a2a5811ba996",
+        "name": "out_global",
+        "mode": "link",
+        "links": [
+            "2ea4fe4c729c2cc2",
+            "3a6a1b87cdbbf213",
+            "a2e68b883b97d522",
+            "f06963ae7c5f8d81"
+        ],
+        "x": 95,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "a2e68b883b97d522",
+        "type": "link in",
+        "z": "7f6877d269488868",
+        "g": "e549091de0ca2265",
+        "name": "in_conseil",
+        "links": [
+            "a91444d0d1d7478b"
+        ],
+        "x": 185,
+        "y": 320,
+        "wires": [
+            [
+                "0f34cb8fd9436656"
+            ]
+        ]
+    },
+    {
+        "id": "0823e92bc4b613d6",
+        "type": "ui_button",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "3d3d40f75a57f790",
+        "name": "ACCUEIL",
+        "group": "7624dccab3de5575",
+        "order": 2,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "ACCUEIL",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "rgba(255, 255, 255, 0)",
+        "className": "",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 140,
+        "y": 600,
+        "wires": [
+            [
+                "8290e2e44ec1c221"
+            ]
+        ]
+    },
+    {
+        "id": "5d845aa425b79536",
+        "type": "ui_button",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "3d3d40f75a57f790",
+        "name": "METEO",
+        "group": "7624dccab3de5575",
+        "order": 3,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "METEO",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "rgba(255, 255, 255, 0)",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 140,
+        "y": 640,
+        "wires": [
+            [
+                "8290e2e44ec1c221"
+            ]
+        ]
+    },
+    {
+        "id": "332559230b0b065d",
+        "type": "ui_button",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "3d3d40f75a57f790",
+        "name": "ADHERER",
+        "group": "7624dccab3de5575",
+        "order": 4,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "ADHERER",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "rgba(255, 255, 255, 0)",
+        "className": "",
+        "icon": "",
+        "payload": "2",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 150,
+        "y": 680,
+        "wires": [
+            [
+                "8290e2e44ec1c221"
+            ]
+        ]
+    },
+    {
+        "id": "8290e2e44ec1c221",
+        "type": "ui_ui_control",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "3d3d40f75a57f790",
+        "name": "",
+        "events": "all",
+        "x": 320,
+        "y": 640,
+        "wires": [
+            [
+                "2f0b21505ca0bd2f"
+            ]
+        ]
+    },
+    {
+        "id": "0a8d1996cb160aca",
+        "type": "inject",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "302b5277cfcaa22c",
+        "name": "minute",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1200",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 160,
+        "wires": [
+            [
+                "dba054394ee126ad"
+            ]
+        ]
+    },
+    {
+        "id": "dba054394ee126ad",
+        "type": "http request",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "302b5277cfcaa22c",
+        "name": "OpenWeatherCurrentWeather",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://api.openweathermap.org/data/2.5/weather?q=Lescar,fr&appid=6d663ce00320df325d7ddc3564de9b48",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 370,
+        "y": 160,
+        "wires": [
+            [
+                "96f4dff5bfa7fb16",
+                "175a7110dfe5fe68",
+                "a08a54033292f1db",
+                "d53947fc5ee975b2",
+                "8fd00e9e1340d4d3"
+            ]
+        ]
+    },
+    {
+        "id": "96f4dff5bfa7fb16",
+        "type": "function",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "302b5277cfcaa22c",
+        "name": "traitement_temperature",
+        "func": "if (msg.payload && msg.payload.main && msg.payload.main.temp) {\n    msg.payload = (parseFloat(msg.payload.main.temp) - 273.15).toFixed(2);\n} \n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 120,
+        "wires": [
+            [
+                "910bf1009d7a962a"
+            ]
+        ]
+    },
+    {
+        "id": "910bf1009d7a962a",
+        "type": "ui_gauge",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "302b5277cfcaa22c",
+        "name": "temperature",
+        "group": "e629f3518270d85c",
+        "order": 1,
+        "width": 6,
+        "height": 3,
+        "gtype": "gage",
+        "title": "température (en °C)",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": "-10",
+        "max": "40",
+        "colors": [
+            "#a51d2d",
+            "#26a269",
+            "#a51d2d"
+        ],
+        "seg1": "0",
+        "seg2": "30",
+        "diff": false,
+        "className": "",
+        "x": 835,
+        "y": 120,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "175a7110dfe5fe68",
+        "type": "function",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "302b5277cfcaa22c",
+        "name": "traitement_vent",
+        "func": "if (msg.payload && msg.payload.wind && msg.payload.wind.speed) {\n    msg.payload = parseFloat(msg.payload.wind.speed);\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 160,
+        "wires": [
+            [
+                "112d77dbc4df3bea"
+            ]
+        ]
+    },
+    {
+        "id": "112d77dbc4df3bea",
+        "type": "ui_gauge",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "302b5277cfcaa22c",
+        "name": "vitesse_vent",
+        "group": "a0e97bdd1b0d4d2a",
+        "order": 1,
+        "width": 6,
+        "height": 3,
+        "gtype": "gage",
+        "title": "vitesse du vent (en m/s)",
+        "label": "m/s",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "30",
+        "colors": [
+            "#26a269",
+            "#26a269",
+            "#a51d2d"
+        ],
+        "seg1": "5",
+        "seg2": "15",
+        "diff": false,
+        "className": "",
+        "x": 775,
+        "y": 160,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "a08a54033292f1db",
+        "type": "function",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "302b5277cfcaa22c",
+        "name": "traitement_humidite",
+        "func": "if (msg.payload && msg.payload.main && msg.payload.main.humidity) {\n    msg.payload = parseFloat(msg.payload.main.humidity);\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 80,
+        "wires": [
+            [
+                "e9d35691d1338232"
+            ]
+        ]
+    },
+    {
+        "id": "e9d35691d1338232",
+        "type": "ui_gauge",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "302b5277cfcaa22c",
+        "name": "humidite",
+        "group": "8fd907f852a209e6",
+        "order": 2,
+        "width": 4,
+        "height": 3,
+        "gtype": "wave",
+        "title": "humidité",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#729fcf",
+            "#729fcf",
+            "#729fcf"
+        ],
+        "seg1": "70",
+        "seg2": "90",
+        "diff": false,
+        "className": "",
+        "x": 795,
+        "y": 80,
+        "wires": [],
+        "icon": "node-red/timer.svg",
+        "l": false
+    },
+    {
+        "id": "d53947fc5ee975b2",
+        "type": "function",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "302b5277cfcaa22c",
+        "name": "extraire_temperature",
+        "func": "if (msg.payload && msg.payload.main && msg.payload.main.temp) {\n    const temperatureCelsius = (msg.payload.main.temp - 273.15).toFixed(2);\n    //const temperatureCelsius = 2.9;\n    msg.payload = parseFloat(temperatureCelsius);\n}\n    \nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 200,
+        "wires": [
+            [
+                "98e753cf9f18eaad"
+            ]
+        ]
+    },
+    {
+        "id": "98e753cf9f18eaad",
+        "type": "ui_chart",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "302b5277cfcaa22c",
+        "name": "temperature_over_time",
+        "group": "c5338a79181a3355",
+        "order": 1,
+        "width": 8,
+        "height": 5,
+        "label": "température au fil du temps",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "12",
+        "removeOlderPoints": "50",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": true,
+        "useUTC": true,
+        "colors": [
+            "#1f77b4",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 815,
+        "y": 200,
+        "wires": [
+            []
+        ],
+        "l": false
+    },
+    {
+        "id": "8fd00e9e1340d4d3",
+        "type": "function",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "302b5277cfcaa22c",
+        "name": "extraire_humidite",
+        "func": "if (msg.payload && msg.payload.main && msg.payload.main.humidity) {\n    const humidity = msg.payload.main.humidity;\n    //const humidity = 96.1;\n    msg.payload = parseFloat(humidity);\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 240,
+        "wires": [
+            [
+                "bde7ebc69f6e7e81"
+            ]
+        ]
+    },
+    {
+        "id": "bde7ebc69f6e7e81",
+        "type": "ui_chart",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "302b5277cfcaa22c",
+        "name": "humidity_over_time",
+        "group": "7af1bbabcd59859a",
+        "order": 1,
+        "width": 8,
+        "height": 5,
+        "label": "humidité au fil du temps",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "12",
+        "removeOlderPoints": "50",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": true,
+        "useUTC": false,
+        "colors": [
+            "#ff7f0e",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 795,
+        "y": 240,
+        "wires": [
+            []
+        ],
+        "l": false
+    },
+    {
+        "id": "9c3cc16a3fcc602d",
+        "type": "inject",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "b57b76200458754c",
+        "name": "heure",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "3600",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 420,
+        "wires": [
+            [
+                "68df16f9a919515b"
+            ]
+        ]
+    },
+    {
+        "id": "68df16f9a919515b",
+        "type": "http request",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "b57b76200458754c",
+        "name": "OpenWeatherProForecast",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://pro.openweathermap.org/data/2.5/forecast/hourly?lat=43.33236406809312&lon=-0.43368082883560566&appid=6d663ce00320df325d7ddc3564de9b48",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 350,
+        "y": 420,
+        "wires": [
+            [
+                "5ad8c80da497f1dc",
+                "6c9fec01b3068b80",
+                "e1a3e5fad241b85e",
+                "201c587fce0722b4"
+            ]
+        ]
+    },
+    {
+        "id": "e6a93ea8c5043e72",
+        "type": "ui_template",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "b57b76200458754c",
+        "group": "904e23dfd4c92f3b",
+        "name": "forecast_j2",
+        "order": 3,
+        "width": 4,
+        "height": 5,
+        "format": "<div style='text-align: center;'>\n    <div style='background-color: rgba(255, 255, 255, 0.2); padding: 10px; border-radius: 15px; width: 150px'>\n        <h3>{{msg.payload.dayDate}}</h3>\n        <img src='https://openweathermap.org/img/wn/{{msg.payload.weatherIcon}}.png' style='width: 50px; height: 50px;'>\n        <p><img src='https://github.com/tahlisfove/IoT/blob/main/img/temp.png?raw=true' style='vertical-align: middle; width: 20px; height: 20px;'> {{msg.payload.tempMax}}°C / {{msg.payload.tempMin}}°C</p>\n        <p><img src='https://github.com/tahlisfove/IoT/blob/main/img/humidity.png?raw=true' style='vertical-align: middle; width: 20px; height: 20px;'> {{msg.payload.humidity}}%</p>\n        <p><img src='https://github.com/tahlisfove/IoT/blob/main/img/wind.png?raw=true' style='vertical-align: middle; width: 20px; height: 20px;'> {{msg.payload.windSpeed}} m/s</p>\n    </div>\n</div>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 750,
+        "y": 400,
+        "wires": [
+            []
+        ],
+        "inputLabels": [
+            "payload"
+        ]
+    },
+    {
+        "id": "a28de86782c033d6",
+        "type": "ui_template",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "b57b76200458754c",
+        "group": "904e23dfd4c92f3b",
+        "name": "forecast_j3",
+        "order": 4,
+        "width": 4,
+        "height": 5,
+        "format": "<div style='text-align: center;'>\n    <div style='background-color: rgba(255, 255, 255, 0.2); padding: 10px; border-radius: 15px; width: 150px'>\n        <h3>{{msg.payload.dayDate}}</h3> \n        <img src='https://openweathermap.org/img/wn/{{msg.payload.weatherIcon}}.png' style='width: 50px; height: 50px;'>\n        <p><img src='https://github.com/tahlisfove/IoT/blob/main/img/temp.png?raw=true' style='vertical-align: middle; width: 20px; height: 20px;'> {{msg.payload.tempMax}}°C / {{msg.payload.tempMin}}°C</p>\n        <p><img src='https://github.com/tahlisfove/IoT/blob/main/img/humidity.png?raw=true' style='vertical-align: middle; width: 20px; height: 20px;'> {{msg.payload.humidity}}%</p>\n        <p><img src='https://github.com/tahlisfove/IoT/blob/main/img/wind.png?raw=true' style='vertical-align: middle; width: 20px; height: 20px;'> {{msg.payload.windSpeed}} m/s</p>\n    </div>\n</div>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 750,
+        "y": 440,
+        "wires": [
+            []
+        ],
+        "inputLabels": [
+            "payload"
+        ]
+    },
+    {
+        "id": "e1a3e5fad241b85e",
+        "type": "function",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "b57b76200458754c",
+        "name": "prevision_j3",
+        "func": "const days = ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'];\nconst months = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];\n\nconst kelvinToCelsius = kelvin => kelvin - 273.15;\n\nconst weatherData = msg.payload.list.filter(entry => {\n    const date = new Date(entry.dt * 1000);\n    const dayAfterTomorrow = new Date();\n    const nextDay = new Date(dayAfterTomorrow);\n    nextDay.setDate(dayAfterTomorrow.getDate() + 3);\n    return date.getDate() === nextDay.getDate();\n});\n\nif (weatherData.length > 0) {\n    let maxTemp = -Infinity;\n    let minTemp = Infinity;\n    weatherData.forEach(data => {\n        maxTemp = Math.max(maxTemp, data.main.temp_max);\n        minTemp = Math.min(minTemp, data.main.temp_min);\n    });\n\n    const dayDate = new Date(weatherData[0].dt * 1000);\n    const formattedDayDate =\n        days[dayDate.getDay()] + ' ' + dayDate.getDate() + '/' + months[dayDate.getMonth()];\n\n    msg.payload = {\n        dayDate: formattedDayDate,\n        weatherIcon: weatherData[0].weather[0].icon,\n        tempMax: kelvinToCelsius(maxTemp).toFixed(1),\n        tempMin: kelvinToCelsius(minTemp).toFixed(1),\n        humidity: weatherData[0].main.humidity,\n        windSpeed: weatherData[0].wind.speed\n    };\n    return msg;\n} else {\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 440,
+        "wires": [
+            [
+                "a28de86782c033d6"
+            ]
+        ]
+    },
+    {
+        "id": "454592e2d8d4fdc4",
+        "type": "ui_template",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "b57b76200458754c",
+        "group": "904e23dfd4c92f3b",
+        "name": "forecast_j4",
+        "order": 5,
+        "width": 4,
+        "height": 5,
+        "format": "<div style='text-align: center;'>\n    <div style='background-color: rgba(255, 255, 255, 0.2); padding: 10px; border-radius: 15px; width: 150px;'>\n        <h3>{{msg.payload.dayDate}}</h3>\n        <img src='https://openweathermap.org/img/wn/{{msg.payload.weatherIcon}}.png' style='width: 50px; height: 50px;'>\n        <p><img src='https://github.com/tahlisfove/IoT/blob/main/img/temp.png?raw=true' style='vertical-align: middle; width: 20px; height: 20px;'> {{msg.payload.tempMax}}°C / {{msg.payload.tempMin}}°C</p>\n        <p><img src='https://github.com/tahlisfove/IoT/blob/main/img/humidity.png?raw=true' style='vertical-align: middle; width: 20px; height: 20px;'> {{msg.payload.humidity}}%</p>\n        <p><img src='https://github.com/tahlisfove/IoT/blob/main/img/wind.png?raw=true' style='vertical-align: middle; width: 20px; height: 20px;'> {{msg.payload.windSpeed}} m/s</p>\n    </div>\n</div>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 750,
+        "y": 480,
+        "wires": [
+            []
+        ],
+        "inputLabels": [
+            "payload"
+        ]
+    },
+    {
+        "id": "201c587fce0722b4",
+        "type": "function",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "b57b76200458754c",
+        "name": "prevision_j4",
+        "func": "const days = ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'];\nconst months = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];\n\nconst kelvinToCelsius = kelvin => kelvin - 273.15;\n\nconst weatherData = msg.payload.list.filter(entry => {\n    const date = new Date(entry.dt * 1000);\n    const dayAfterTomorrow = new Date();\n    const nextDay = new Date(dayAfterTomorrow);\n    nextDay.setDate(dayAfterTomorrow.getDate() + 4);\n    return date.getDate() === nextDay.getDate();\n});\n\nif (weatherData.length > 0) {\n    let maxTemp = -Infinity;\n    let minTemp = Infinity;\n    weatherData.forEach(data => {\n        maxTemp = Math.max(maxTemp, data.main.temp_max);\n        minTemp = Math.min(minTemp, data.main.temp_min);\n    });\n\n    const dayDate = new Date(weatherData[0].dt * 1000);\n    const formattedDayDate =\n        days[dayDate.getDay()] + ' ' + dayDate.getDate() + '/' + months[dayDate.getMonth()];\n\n    msg.payload = {\n        dayDate: formattedDayDate,\n        weatherIcon: weatherData[0].weather[0].icon,\n        tempMax: kelvinToCelsius(maxTemp).toFixed(1),\n        tempMin: kelvinToCelsius(minTemp).toFixed(1),\n        humidity: weatherData[0].main.humidity,\n        windSpeed: weatherData[0].wind.speed\n    };\n    return msg;\n} else {\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 480,
+        "wires": [
+            [
+                "454592e2d8d4fdc4"
+            ]
+        ]
+    },
+    {
+        "id": "5ad8c80da497f1dc",
+        "type": "function",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "b57b76200458754c",
+        "name": "prevision_j1",
+        "func": "const days = ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'];\nconst months = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];\n\nconst kelvinToCelsius = kelvin => kelvin - 273.15;\n\nconst weatherData = msg.payload.list.filter(entry => {\n    const date = new Date(entry.dt * 1000);\n    const tomorrow = new Date();\n    const nextDay = new Date(tomorrow);\n    nextDay.setDate(tomorrow.getDate() + 1);\n    return date.getDate() === nextDay.getDate();\n});\n\nif (weatherData.length > 0) {\n    let maxTemp = -Infinity;\n    let minTemp = Infinity;\n\n    weatherData.forEach(data => {\n        maxTemp = Math.max(maxTemp, data.main.temp_max);\n        minTemp = Math.min(minTemp, data.main.temp_min);\n    });\n\n    const dayDate = new Date(weatherData[0].dt * 1000);\n    const formattedDayDate =\n        days[dayDate.getDay()] + ' ' + dayDate.getDate() + '/' + months[dayDate.getMonth()];\n\n    msg.payload = {\n        dayDate: formattedDayDate,\n        weatherIcon: weatherData[0].weather[0].icon,\n        tempMax: kelvinToCelsius(maxTemp).toFixed(1),\n        tempMin: kelvinToCelsius(minTemp).toFixed(1),\n        humidity: weatherData[0].main.humidity,\n        windSpeed: weatherData[0].wind.speed\n    };\n    return msg;\n} else {\n    return null;\n}",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 360,
+        "wires": [
+            [
+                "f96890502a8eecbd"
+            ]
+        ]
+    },
+    {
+        "id": "6c9fec01b3068b80",
+        "type": "function",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "b57b76200458754c",
+        "name": "prevision_j2",
+        "func": "const days = ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'];\nconst months = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];\n\nconst kelvinToCelsius = kelvin => kelvin - 273.15;\n\nconst weatherData = msg.payload.list.filter(entry => {\n    const date = new Date(entry.dt * 1000);\n    const dayAfterTomorrow = new Date();\n    const nextDay = new Date(dayAfterTomorrow);\n    nextDay.setDate(dayAfterTomorrow.getDate() + 2);\n    return date.getDate() === nextDay.getDate();\n});\n\nif (weatherData.length > 0) {\n    let maxTemp = -Infinity;\n    let minTemp = Infinity;\n    weatherData.forEach(data => {\n        maxTemp = Math.max(maxTemp, data.main.temp_max);\n        minTemp = Math.min(minTemp, data.main.temp_min);\n    });\n\n    const dayDate = new Date(weatherData[0].dt * 1000);\n    const formattedDayDate =\n        days[dayDate.getDay()] + ' ' + dayDate.getDate() + '/' + months[dayDate.getMonth()];\n\n    msg.payload = {\n        dayDate: formattedDayDate,\n        weatherIcon: weatherData[0].weather[0].icon,\n        tempMax: kelvinToCelsius(maxTemp).toFixed(1),\n        tempMin: kelvinToCelsius(minTemp).toFixed(1),\n        humidity: weatherData[0].main.humidity,\n        windSpeed: weatherData[0].wind.speed\n    };\n    return msg;\n} else {\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 400,
+        "wires": [
+            [
+                "e6a93ea8c5043e72"
+            ]
+        ]
+    },
+    {
+        "id": "f96890502a8eecbd",
+        "type": "ui_template",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "b57b76200458754c",
+        "group": "904e23dfd4c92f3b",
+        "name": "forecast_j1",
+        "order": 2,
+        "width": 4,
+        "height": 5,
+        "format": "<div style='text-align: center;'>\n    <div style='background-color: rgba(255, 255, 255, 0.2); padding: 10px; border-radius: 15px; width: 150px'>\n        <h3>{{msg.payload.dayDate}}</h3>\n        <img src='https://openweathermap.org/img/wn/{{msg.payload.weatherIcon}}.png' style='width: 50px; height: 50px;'>\n        <p><img src='https://github.com/tahlisfove/IoT/blob/main/img/temp.png?raw=true' style='vertical-align: middle; width: 20px; height: 20px;'> {{msg.payload.tempMax}}°C / {{msg.payload.tempMin}}°C</p>\n        <p><img src='https://github.com/tahlisfove/IoT/blob/main/img/humidity.png?raw=true' style='vertical-align: middle; width: 20px; height: 20px;'> {{msg.payload.humidity}}%</p>\n        <p><img src='https://github.com/tahlisfove/IoT/blob/main/img/wind.png?raw=true' style='vertical-align: middle; width: 20px; height: 20px;'> {{msg.payload.windSpeed}} m/s</p>\n    </div>\n</div>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 750,
+        "y": 360,
+        "wires": [
+            []
+        ],
+        "inputLabels": [
+            "payload"
+        ]
+    },
+    {
+        "id": "70998692380309a6",
+        "type": "link in",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "302b5277cfcaa22c",
+        "name": "in_gauges",
+        "links": [
+            "d13c9885bc257c2d"
+        ],
+        "x": 175,
+        "y": 120,
+        "wires": [
+            [
+                "dba054394ee126ad"
+            ]
+        ]
+    },
+    {
+        "id": "6f74d2c231237282",
+        "type": "link in",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "b57b76200458754c",
+        "name": "in_prevision",
+        "links": [
+            "d13c9885bc257c2d",
+            "2f0b21505ca0bd2f"
+        ],
+        "x": 185,
+        "y": 380,
+        "wires": [
+            [
+                "68df16f9a919515b"
+            ]
+        ]
+    },
+    {
+        "id": "bf56a25352bac590",
+        "type": "ui_button",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "1dcf200a5334cc32",
+        "name": "actualise",
+        "group": "987497a273939ca2",
+        "order": 1,
+        "width": 2,
+        "height": 5,
+        "passthru": false,
+        "label": "",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "rgba(255, 255, 255, 0)",
+        "className": "",
+        "icon": "fa-refresh fa-4x",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "",
+        "topicType": "str",
+        "x": 600,
+        "y": 600,
+        "wires": [
+            [
+                "d13c9885bc257c2d"
+            ]
+        ]
+    },
+    {
+        "id": "d13c9885bc257c2d",
+        "type": "link out",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "1dcf200a5334cc32",
+        "name": "out_bouton",
+        "mode": "link",
+        "links": [
+            "6f74d2c231237282",
+            "70998692380309a6"
+        ],
+        "x": 695,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "2f0b21505ca0bd2f",
+        "type": "link out",
+        "z": "a7bd5c8eefd0dc08",
+        "g": "3d3d40f75a57f790",
+        "name": "out_refreash2",
+        "mode": "link",
+        "links": [
+            "6f74d2c231237282"
+        ],
+        "x": 435,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "7e14a1b6ced02403",
+        "type": "ui_button",
+        "z": "0235ec4cf042c9ac",
+        "g": "c8a25a87695a8288",
+        "name": "ACCUEIL",
+        "group": "d13ba31fc9308041",
+        "order": 2,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "ACCUEIL",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "rgba(255, 255, 255, 0)",
+        "className": "",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 120,
+        "y": 680,
+        "wires": [
+            [
+                "ab5625506b37767a"
+            ]
+        ]
+    },
+    {
+        "id": "0f7d22bfae0dd090",
+        "type": "ui_button",
+        "z": "0235ec4cf042c9ac",
+        "g": "c8a25a87695a8288",
+        "name": "METEO",
+        "group": "d13ba31fc9308041",
+        "order": 3,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "METEO",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "rgba(255, 255, 255, 0)",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 120,
+        "y": 720,
+        "wires": [
+            [
+                "ab5625506b37767a"
+            ]
+        ]
+    },
+    {
+        "id": "d4796b05345f8f30",
+        "type": "ui_button",
+        "z": "0235ec4cf042c9ac",
+        "g": "c8a25a87695a8288",
+        "name": "ADHERER",
+        "group": "d13ba31fc9308041",
+        "order": 4,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "ADHERER",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "rgba(255, 255, 255, 0)",
+        "className": "",
+        "icon": "",
+        "payload": "2",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 130,
+        "y": 760,
+        "wires": [
+            [
+                "ab5625506b37767a"
+            ]
+        ]
+    },
+    {
+        "id": "ab5625506b37767a",
+        "type": "ui_ui_control",
+        "z": "0235ec4cf042c9ac",
+        "g": "c8a25a87695a8288",
+        "name": "",
+        "events": "all",
+        "x": 300,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d544e32dd190119d",
+        "type": "mqtt in",
+        "z": "0235ec4cf042c9ac",
+        "g": "d64014dd16bf715b",
+        "name": "",
+        "topic": "skatepark/inscription/plus16",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "c11bab59d5178c98",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 560,
+        "wires": [
+            [
+                "962724d42f913c6d"
+            ]
+        ]
+    },
+    {
+        "id": "962724d42f913c6d",
+        "type": "function",
+        "z": "0235ec4cf042c9ac",
+        "g": "d64014dd16bf715b",
+        "name": "recupere_plus16",
+        "func": "if (!global.get('Participant>16')) {\n    global.set('Participant>16', []);\n    global.set('nombreTotalParticipant>16', 0);\n}\n\nvar nom = msg.payload.Nom;\nvar prenom = msg.payload.Prenom;\nvar participant16ListeInscrits = global.get('Participant>16');\nvar nombreTotalParticipant16 = global.get('nombreTotalParticipant>16');\n\nparticipant16ListeInscrits.push({ Nom: nom, Prenom: prenom });\nnombreTotalParticipant16++;\n\nglobal.set('Participant>16', participant16ListeInscrits);\nglobal.set('nombreTotalParticipant>16', nombreTotalParticipant16);\n\nvar data = {\n    NombreTotalParticipant16: nombreTotalParticipant16,\n    Participant16ListeInscrits: participant16ListeInscrits\n};\n\nmsg.payload = data;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 560,
+        "wires": [
+            [
+                "04d3497e05d0754d"
+            ]
+        ]
+    },
+    {
+        "id": "1d5585ff8ab93206",
+        "type": "function",
+        "z": "0235ec4cf042c9ac",
+        "g": "9c9bd10b6a85a48b",
+        "name": "recupere_moins16",
+        "func": "if (!global.get('ParticipantLess16')) {\n    global.set('ParticipantLess16', []);\n    global.set('nombreTotalParticipantLess16', 0);\n}\n\nvar nom = msg.payload.Nom;\nvar prenom = msg.payload.Prenom;\nvar participantLess16ListeInscrits = global.get('ParticipantLess16');\nvar nombreTotalParticipantLess16 = global.get('nombreTotalParticipantLess16');\n\nparticipantLess16ListeInscrits.push({ Nom: nom, Prenom: prenom });\nnombreTotalParticipantLess16++;\n\nglobal.set('ParticipantLess16', participantLess16ListeInscrits);\nglobal.set('nombreTotalParticipantLess16', nombreTotalParticipantLess16);\n\nvar data = {\n    NombreTotalParticipantLess16: nombreTotalParticipantLess16,\n    ParticipantLess16ListeInscrits: participantLess16ListeInscrits\n};\n\nmsg.payload = data;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 440,
+        "wires": [
+            [
+                "d351173d9f795da1"
+            ]
+        ]
+    },
+    {
+        "id": "fa515ce28aca98a1",
+        "type": "mqtt in",
+        "z": "0235ec4cf042c9ac",
+        "g": "9c9bd10b6a85a48b",
+        "name": "",
+        "topic": "skatepark/inscription/moins16",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "c11bab59d5178c98",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 440,
+        "wires": [
+            [
+                "1d5585ff8ab93206"
+            ]
+        ]
+    },
+    {
+        "id": "1bb64598a626d87e",
+        "type": "mqtt in",
+        "z": "0235ec4cf042c9ac",
+        "g": "c3b9902cd704d963",
+        "name": "",
+        "topic": "skatepark/message",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "c11bab59d5178c98",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1030,
+        "y": 80,
+        "wires": [
+            [
+                "4147928aefee8cb0"
+            ]
+        ]
+    },
+    {
+        "id": "d351173d9f795da1",
+        "type": "ui_template",
+        "z": "0235ec4cf042c9ac",
+        "g": "9c9bd10b6a85a48b",
+        "group": "6abd56180fd4dc52",
+        "name": "list1",
+        "order": 1,
+        "width": 6,
+        "height": 7,
+        "format": "<div style=\"margin-bottom: 5px\">\n    <h3>Nombre d'inscrits -16 ans: {{ msg.payload.NombreTotalParticipantLess16 }}</h3>\n    <h4>Liste des participants :</h4>\n</div>\n<div>\n    <button id=\"button_list\">\n        <ul style=\"list-style: none; padding: 0; margin: 0; inline-block; margin-right: 5px; color: white; font-size: 12px; font-weight: bold;\">\n            <li ng-repeat=\"participant in msg.payload.ParticipantLess16ListeInscrits\">{{ participant.Prenom }} {{ participant.Nom }},</li>\n        </ul>\n    </button>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 610,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "04d3497e05d0754d",
+        "type": "ui_template",
+        "z": "0235ec4cf042c9ac",
+        "g": "d64014dd16bf715b",
+        "group": "0f10d6d7714474a7",
+        "name": "list2",
+        "order": 1,
+        "width": 6,
+        "height": 7,
+        "format": "<div style=\"margin-bottom: 5px\">\n    <h3>Nombre d'inscrits +16 ans: {{ msg.payload.NombreTotalParticipant16 }}</h3>\n    <h4>Liste des participants :</h4>\n</div>\n<div>\n    <button id=\"button_list\">\n        <ul style=\"list-style: none; padding: 0; margin: 0; inline-block; margin-right: 5px; color: white; font-size: 12px; font-weight: bold;\">\n            <li ng-repeat=\"participant in msg.payload.Participant16ListeInscrits\">{{ participant.Prenom }} {{ participant.Nom }},</li>\n        </ul>\n    </button>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 610,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c2da46112b4573ee",
+        "type": "mqtt out",
+        "z": "0235ec4cf042c9ac",
+        "g": "c8c43603f62e0eb4",
+        "name": "skatepark/inscription",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "c11bab59d5178c98",
+        "x": 740,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "3148a12668d023a7",
+        "type": "ui_form",
+        "z": "0235ec4cf042c9ac",
+        "g": "c8c43603f62e0eb4",
+        "name": "formulaire_inscription",
+        "label": "",
+        "group": "9dfc3b1de7c1bd8e",
+        "order": 3,
+        "width": 4,
+        "height": 1,
+        "options": [
+            {
+                "label": "nom",
+                "value": "Nom",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "prénom",
+                "value": "Prenom",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "age",
+                "value": "Age",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "email",
+                "value": "Email",
+                "type": "email",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "téléphone",
+                "value": "Téléphone",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "participant",
+                "value": "Participant ",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "spectateur",
+                "value": "Spectateur",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Nom": "",
+            "Prenom": "",
+            "Age": "",
+            "Email": "",
+            "Téléphone": "",
+            "Participant ": false,
+            "Spectateur": false
+        },
+        "payload": "",
+        "submit": "Confirmer",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": false,
+        "className": "",
+        "x": 300,
+        "y": 280,
+        "wires": [
+            [
+                "1fc7bb94c8dc7fd5",
+                "c12e571e4a82d246"
+            ]
+        ]
+    },
+    {
+        "id": "1fc7bb94c8dc7fd5",
+        "type": "function",
+        "z": "0235ec4cf042c9ac",
+        "g": "c8c43603f62e0eb4",
+        "name": "trie_inscriptions",
+        "func": "var nom = msg.payload.Nom;\nvar prenom = msg.payload.Prenom;\nvar email = msg.payload.Email;\nvar estParticipant = msg.payload['Participant '];\nvar age = parseFloat(msg.payload.Age);\n\nvar userData = {\n    Nom: nom,\n    Prenom: prenom,\n    Email: email,\n    Age: age\n};\n\nif (estParticipant === true) {\n    if (age > 16) {\n        msg.topic = \"skatepark/inscription/plus16\";\n    } else {\n        msg.topic = \"skatepark/inscription/moins16\";\n    }\n} else {\n    msg.topic = \"skatepark/spectateur\";\n}\n\nmsg.payload = userData;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 320,
+        "wires": [
+            [
+                "c2da46112b4573ee"
+            ]
+        ]
+    },
+    {
+        "id": "c12e571e4a82d246",
+        "type": "function",
+        "z": "0235ec4cf042c9ac",
+        "g": "c8c43603f62e0eb4",
+        "name": "creation_tableau",
+        "func": "var formDataArray = flow.get(\"formDataArray\") || [];\nvar newFormData = msg.payload;\n\nformDataArray.push(newFormData);\nflow.set(\"formDataArray\", formDataArray);\n\nmsg.payload = formDataArray;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 240,
+        "wires": [
+            [
+                "aaf1d02c7066d5a2"
+            ]
+        ]
+    },
+    {
+        "id": "aaf1d02c7066d5a2",
+        "type": "mqtt out",
+        "z": "0235ec4cf042c9ac",
+        "g": "c8c43603f62e0eb4",
+        "name": "",
+        "topic": "skatepark/inscription",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "c11bab59d5178c98",
+        "x": 760,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "39db0390c954c873",
+        "type": "mqtt in",
+        "z": "0235ec4cf042c9ac",
+        "g": "f23aeecefb4b6db4",
+        "name": "",
+        "topic": "skatepark/event",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "c11bab59d5178c98",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1080,
+        "y": 180,
+        "wires": [
+            [
+                "e8fbec9044ecbfe2"
+            ]
+        ]
+    },
+    {
+        "id": "2e5e6d92d0316aa1",
+        "type": "change",
+        "z": "0235ec4cf042c9ac",
+        "g": "4587b971c69b6aa9",
+        "name": "stocke_slider",
+        "rules": [
+            {
+                "t": "set",
+                "p": "storedValue",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 270,
+        "y": 120,
+        "wires": [
+            [
+                "192acf2968b80223"
+            ]
+        ]
+    },
+    {
+        "id": "192acf2968b80223",
+        "type": "ui_button",
+        "z": "0235ec4cf042c9ac",
+        "g": "4587b971c69b6aa9",
+        "name": "noter",
+        "group": "ae81a3f65e8e43d0",
+        "order": 6,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "ENVOYER NOTE",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "rgba(255, 255, 255, 0.2)",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 430,
+        "y": 120,
+        "wires": [
+            [
+                "5e92aaee86c9538d"
+            ]
+        ]
+    },
+    {
+        "id": "5e92aaee86c9538d",
+        "type": "function",
+        "z": "0235ec4cf042c9ac",
+        "g": "4587b971c69b6aa9",
+        "name": "calcule_moyenne",
+        "func": "var storedValue = flow.get('storedValue');\n\nif (storedValue !== undefined) {\n    var previousValues = flow.get('previousValues') || [];\n    previousValues.push(storedValue);\n    \n    var sum = previousValues.reduce(function(acc, val) {\n        return acc + val;\n    }, 0);\n    \n    var average = sum / previousValues.length;\n    \n    flow.set('previousValues', previousValues);\n    msg.payload = average;\n    return msg;\n} else {\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 120,
+        "wires": [
+            [
+                "f97b79c092021fea"
+            ]
+        ]
+    },
+    {
+        "id": "a78d8f1be5367889",
+        "type": "ui_slider",
+        "z": "0235ec4cf042c9ac",
+        "g": "4587b971c69b6aa9",
+        "name": "slider",
+        "label": "",
+        "tooltip": "",
+        "group": "ae81a3f65e8e43d0",
+        "order": 3,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "outs": "end",
+        "topic": "",
+        "topicType": "str",
+        "min": "1",
+        "max": 5,
+        "step": 1,
+        "className": "",
+        "x": 110,
+        "y": 120,
+        "wires": [
+            [
+                "2e5e6d92d0316aa1",
+                "41f5ddbbdf1f944a"
+            ]
+        ]
+    },
+    {
+        "id": "f97b79c092021fea",
+        "type": "ui_template",
+        "z": "0235ec4cf042c9ac",
+        "g": "4587b971c69b6aa9",
+        "group": "ae81a3f65e8e43d0",
+        "name": "average",
+        "order": 8,
+        "width": 6,
+        "height": 1,
+        "format": "<div style=\"margin-top: -10px\">\n    <p style=\"font-size: 15px\">\n    Note moyenne: {{msg.payload.toFixed(1)}} <img src='https://github.com/tahlisfove/IoT/blob/main/img/stars.png?raw=true' style='vertical-align: middle; margin-bottom: 5px; width: 20px; height: 20px;'>\n    </p>\n</div>",
+        "storeOutMessages": false,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 800,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "41f5ddbbdf1f944a",
+        "type": "ui_template",
+        "z": "0235ec4cf042c9ac",
+        "g": "4587b971c69b6aa9",
+        "group": "ae81a3f65e8e43d0",
+        "name": "text_rate",
+        "order": 1,
+        "width": 6,
+        "height": 2,
+        "format": "<div style=\"margin-top: -18px\">\n    <p style=\"font-size: 15px\">\n        N'hésitez pas à attribuer une note <br> \n        globale au skatepark, sur une échelle de <br>\n        1 à 5, dans la section ci-dessous.\n    </p>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 260,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e8fbec9044ecbfe2",
+        "type": "ui_template",
+        "z": "0235ec4cf042c9ac",
+        "g": "f23aeecefb4b6db4",
+        "group": "443a521dd1b2f8af",
+        "name": "event",
+        "order": 1,
+        "width": 6,
+        "height": 14,
+        "format": "<div style=\"margin-bottom: 30px; margin: 20px; font-size: 15px\">\n    <p>{{msg.payload.eventdescription}}</p>\n</div>\n\n<div style=\"margin-bottom: 30px;  margin-top: 30px;\">\n    <img src=\"{{msg.payload.eventimage}}\" style=\"width: 220px; height: 300px; margin: 10px;\">\n</div>\n\n<div style=\"margin: 20px; font-size: 15px\">\n    <p>\n        Pour toute modification concernant votre inscription ou pour obtenir\n        davantage de renseignements, n'hésitez pas à nous contacter par e-mail \n        à l'adresse suivante : <br><br> {{msg.payload.email}} \n    </p>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1250,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b2a8103671e8ae21",
+        "type": "ui_template",
+        "z": "0235ec4cf042c9ac",
+        "g": "c8c43603f62e0eb4",
+        "group": "9dfc3b1de7c1bd8e",
+        "name": "title",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "format": "<p style=\"margin-top: 20px;\">\n    S'inscrire à l'événement\n</p>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 110,
+        "y": 280,
+        "wires": [
+            [
+                "3148a12668d023a7"
+            ]
+        ]
+    },
+    {
+        "id": "4147928aefee8cb0",
+        "type": "ui_toast",
+        "z": "0235ec4cf042c9ac",
+        "g": "c3b9902cd704d963",
+        "position": "top right",
+        "displayTime": "5",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "skatepark",
+        "name": "notifications",
+        "x": 1230,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "c27dcc73026945e8",
+        "type": "ui_template",
+        "z": "0235ec4cf042c9ac",
+        "d": true,
+        "g": "2de4bb8f125227fc",
+        "group": "9dfc3b1de7c1bd8e",
+        "name": "form_html",
+        "order": 5,
+        "width": 6,
+        "height": 8,
+        "format": "<!DOCTYPE html>\n<html>\n    <head>\n        <title>Formulaire</title>\n        <style>\n            form#myForm div label {\n                width: 85px;\n                display: inline-block;\n            }\n\n            form#myForm div {\n                margin-bottom: 8px;\n                display: flex;\n                align-items: center;\n            }\n\n            form#myForm div:nth-child(4) label#sk {\n                margin-left: -20px;\n            }\n        </style>\n    </head>\n    <body>\n        <form id=\"myForm\">\n            <div>\n                <label for=\"nom\">Nom*:</label>\n                <input type=\"text\" id=\"nom\" name=\"nom\" required>\n            </div>\n            <div>\n                <label for=\"prenom\">Prénom*:</label>\n                <input type=\"text\" id=\"prenom\" name=\"prenom\" required>\n            </div>\n            <div>\n                <label for=\"age\">Âge*:</label>\n                <input type=\"text\" id=\"age\" name=\"age\" required>\n            </div>\n            <div>\n                <label>Moyen*:</label>\n                <input type=\"radio\" id=\"skate\" name=\"choix\" value=\"skate\" required>\n                <label id=\"sk\" for=\"skate\">Skate</label>\n                <input type=\"radio\" id=\"trottinette\" name=\"choix\" value=\"trottinette\" required>\n                <label for=\"trottinette\">Trottinette</label>\n            </div>\n            <div>\n                <label for=\"email\">Email*:</label>\n                <input type=\"email\" id=\"email\" name=\"email\" required>\n            </div>\n            <div>\n                <label for=\"telephone\">Numéro:</label>\n                <input type=\"text\" id=\"telephone\" name=\"telephone\" maxlength=\"10\">\n            </div>\n            <input type=\"button\" value=\"Envoyer\" onclick=\"validateForm()\">\n        </form>\n\n        <div id=\"infoZone\"> <br><br>\n            <p><strong>Nom:</strong> <span id=\"infoNom\"></span></p>\n            <p><strong>Âge:</strong> <span id=\"infoAge\"></span></p>\n            <p><strong>Choix:</strong> <span id=\"infoChoix\"></span></p>\n        </div>\n\n        <script>\n            function validateForm() {\n                var nom = document.getElementById(\"nom\").value;\n                var prenom = document.getElementById(\"prenom\").value;\n                var age = document.getElementById(\"age\").value;\n                var choix = document.querySelector('input[name=\"choix\"]:checked');\n                var email = document.getElementById(\"email\").value;\n                var telephone = document.getElementById(\"telephone\").value;\n\n                if (nom === '' || prenom === '' || age === '' || choix === null || email === '') {\n                    alert(\"Veuillez remplir tous les champs obligatoires!\");\n                } else {\n                    submitForm(nom, prenom, age, choix.value, email, telephone);\n                }\n            }\n\n            function submitForm(nom, prenom, age, choix, email, telephone) {\n                var ageInt = parseInt(age); \n            \n\n                var payload = {\n                    nom: nom,\n                    prenom: prenom,\n                    age: age,\n                    choix: choix,\n                };\n\n                if (nom !== '' && prenom !== '' && age !== '' && choix !== '') {\n                    if (!(/^\\d+$/.test(age)) || ageInt < 6) {\n                        alert(\"Âge invalide ou trop jeune!\");\n                    } else if (ageInt > 90) {\n                        alert(\"Pas recommandé de skater à cet âge!\");\n                    } else if (email !== '' && !(/\\S+@\\S+\\.\\S+/.test(email))) {\n                        alert(\"Adresse email invalide!\");\n                        return;\n                    } else if (telephone !== '' && (!(/^\\d+$/.test(telephone)) || telephone.length > 10)) {\n                        alert(\"Numéro de téléphone invalide!\");\n                        return;\n                    } else {\n\n                        var sendMsg = { payload: payload };\n\n                        node.send(sendMsg);\n                        document.getElementById(\"infoNom\").textContent = nom;\n                        document.getElementById(\"infoPrenom\").textContent = prenom;\n                        document.getElementById(\"infoAge\").textContent = age;\n                        document.getElementById(\"infoChoix\").textContent = choix;\n                        document.getElementById(\"infoEmail\").textContent = email;\n                        document.getElementById(\"infoTelephone\").textContent = telephone;\n\n                        alert(\"Formulaire envoyé avec succès!\");\n                    }\n                } else {\n                    alert(\"Veuillez remplir tous les champs obligatoires!\");\n                }\n            }\n\n            var ageInput = document.getElementById('age');\n            ageInput.addEventListener('input', function (event) {\n                this.value = this.value.replace(/[^0-9]/g, '');\n            });\n\n            var telephoneInput = document.getElementById('telephone');\n            telephoneInput.addEventListener('input', function (event) {\n                this.value = this.value.replace(/[^0-9]/g, '');\n            });\n\n        </script>\n    </body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 840,
+        "y": 760,
+        "wires": [
+            [
+                "454aa75b3bb3a190"
+            ]
+        ]
+    },
+    {
+        "id": "454aa75b3bb3a190",
+        "type": "function",
+        "z": "0235ec4cf042c9ac",
+        "d": true,
+        "g": "2de4bb8f125227fc",
+        "name": "traitement",
+        "func": "var age = parseInt(msg.payload.age);\n\nif (age > 16) {\n    msg.payload = {\n        Nom: msg.payload.nom,\n        Choix: msg.payload.choix\n    };\n    return [msg, null, null];\n} else {\n    msg.payload = {\n        Nom: msg.payload.nom,\n        Choix: msg.payload.choix\n    };\n    return [null, msg, null];\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 760,
+        "wires": [
+            [
+                "09659e460c52998d"
+            ]
+        ]
+    },
+    {
+        "id": "09659e460c52998d",
+        "type": "mqtt out",
+        "z": "0235ec4cf042c9ac",
+        "d": true,
+        "g": "2de4bb8f125227fc",
+        "name": "",
+        "topic": "skatepark/inscription",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "c11bab59d5178c98",
+        "x": 1200,
+        "y": 760,
+        "wires": []
+    }
+]

@@ -1,0 +1,73 @@
+/* division droite de la page faq */
+#right_section_faq {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 70%;
+  background-color: #f9f9f9;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* réponse aux questions */
+.question {
+  font: inherit;
+  font-size: 13px;
+  color: #2b2929;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* zone contenant les questions et réponses */
+details {
+  font: inherit;
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+  margin-left: 180px;
+  margin-right: 180px;
+}
+
+/* label des questions */
+summary {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  list-style-type: none;
+}
+
+/* ouverture des réponses */
+details[open] summary ~ * {
+  animation: sweep 0.6s ease-in-out;
+}
+
+/* suppression du marqueur du sommaire */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* question après ouverture */
+details[open] summary {
+  background-color: #c4d7e7;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+/* marqueur du sommaire */
+.plus_symbol {
+  float: right;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* modification du marqueur avant ouverture */
+.plus_symbol::after {
+  content: '+';
+}
+
+/* modification du marqueur après ouverture */
+details[open] .plus_symbol::after {
+  content: '-';
+}
+
+/* balayages des réponses */
+@keyframes sweep {
+  0%    {opacity: 0; transform: translateX(-10px)}
+  100%  {opacity: 1; transform: translateX(0)}
+}

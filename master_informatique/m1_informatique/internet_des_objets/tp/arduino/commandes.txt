@@ -1,0 +1,5 @@
+cd /opt/arduino-1.8.15/
+
+schristoph@scinfe178 /opt/arduino-1.8.15 
+
+./arduino

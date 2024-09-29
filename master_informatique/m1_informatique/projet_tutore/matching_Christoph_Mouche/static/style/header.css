@@ -1,0 +1,171 @@
+/* paramétres du header */
+header {
+  display: flex;
+  color: black;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #e6e6e6;  
+  font-size: 20px;
+  border-bottom: solid 1px rgb(231, 231, 231);
+}
+
+/* lien nom du site */
+.logo_link {
+  text-decoration: none;
+}
+
+/* division droite header */
+.header_div {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  margin-top: -5px;
+}
+
+/* division gauche header */
+.logo_container_head {
+  margin-left: 60px;
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+/* image du logo */
+.match_logo_header{
+  width: 65px;
+  height: auto;
+  margin-bottom: -10px;
+}
+
+/* nom du site */
+#logo {
+  text-decoration:none; 
+  color: black;
+  margin-left: 8px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  align-self: flex-end;
+}
+
+/* liens cliquable */
+.header_link {
+  color: black;
+  text-decoration: none;
+  position: relative;
+  margin: 25px;
+  padding: 5px;
+  transition: background-color 0.6s ease;
+  border-radius: 10px;
+
+}
+
+/* arriére plan lorsque liens clicable survolés */
+.header_link:hover {
+  background-color: #a6b4e4;
+}
+
+/* animation des liens cliquables aprés */
+.header_link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 1px;
+  background-color: rgb(79, 145, 173);
+  transition: width 0.5s ease-out;
+}
+
+/* menu déroulant des langues */
+.dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+/* div de chaque langue disponible */
+.dl {
+  display: flex;
+  flex-direction: row;
+}
+
+/* ajoute un fond actif au lien de la page actuelle */
+.page_actuelle {
+  border-radius: 10px;
+  background-color: #a6b4e4;
+  padding: 5px;
+}
+
+/* image de la langue actuelle */
+.dropbtn {
+  width: 45px;
+  height: 45px;
+  background-color: transparent;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  color: black;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: padding 0.5s ease;
+}
+
+/* retrécissement de l'image de la langue actuelle survolée */
+.dropbtn:hover .selection_langue {
+  width: 20px;
+}
+
+/* retrécissement de l'image des autres langues survolée */
+.dropfinbtn:hover .selection_langue {
+  width: 20px;
+}
+
+/* paramétres visuel quand la menu déroulant est actif */
+.dropbtn.active {
+  background-color: #f1f1ed;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+}
+
+/* image des langues disponibles */
+.dropfinbtn {
+  width: 45px;
+  height: 45px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #f1f1ed;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: padding 0.5s ease;
+}
+
+/* div de la langue actuellement selectionée */
+.selection_langue {
+  width: 28px;
+  height: auto;
+  vertical-align: middle;
+  transition: width 0.5s ease;
+}
+
+/* div des autres langues disponibles */
+#fin {
+  display: none;
+  transition: display 0.5s ease;
+}
+
+/* texte de la langue choisie */
+.lang {
+  width: 25px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 16px;
+  text-align: center;
+  margin-left: 5px;
+}

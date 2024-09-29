@@ -1,0 +1,287 @@
+/* division de droite matching */
+#right_section_platform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  background-color: #f9f9f9;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-right: solid 1px rgb(182, 177, 177);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* division de gauche étapes */
+#left_section_platform {
+  width:70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f9f9f9;
+}
+
+/* balises p de la div étapes */
+#left_section_platform p {
+  margin: 0px;
+}
+
+/* titre h1 de la page */
+h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* div contenant les différentes étapes */
+.outils {
+  width: 40%;
+  background-color: #f4f4f4;
+  margin: 30px;
+  border: 2px solid #aaa;
+  border-radius: 5px;
+}
+
+/* titre des étapes*/
+.step_name {
+  font-size: 16px;
+  display: flex;
+  align-items: center; /* Centrer verticalement */
+}
+
+/* div contenant les titre des étapes */
+.titre_upload {
+  padding-right: 10px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  border-bottom: 2px solid #aaa;
+  background-color: #dcdcdc;
+}
+
+/* div zone de dépot drag and drop */
+.upload-area {
+  border: 2px dashed #aaa;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* p de la zone de drag and drop */
+.upload-area p {
+  margin: 10px;
+}
+
+/* img de la zone de drag and drop */
+.upload-area img {
+  width: 30px;
+  height: auto;
+  margin: 5px;
+}
+
+/* taille du texte "or" dans l'étape de dépot de fichier */
+#or {
+  font-size: 11px;
+}
+
+/* étapes du matching */
+#drag_div,
+#domaine_div,
+#infosup_div {
+  padding-bottom: 10px;
+}
+
+/* div de texte additionnel à la description */
+#infosup_div {
+  width: 55%;
+}
+
+/* div comprenant les deux liste pour le poste */
+.domaine_area {
+  padding: 10px;
+  margin-top: 41px;
+  margin-bottom: 25px;
+}
+
+/* textarea de l'étape 3 */
+.textsup_area {
+  resize: none;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 96%;
+  height: 125px;
+}
+
+/* lien pour réinitialiser les étapes */
+.clear_text {
+  font-size: 14px;
+  padding-left: 20px;
+  color: #0b4f98;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ligne de clear lorsque survolé */
+.clear_text:hover {
+  text-decoration: underline;
+}
+
+/* étape 1 et 2 du matching (fichier et poste) */
+.textarea_div,
+.domaine_area {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* div de l'affichage des résultats (titre et candidats) */
+.matching-results {
+  margin: 30px;
+  width: 100%;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/* div de l'affichage des résultats (candidats) */
+.liste_matching {
+  padding: 30px;
+  border-right: solid 1px #aaa;
+  border-top: solid 1px #aaa;
+  border-left: solid 1px #aaa;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* balises p de la div affichage des résultats */
+.liste_matching p {
+  margin: 0px;
+}
+
+/* titre h2 de l'affichage des résultats */
+#titre_matching {
+  border: solid 1px #aaa;
+  background-color: #dcdcdc;
+  margin: 0;
+  text-align: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 30px;
+}
+
+/* div contenant le % matching */
+.pourcentage_back {
+  border: 1px solid black;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  padding: 5px;
+}
+
+/* fond rouge pour % matching */
+.pourcentage_back_red {
+  background-color: #ff4e4e;
+}
+
+/* fond orange pour % matching */
+.pourcentage_back_orange {
+  background-color: #eebd64;
+}
+
+/* fond vert pour % matching */
+.pourcentage_back_green {
+  background-color: #8ae18a;
+}
+    
+/* div comprenant toutes les informations récupérés aprés matching */
+.matching-info {
+  display: flex;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  background-color: #dcdcdc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+}
+
+/* apparition de nv résultats premier */
+.matching-info > div:first-child {
+  flex: 85%;
+}
+
+/* apparition de nv résultats dernier */
+.matching-info > div:last-child {
+  flex: 15%;
+}
+
+/* image de la fleche devant de cv résultat */
+.fleche {
+  width: 12px;
+  margin-left: 10px;
+}
+
+/* poucentage de matching */
+.pourcentage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* div d'attente de résultat de matching */
+.aucun_resultat {
+  text-align: center;
+}
+
+/* élément liste pour choix du domaine et métier */
+.liste {
+  height: 30px;
+  width: 80%;
+  margin-bottom: 13px;
+  margin-top: 10px;
+}
+
+/* nom du fichier selectionné */
+#nomfichier {
+  font-size: 11px;
+}
+
+/* div comprennat les deux étapes obligatoire (1 et 2) */
+.etape_obligatoire {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 35px;
+}
+
+/* div des bouttons étape 4 (matching et clear) */
+.div_bouton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* dseconde liste déroulante (poste)*/
+#secondPartDropdown {
+  margin-bottom: 23px;
+}
+
+/* div contenant le numéro et le lien du cv aprés matching */
+.div-container {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
