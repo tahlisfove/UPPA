@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-pref-height: 200; -fx-pref-width: 520;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="convertisseur.ConvertisseurController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0">
+         <children>
+            <RadioButton fx:id="deviseRadioButton" mnemonicParsing="false" selected="true" style="-fx-font-weight: bold;" text="Devises">
+               <padding>
+                  <Insets right="30.0" />
+               </padding>
+            </RadioButton>
+            <RadioButton fx:id="mesureRadioButton" mnemonicParsing="false" style="-fx-font-weight: bold;" text="Mesures">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+               <toggleGroup>
+                  <ToggleGroup />
+               </toggleGroup>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="temperatureRadioButton" mnemonicParsing="false" style="-fx-font-weight: bold;" text="Température" toggleGroup="$ToggleGroup">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </RadioButton>
+         </children>
+      </HBox>
+      <HBox alignment="BOTTOM_CENTER" prefHeight="40.0" prefWidth="200.0">
+         <children>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="60.0" prefWidth="200.0">
+               <children>
+                  <Label style="-fx-font-weight: bold;" text="De">
+                     <HBox.margin>
+                        <Insets bottom="6.0" right="6.0" />
+                     </HBox.margin></Label>
+                  <TextField fx:id="inputTextField" />
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="60.0" prefWidth="200.0">
+               <children>
+                  <Label style="-fx-font-weight: bold;" text="A">
+                     <HBox.margin>
+                        <Insets bottom="6.0" left="5.0" right="6.0" />
+                     </HBox.margin></Label>
+                  <TextField fx:id="resultTextField" editable="false" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" prefHeight="50.0" prefWidth="200.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ComboBox fx:id="fromComboBox" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="28.0" />
+                     </HBox.margin></ComboBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="60.0" prefWidth="200.0">
+               <children>
+                  <ComboBox fx:id="toComboBox" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="26.0" />
+                     </HBox.margin></ComboBox>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="369.0">
+         <children>
+            <HBox prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <CheckBox fx:id="negativeCheckBox" disable="true" mnemonicParsing="false" onAction="#Checkbox" style="-fx-font-weight: bold;" text="Nombres négatifs">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></CheckBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleConversion" style="-fx-font-weight: bold;" text="Convertir">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></Button>
+                  <Button mnemonicParsing="false" onAction="#handleQuitButton" style="-fx-font-weight: bold;" text="Quitter">
+                     <HBox.margin>
+                        <Insets left="12.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

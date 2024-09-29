@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="Vboxid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="385.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulateur.SimulateurController">
+   <children>
+      <VBox prefHeight="420.0" prefWidth="300.0">
+         <children>
+            <HBox fx:id="hb1" prefHeight="125.0" prefWidth="275.0">
+               <children>
+                  <VBox prefHeight="150.0" prefWidth="300.0">
+                     <children>
+                        <HBox alignment="BOTTOM_LEFT" prefHeight="40.0" prefWidth="200.0">
+                           <children>
+                              <Label text="Nom*">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="TextField_nom">
+                                 <HBox.margin>
+                                    <Insets left="35.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+                           <children>
+                              <Label text="Prenom*">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="TextField_prenom">
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="40.0" prefWidth="200.0">
+                           <children>
+                              <Label text="Date naissance*">
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <DatePicker fx:id="DatePicker_age" editable="false" prefHeight="26.0" prefWidth="125.0">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </DatePicker>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="150.0" prefWidth="275.0">
+                     <children>
+                        <HBox alignment="BOTTOM_LEFT" prefHeight="40.0" prefWidth="200.0">
+                           <children>
+                              <Label text="Code postal*">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="TextField_code" prefWidth="80.0">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+                           <children>
+                              <Label text="Ville*">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <ChoiceBox fx:id="ChoiceBox_ville" prefHeight="12.0" prefWidth="150.0">
+                                 <HBox.margin>
+                                    <Insets left="32.0" />
+                                 </HBox.margin>
+                              </ChoiceBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="40.0" prefWidth="200.0">
+                           <children>
+                              <Label text="Salaire*">
+                                 <HBox.margin>
+                                    <Insets left="10.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="TextField_salaire" prefWidth="150.0">
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <HBox fx:id="hb2" alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btn_retour" mnemonicParsing="false" onAction="#btn_retour" style="-fx-font-weight: bold;" text="Retour">
+                     <HBox.margin>
+                        <Insets bottom="5.0" right="10.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="button_calculer" mnemonicParsing="false" onAction="#Calculer" style="-fx-font-weight: bold;" text="Calculer">
+                     <HBox.margin>
+                        <Insets bottom="5.0" right="35.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <HBox prefHeight="250.0" prefWidth="400.0">
+               <children>
+                  <VBox fx:id="VboxVisible" prefHeight="235.0" prefWidth="550.0">
+                     <children>
+                        <HBox alignment="BOTTOM_CENTER" prefHeight="30.0" prefWidth="200.0">
+                           <children>
+                              <Label text="Durée:" />
+                              <Label fx:id="label_duree">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0">
+                           <children>
+                              <Slider fx:id="slider1" blockIncrement="0.0" min="1.0" prefWidth="250.0" showTickMarks="true">
+                                 <cursor>
+                                    <Cursor fx:constant="DEFAULT" />
+                                 </cursor></Slider>
+                           </children>
+                        </HBox>
+                        <HBox alignment="BOTTOM_CENTER" prefHeight="30.0" prefWidth="200.0">
+                           <children>
+                              <Label text="Mensualité:" />
+                              <Label fx:id="label_mensualite">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0">
+                           <children>
+                              <Slider fx:id="slider2" blockIncrement="0.0" min="1.0" prefWidth="250.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0">
+                           <children>
+                              <Label text="Montant du prêt:">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="label_pret">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Separator prefWidth="200.0" />
+                        <HBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="button_deposer" mnemonicParsing="false" style="-fx-font-weight: bold;" text="Déposer demande de prêt">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" right="35.0" top="5.0" />
+                                 </HBox.margin></Button>
+                           </children>
+                        </HBox>
+                        <Separator prefWidth="200.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>
