@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Inscription</title>
+  <script type="text/javascript" src="./Scripts/formulaire.js"></script>
+  <link rel="stylesheet" href="./Styles/formulaire.css" type="text/css"/>
+  <link rel="stylesheet" href="./Styles/mediaprint.css" type="text/css" media="print"/>
+</head>
+<body>
+
+  <header>
+    <table border="0">
+      <tr>
+        <td>
+          <img src="./Images/web.png" alt="déco"/>
+        </td>
+      </tr>
+    </table>
+  </header>
+
+  <nav class="menu2">
+          <a href="file:///C:/../Pages_libres/2_galerie.xhtml"><img src="./Images/1.png" alt=""/></a>
+           <ul> <li><a class="l" href="file:///C:/../Page_impos%C3%A9e/Livre_Petit/livre_v2.xhtml">Projet Imposé</a></li>
+                <li><a class="l" href="file:///C:/../accueil.xhtml">Accueil</a></li>
+                <li class="deroulant"><a class="l" href="file:///C:/../Pages_libres/1_presentation.xhtml">Projet Libre</a>
+             <ul class="sous">
+                <li><a class="tmax" href="file:///C:/../Pages_libres/1_presentation.xhtml">Présentation</a></li>
+                <ul>
+                  <li><a class="taille" href="file:///C:/../Pages_libres/1_presentation.xhtml#11">Types de skate</a></li>
+                  <li><a class="taille" href="file:///C:/../Pages_libres/1_presentation.xhtml#12">Un trick c'est quoi?</a></li>
+                  <li><a class="taille" href="file:///C:/../Pages_libres/1_presentation.xhtml#14">Icônes du skate</a></li>
+                  <li><a class="taille" href="file:///C:/../Pages_libres/1_presentation.xhtml#15">Culture du skate</a></li>
+                </ul>
+                <li><a class="tmax" href="file:///C:/../Pages_libres/2_galerie.xhtml">Galerie</a></li>
+                <li><a class="tmax" href="file:///C:/../Pages_libres/3_inscription.xhtml">Formulaire</a></li>
+            </ul>
+          </li>
+        </ul>
+          <a href="file:///C:/../accueil.xhtml"><img src="./Images/2.png" alt=""/></a>
+  </nav>
+
+    <article>
+
+      <form method="get" action="https://httpbin.org/get">
+      <h2><b>Formulaire d'inscription</b></h2>
+         <fieldset>
+           <legend><b>Identité</b></legend><div class="o"><br>
+           </br><label for="f_civilité"><span><div class="civ"> Civilité : </div> </span>
+           <select id="f_civilite" name="iden_civilite">
+                    <option>Mme</option>
+                    <option>M.</option></select></label><br>
+
+         </br>
+             <label for="f_prenom"><div class="droit">Prénom :</div></label>
+             <input type="text" name="iden_prenom" id="f_prenom"></input>
+         <br>
+
+       </br>
+           <label for="f_nom"><div class="droit">Nom :</div></label>
+             <input  type="text" name="iden_nom" id="f_nom"></input>
+         <br>
+
+       </br>
+           <label class="droi" for="f_date">Date de naissance :</label>
+           <input class="droite" id="f_date" type="date" placeholder="jj/mm/aaaa" name="iden_date"></input>
+         <br>
+
+       </br>
+           <label for="f_email"><div class="droit">Email :</div></label>
+           <input id="f_email" placeholder="exemple@gmail.com" type="email" name="iden_email"></input>
+        <br>
+
+    </br></div></fieldset>
+
+        <fieldset>
+          <legend><b>Adresse de facturation</b></legend><div class="o"><br>
+
+        </br><label for="f_adresse"><div class="droit">Adresse :</div></label>
+        <input type="text" id="f_adresse" name="fact_adresse"></input>
+         <br>
+
+        </br>
+           <label for="f_code_postal"><div class="droit">Code postal :</div></label>
+           <input class="code" id="f_code_postal" type="text" maxlength="5" name="fact_code_postal"></input>
+         <br>
+
+       </br>
+           <label for="f_ville"><div class="droit">Ville :</div></label>
+           <input type="text" id="f_ville" name="fact_ville"></input>
+         <br>
+
+       </br> </div></fieldset>
+         <fieldset>
+
+           <legend><b>Adresse de livraison</b></legend><div class="o"><br>
+
+          </br>
+           <label class="droi" for="l_facturation">Idem que facturation : </label>
+           <input class="droite" id="l_facturation" type="checkbox" onclick="read(this);vide(this)" name="livr_facturation"></input><br>
+
+         </br>
+            <label for="l_adresse"><div class="droit">Adresse :</div></label>
+            <input  id="l_adresse" type="text" name="livr_adresse"></input>
+          <br>
+
+        </br>
+            <label for="l_code_postal"><div class="droit">Code postal :</div></label>
+            <input  class="code" id="l_code_postal" type="text"  maxlength="5" name="livr_code_postal"></input>
+          <br>
+
+        </br>
+            <label for="l_ville"><div class="droit"> Ville :</div></label>
+            <input  id="l_ville" type="text" name="livr_ville" ></input>
+          <br>
+
+        </br></div></fieldset>
+
+      <input id="submit" type="submit" value="Envoyer"></input>
+      <input id="reset" type="reset" value="Réinitialiser"></input>
+    </form>
+</article>
+
+        <aside id="sah">
+          <h3 class="o">Vous voulez apprendre le skate ?</h3> <br>
+        </br>Voici SKATE and PROGRESS le livret de Joseph Garbaccio 8 fois champion de France.
+                  <img src="./Images/livret.png" width="215px" alt="street"/><br>
+                </br><a id="u" href="https://www.skateandprogress.com/bon-de-commande">COMMANDER LE LIVRET EN CLIQUANT ICI </a>
+        </aside>
+
+    <footer>
+      <table>
+        <tr>
+          <td>
+          Site Web crée par CHRISTOPH Samuel, étudiant en L1 informatique a l'unviversité de Pau et des Pays de l'Adour.
+          </td>
+        </tr>
+      </table>
+    </footer>
+  </body>
+  </html>

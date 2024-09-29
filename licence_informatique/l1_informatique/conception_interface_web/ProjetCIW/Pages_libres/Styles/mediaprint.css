@@ -1,0 +1,30 @@
+@media print {
+  body {width: 100%;}
+  header {display: none};
+  nav {display: none;}
+  nav a {display: none;}
+  footer {display: none;}
+  #z {font-size: 12px;}
+  #sah {border: 2px solid black;}
+  #y {display: none;}
+  #z {
+    text-align: center;
+    width: 90%
+  }
+
+  ul, ol {page-break-inside: avoid;}
+  a:hover {text-decoration:none;}
+
+ #u[href]:after {
+   content: " (" attr(href) ")";
+   text-align: center;
+ }
+ a.y[href]:after {
+   content: " (" attr(href) ")";
+   text-align: center;
+ }
+ a.sa[href]:after {
+   content: " (" attr(href) ")";
+   text-align: center;
+ }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Ma galerie</title>
+  <style>
+  body {min-height: 100vh;}
+  </style>
+  <script type="text/javascript" src="./Scripts/galerie.js"></script>
+  <link rel="stylesheet" href="./Styles/style.css" type="text/css"/>
+  <link rel="stylesheet" href="./Styles/mediaprint.css" type="text/css" media="print"/>
+</head>
+  <body oncontextmenu="return changeColorDeFond()">
+
+  <header>
+    <table border="0">
+      <tr>
+        <td>
+          <img src="../Pages_libres/Images/web.png" alt="déco"/>
+        </td>
+      </tr>
+    </table>
+  </header>
+
+  <nav>
+      <a href="file:///C:/../Pages_libres/1_presentation.xhtml"><img src="./Images/1.png" alt=""/></a>
+
+       <ul> <li><a class="l" href="file:///C:/..Page_impos%C3%A9e/Livre_Petit/livre_v2.xhtml">Projet Imposé</a></li>
+            <li><a class="l" href="file:///C:/../accueil.xhtml">Accueil</a></li>
+            <li class="deroulant"><a class="l" id="zz" href="file:///C:/../Pages_libres/1_presentation.xhtml">Projet Libre</a>
+                <ul class="sous">
+                   <li><a class="tmax" href="file:///C:/../Pages_libres/1_presentation.xhtml">Présentation</a></li>
+                   <ul>
+                     <li><a class="taille" href="file:///C:/../Pages_libres/1_presentation.xhtml#11">Types de skate</a></li>
+                     <li><a class="taille" href="file:///C:/../Pages_libres/1_presentation.xhtml#12">Un trick c'est quoi?</a></li>
+                     <li><a class="taille" href="file:///C:/../Pages_libres/1_presentation.xhtml#14">Icônes du skate</a></li>
+                     <li><a class="taille" href="file:///C:/../Pages_libres/1_presentation.xhtml#15">Culture du skate</a></li>
+                   </ul>
+                   <li><a class="tmax" href="file:///C:/../Pages_libres/2_galerie.xhtml">Galerie</a></li>
+                   <li><a class="tmax" href="file:///C:/../Pages_libres/3_inscription.xhtml">Formulaire</a></li>
+                </ul>
+            </li>
+       </ul>
+
+          <a href="file:///C:/../Pages_libres/3_inscription.xhtml"><img src="./Images/2.png" alt=""/></a>
+  </nav>
+
+  <article id="y">
+        <h2><i>Composition d'un skateboard basique</i></h2>
+        <p><h4>Sur un skate on retrouve <i id="mot">...</i></h4></p>
+        <p><img id="img" src="./Images/skate.jpg" height="350px"/></p>
+
+        <input type="button" value="1" onclick="changeImageM3('./Images/plache.jpg', 'une planche,')" />
+        <input type="button" value="2" onclick="changeImageM3('./Images/trucks.jpg', 'une paire de trucks,')" />
+        <br/>
+
+        <input type="button" value="3" onclick="changeImageM2('img', 'mot', './Images/grip.jpg', 'un grip,')" />
+        <input type="button" value="4" onclick="changeImageM2('img', 'mot','./Images/roue.jpg', 'quatres roues,')" /><br>
+      </br>
+
+        <input type="button" value="5" onclick="changeImageM3('./Images/roulement.png', 'huit roulements,')" />
+        <input type="button" value="6" onclick="changeImageM3('./Images/vis.jpg', 'des vis,')" /><p>
+
+    <input id="w" type="button" value="Assemblé" onclick="changeImageM3('./Images/skate.jpg', '...')" />
+     </p>
+
+        <a href="https://www.youtube.com/watch?v=XHAbe_r3zcA"><img id="n" src="./Images/galerie.png" /></a>
+
+  </article>
+
+    <aside id="z">
+
+     <h3 id="a">La planche</h3><br>
+   </br>La planche est faite en bois d’érable, il y a en général 7 couches de bois, à peu près 1cm au total.
+     La largeur varie énormément entre une planche de street (flat) et une planche de rampe. Les moins larges mesure 18cm tandis
+     que les plus larges vont jusqu'à 24cm. La longueur varie aussi pas mal, de 72cm jusqu'à 82cm. La planche est
+     “découpée” en trois parties : le nose (l'avant), le tail (la partie arrière), et le “wheelbase” (la partie centrale : entre les vis).<p>
+
+     </p><h3 id="b">Les Trucks</h3> <br>
+   </br>Les trucks servent à diriger le skate et à amortir. Ils apportent une certaine souplesse à la planche. Ils sont composés de plusieurs éléments parmis lesquels on retrouve :<br>
+</br>-Les gommes : en caoutchouc, sers à amortir.<br>
+</br>-“Kinping” : c’est la vis qui maintient la base, les gommes et l’axe.<br>
+</br>-La base : c'est la partie qui est au contact de la planche.<br>
+</br>-L'axe : c'est la partie qui tient les roues et roulements.<p>
+
+     </p><h3 id="c">Le grip</h3><br>
+   </br>Le grip est un composant important en skate. Ce n’est ni plus ni moins que du papier de verre autocollant. C'est grâce à lui
+     que tu peux décoller ta planche et lancer pleins de figures.<p>
+
+     </p><h3 id="d">Les roues</h3><br>
+   </br> Les roues permettent (ou non) d’avoir une bonne accroche en virage ou alors d’amortir sur les sols
+     pas très lisses. La dureté est importante, le diamètre également. Les roues sont mesurées en millimètres. On choisit ses roues
+     en fonction de la discipline que l’on pratique : en street (et flat), petite roues conseillées (entre 48 et 54), en rampe, grosse
+     roues (56 et plus). Des grandes roues permettent d’atteindre une plus grande vitesse, tandis que les petites privilégient l’accélération.<p>
+
+     </p><h3 id="e">Les roulements</h3><br>
+   </br>Les roulements (à billes) sont des éléments à ne pas négliger, car d’eux dépend, en partie, la vitesse du skate. Ils sont classés en
+     plusieurs “catégories”, à savoir : abec 1, 3, 5, 7, 9. La référence “abec” est un degré de “fluidité de roulage”,
+     le abec 1 roule moins que le 9. mais attention : les abec9 permettent de bien rouler, mais ne supportent pas les gaps. En effet, après un drop sûr
+     5 ou 6 marches, ils éclatent. Donc des abec 5 ou 3 sont préférables.<p>
+
+    </p><h3 id="f">La visserie</h3><br>
+  </br>Sert à solidariser les trucks et la planche : il y en a 4 vis par truck, et donc, logiquement, autant d’écrous. Ce sont des écrous freins.
+     Les vis se montent avec une clef Allen® ou un tournevis cruciforme. Les écrous avec une clef plate ou à pipe : de 8 ou 10.
+
+      </aside>
+
+  <footer>
+    <table>
+      <tr>  <td> Site Web crée par CHRISTOPH Samuel, étudiant en L1 informatique a l'unviversité de Pau et des Pays de l'Adour. </td>  </tr>
+    </table>
+  </footer>
+</body>
+
+</html>
