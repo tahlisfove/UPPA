@@ -213,6 +213,8 @@ Lorsqu’un utilisateur clique sur un budget, il accède à une vue détaillée 
 
 L'utilisateur peut ajouter ou supprimer des personnes du budget. Par exemple, si une personne se joint au groupe, elle peut être ajoutée facilement.
 
+<br>
+
 **Ajout d'une personne** :
 Dans cet exemple, Personne 5 a été ajoutée.
 
