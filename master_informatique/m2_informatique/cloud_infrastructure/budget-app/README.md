@@ -273,7 +273,7 @@ Après cette modification, seul Personne 4 a payé 50€ pour les pizzas, et don
 
 Lorsque l’utilisateur ferme la feuille de budget, le **budget global** total est affiché sur le côté de la feuille.
 
-![Budget global](img/budget2.png)
+![Budget global](img/budget_v2.png)
 
 <br><br>
 
