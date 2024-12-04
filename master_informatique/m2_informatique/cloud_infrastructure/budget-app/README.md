@@ -1,17 +1,17 @@
-# 0. Prérequis
+## 0. Prérequis
 
 Avant de démarrer le projet, assurez-vous d'avoir:
 
     - Docker installé.
     - Docker Compose installé.
 
-## Lancer les Services avec Docker Compose
+### Lancer les Services avec Docker Compose
 
 Depuis un terminal dans le dossier racine, utilisez la commande suivante pour démarrer tous les services:
 
     docker-compose up --build
 
-## Accédez au conteneur PostgreSQL pour vérifier les données:
+### Accédez au conteneur PostgreSQL pour vérifier les données:
 
 Dans un autre terminal vous pouvez accéder aux informations stockées dans la base de données une fois tout les services actifs via la commande:
 
@@ -25,7 +25,7 @@ Une fois dans le shell PostgreSQL, vous pouvez exécuter les requêtes suivantes
     
 
 
-## Arrêter et Redémarrer les Services
+### Arrêter et Redémarrer les Services
 
 Pour arrêter les services:
 
@@ -39,7 +39,7 @@ Pour redémarrer les services et reconstruire les images si nécessaire:
 
 # Application de Gestion de Budget Partagé
 
-# 1. Arborescence du projet
+## 1. Arborescence du projet
 
 
 
