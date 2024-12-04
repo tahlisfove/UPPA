@@ -11,7 +11,7 @@ Depuis un terminal dans le dossier racine, utilisez la commande suivante pour d�
 
 ## Accédez au conteneur PostgreSQL pour vérifier les données :
 
-Dans un autre terminal vous pouvez accéder aux informations stockées dans la base de données une fois tout les services démarrées via la commande: "docker exec -it bdd psql -U your_db_user -d budget_db"
+Dans un autre terminal vous pouvez accéder aux informations stockées dans la base de données une fois tout les services actifs via la commande: "docker exec -it bdd psql -U your_db_user -d budget_db"
 
 Une fois dans le shell PostgreSQL, vous pouvez exécuter les requêtes suivantes pour vérifier les données (par exemple):
 
