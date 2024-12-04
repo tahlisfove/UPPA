@@ -40,48 +40,48 @@ Pour redémarrer les services et reconstruire les images si nécessaire:
 ## 1. Arborescence du projet
 
 ├── auth/<br>
-│   ├── app.js
-│   ├── Dockerfile
-│   └── package.json
-│
-├── backend/
-│   ├── app.js
-│   ├── Dockerfile
-│   ├── init.sql
-│   └── package.json
-│
-├── frontend/
-│   ├── src/
-│   │   ├── App.js
-│   │   └── index.js
-│   ├── public/
-│   │   ├── styles.css
-│   │   ├── script.js
-│   │   └── index.html
-│   ├── Dockerfile
-│   └── package.json
-│
-├── img/
-│   ├── psql.png
-│   └── ...
-│
-├── login-frontend/
-│   ├── src/
-│   │   ├── App.js
-│   │   └── index.js
-│   ├── public/
-│   │   ├── styles.css
-│   │   ├── script.js
-│   │   └── index.html
-│   ├── Dockerfile
-│   └── package.json
-│
-├── nginx/
-│   └── default.conf
-│
-├── .env
-├── docker-compose.yml
-└── README.md
+│   ├── app.js<br>
+│   ├── Dockerfile<br>
+│   └── package.json<br>
+│<br>
+├── backend/<br>
+│   ├── app.js<br>
+│   ├── Dockerfile<br>
+│   ├── init.sql<br>
+│   └── package.json<br>
+│<br>
+├── frontend/<br>
+│   ├── src/<br>
+│   │   ├── App.js<br>
+│   │   └── index.js<br>
+│   ├── public/<br>
+│   │   ├── styles.css<br>
+│   │   ├── script.js<br>
+│   │   └── index.html<br>
+│   ├── Dockerfile<br>
+│   └── package.json<br>
+│<br>
+├── img/<br>
+│   ├── psql.png<br>
+│   └── ...<br>
+│<br>
+├── login-frontend/<br>
+│   ├── src/<br>
+│   │   ├── App.js<br>
+│   │   └── index.js<br>
+│   ├── public/<br>
+│   │   ├── styles.css<br>
+│   │   ├── script.js<br>
+│   │   └── index.html<br>
+│   ├── Dockerfile<br>
+│   └── package.json<br>
+│<br>
+├── nginx/<br>
+│   └── default.conf<br>
+│<br>
+├── .env<br>
+├── docker-compose.yml<br>
+└── README.md<br>
 
 <br><br>
 
