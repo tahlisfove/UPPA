@@ -1,0 +1,595 @@
+/* style par default de la page */
+body {
+  background-color: #e9e5e5;
+  color: #333;
+  line-height: 1.6;
+  margin: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/******/
+
+
+/* style du header */
+header {
+  background-color: #333;
+  color: #f2f1f1;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+/* titre de la page header */
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2.5em;
+}
+
+/* message du header */
+header p {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+
+/******/
+
+
+/* style pour la div du formulaire de création */
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* div complet formulaire de creation de feuille */
+.budget-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* div contenant le titre du formulaire de creation de feuille */
+.titre {
+  width: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: #333;
+  color: #f2f1f1;
+}
+
+/* titre du formulaire de creation de feuille */
+.budget-form h2 {
+  text-align: center;
+  font-size: 1.8em;
+  margin: 5%;
+}
+
+/* div du formulaire de creation de feuille */
+#budgetForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 3%;
+}
+
+/* labels du formulaire de creation de feuille */
+.budget-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* div comprennant label et input du formulaire de creation de feuille */
+#inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+  border-radius: 3%;
+}
+
+/* champs de saisie du formulaire de creation de feuille */
+.budget-form input {
+  width: 70%;
+  height: 25px;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+/* bouton du formulaire de creation de feuille */
+.budget-form button {
+  padding: 16px 20px;
+  margin-bottom: 2%;
+  margin-top: 4%;
+  background-color: #5e5d5d;
+  color: #f2f1f1;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1.2em;
+}
+
+/* effet de survol du bouton */
+.budget-form button:hover {
+  background-color: #3b3a3a;
+}
+
+/* section ou les feuilles sont crees */
+.budgets-container {
+  margin-top: 30px;
+}
+
+/* div d'une feuille de budget */
+.budget-item {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* div contenant le titre d'une feuille de budget */
+.div_h {
+  text-align: center;
+  width: 80%;
+  font-size: 1.5em;
+  border-radius: 30px;
+  margin-right: 1%;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* div contenant le montant total d'une feuille de budget */
+.div_p {
+  text-align: center;
+  width: 20%;
+  font-size: 1.2em;
+  border-radius: 30px;
+  margin-left: 1%;
+  color: #f2f1f1;
+  background-color: #5e5d5d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* placement du montant d'une feuille de budget */
+.budget-item p {
+  margin: 20%;
+}
+
+/* effet augmentation de taille au survol d'une feuille de budget */
+.budget-item:hover {
+  transform: scale(1.04);
+}
+
+/* transition couleur du montant au survol d'une feuille de budget */
+.budget-item:hover .div_p {
+  background-color: #333;
+}
+
+/* temps de transition du montant au survol d'une feuille de budget */
+.budget-item .div_p {
+  transition: background-color 0.3s ease;
+}
+
+
+/******/
+
+
+/* div principale du détail du budget d'une feuille */
+#budgetDetail {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 85%;
+  background-color: #e9e5e5;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  color: black;
+  overflow-y: auto;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+}
+
+/* div de mise en place des differentes divisions dans la page de details d'une feuille */
+#placement3 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e9e5e5;
+}
+
+/* placement des div principale des details d'une feuille de budget */
+.infos, #transactionList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* div utilisateur et ajout de transactions d'une feuille de budget */
+.infos {
+  width: 60%; 
+  text-align: center;
+}
+
+/* div gestion budget et historique des transactions d'une feuille de budget */
+#transactionList {
+  width: 40%;
+}
+
+/* div contenant les bouttons pour fermer ou supprimer une feuille de budget */
+.buttonformulaire {
+  padding: 1%;
+  margin: 2%;
+  text-align: center;
+  background-color: rgb(62, 66, 58);
+}
+
+/* style des differentes sections de la feuille de budget */
+.transaction-form,
+.buttonformulaire,
+#transList,
+#budgetDetailTotal,
+#titreAdd {
+  background-color: #f4f4f4;
+  border-radius: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
+}
+
+
+/******/
+
+
+/* nom de la feuille dans le détail du budget */
+#budgetDetailName {
+  margin-bottom: 5%;
+  color: black;
+  border-radius: 30px;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  font-size: 2.2em;
+  margin: 2%;
+  padding: 2%;
+}
+
+/* sous-titres dans le détail du budget */
+#budgetDetail h3 {
+  background-color: #333;
+  color: #f2f1f1;
+  margin: 0;
+  padding: 3%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+
+/******/
+
+
+/* div de gestion des utilisateurs d'une feuille de budget */
+#titreAdd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+}
+
+/* div avec liste des utilisateurs d'une feuille de budget */
+#budgetDetailUsers {
+  padding-top: 2%;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+/* taille des element de gestion des utilisateurs et ajout d'une transaction d'une feuille de budget */
+#budgetDetailUsers, #titreAdd, .transaction-form {
+  width: 94%;
+}
+
+/* taille des elements de gestion des utilisateurs d'une feuille de budget */
+#titreAdd div, li{
+  width: 100%;
+}
+
+/* style des listes pour les utilisateurs */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* input pour ajouter de nouvelle personne */
+#newUser {
+  width: 16.2%;
+}
+
+
+/******/
+
+
+/* div pour ajout de transactions dans une feuille de budget */
+.transaction-form {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+}
+
+
+/* div avec le titre pour ajout de transactions */
+#budgetDetailTransactions {
+  margin-top: 30px;
+}    
+
+/* titre pour ajout de transactions dans une feuille de budget */
+.transaction-form h3 {
+  text-align: center;
+}
+
+/* styles des elements input et select des gestion utilisateur et ajout de transactions */
+.transaction-form input, .transaction-form select, #newUser {
+  padding: 12px;
+  margin-bottom: 3%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+  border-radius: 20px;
+}
+
+/* div contenant le formulaire d'ajout de transactions */
+#nom-somme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1%;
+  margin-top: 3%;
+}
+
+/* element select pour l'ajout de transactions */
+#nom-somme select {
+  width: 25%;
+}
+
+/* element montant pour l'ajout de transactions */
+#amount {
+  width: 6.7%;
+}
+
+/* element description pour l'ajout de transactions */
+#description {
+  width: 22%;
+}
+
+/* button pour l'ajout de transactions */
+#addTransactionButton {
+  align-self: center;
+  margin-bottom: 3%;
+  margin-top: 0;
+}
+
+
+/******/
+
+
+/* div contenant la gestion des transaction et l'historique des transactions d'une feuille de budget */
+#budgetDetailTotal, #transList {
+  width: 90%;
+  margin: 4%;
+  text-align: center;
+}
+
+/* div contenant la gestion des transaction d'une feuille de budget */
+#budgetDetailTotal p{
+  margin: 0;
+  padding: 3%;
+}
+
+/* div contenant la liste des dettes */
+#budgetDetailDebtSummary {
+  width: 100%;
+  text-align: center;
+  background-color: #f4f4f4;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+/* liste des dettes suite au calculs */
+#budgetDetailDebtSummary li { 
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+
+/******/
+
+
+/* titre l'historique des transactions dans une feuille de budget */
+#transList h3 {
+  padding-bottom: 3%;
+  padding-top: 3%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+/* div d'un historique pour une transaction */
+.transaction-item {
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+    
+/* texte descriptif d'une transaction */
+.transaction-item p {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+/* espacement entre les differentes transaction dans l'historique */
+#transactionItems li {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+    
+
+/******/
+
+
+/* style des boutons par defaut */
+button {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+/* boutons par defaut dans les liste (pour supressions d'utilisateurs ou transactions) */
+li button {
+  margin-left: 4%;
+}
+
+/* boutons supression de feuille et ajout d'utilisateur */
+#deleteBudgetButton,
+#addUserButton {
+  margin-left: 3%;
+}
+
+/* boutons dans le détail du budget */
+#budgetDetail button {
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+/* style des boutons de suppression */
+#deleteBudgetButton,
+.delete-transaction-button,
+#budgetDetailUsers ul button {
+  background-color: #BB322B;
+}
+
+/* effet au survol des boutons de suppression */
+#deleteBudgetButton:hover,
+.delete-transaction-button:hover,
+#budgetDetailUsers ul button:hover {
+  background-color: #860a0a;
+}
+
+/* style des boutons d'ajout et de fermeture */
+#addUserButton,
+#addTransactionButton,
+#closeBudgetDetailButton {
+  background-color: #5e5d5d;
+}
+
+/* effet au survol des boutons d'ajout et de fermeture */
+#addUserButton:hover,
+#addTransactionButton:hover,
+#closeBudgetDetailButton:hover {
+  background-color: #3b3a3a;
+}
+
+/* style du bouton de deconnexion */
+#logoutButton {
+  background-color: #4CAF50; /* Vert de fond */
+  color: white; /* Couleur du texte */
+  font-size: 1.1em; /* Taille de la police */
+  padding: 12px 24px; /* Espacement intérieur */
+  border: none; /* Pas de bordure */
+  border-radius: 30px; /* Bords arrondis */
+  cursor: pointer; /* Change le curseur en main */
+  transition: all 0.3s ease; /* Animation lors du survol */
+  box-shadow: 0 4px 8px rgba(0, 128, 0, 0.2); /* Ombre subtile */
+  width: 100%; /* Largeur à 100% pour s’adapter à son conteneur */
+  max-width: 250px; /* Limiter la largeur maximale */
+  text-align: center; /* Centrer le texte */
+  font-weight: bold; /* Texte en gras */
+  text-transform: uppercase; /* Mettre le texte en majuscules */
+}
+
+/* effet au survol du boutton de deconnexion */
+#logoutButton:hover {
+  background-color: #45a049; /* Vert légèrement plus foncé au survol */
+  box-shadow: 0 6px 12px rgba(0, 128, 0, 0.3); /* Ombre plus marquée au survol */
+}
+
+/* effet au clic du boutton de deconnexion */
+#logoutButton:active {
+  background-color: #3c8d40; /* Changer la couleur lors du clic */
+  box-shadow: 0 2px 6px rgba(0, 128, 0, 0.2); /* Ombre plus légère lors du clic */
+  transform: translateY(2px); /* "Enfoncer" le bouton lors du clic */
+}
+
+
+/******/
+
+
+/* style général du footer */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #f2f1f1;
+  padding: 6px 0;
+  margin-top: 3%;
+}
+
+/* div du footer pour placement */
+.footerdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* texte de droite du footer */
+.footer-details {
+  font-style: italic;
+  margin-right: 6%;
+}
+
+/* texte de gauche du footer */
+.footer-info {
+  margin-left: 6%;
+}
+
+/* taille du texte dans le footer */
+footer p {
+  font-size: 1em;
+}
+
+
+/******/
+
+
+/* div de superposition quand on ouvre une feuille */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
