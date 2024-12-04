@@ -5,11 +5,15 @@ Avant de démarrer le projet, assurez-vous d'avoir:
     - Docker installé.
     - Docker Compose installé.
 
+<br>
+
 ### Lancer les Services avec Docker Compose
 
 Depuis un terminal dans le dossier racine, utilisez la commande suivante pour démarrer tous les services:
 
     docker-compose up --build
+
+<br>
 
 ### Accédez au conteneur PostgreSQL pour vérifier les données:
 
@@ -22,6 +26,8 @@ Une fois dans le shell PostgreSQL, vous pouvez exécuter les requêtes suivantes
     SELECT * FROM sheets;         -- Liste des budgets
     SELECT * FROM sheet_users;    -- Liste des utilisateurs associés aux budgets
     SELECT * FROM transactions;   -- Liste des transactions
+
+<br>
     
 ### Arrêter et Redémarrer les Services
 
