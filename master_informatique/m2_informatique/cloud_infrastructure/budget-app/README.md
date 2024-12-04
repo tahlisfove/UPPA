@@ -189,7 +189,7 @@ Lorsqu'un utilisateur accède à l'application via `localhost:8080`, il est redi
 
 ### Authentification
 
-Une fois sur la page de connexion, l'utilisateur peut se connecter avec son compte Google. Si la connexion réussit, l'utilisateur est redirigé vers l'interface principale de l'application.
+Une fois sur la page de connexion, l'utilisateur peut se connecter avec son compte Google. Si la connexion réussit, l'utilisateur est redirigé vers l'interface principale de l'application. (possibilité de passer cette étape en se rendant directement sur localhost:3017)
 
 ![Authentification Google](img/auth_google.png)
 
