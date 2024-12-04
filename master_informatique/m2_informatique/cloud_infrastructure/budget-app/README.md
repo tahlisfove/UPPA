@@ -47,7 +47,7 @@ Pour redémarrer les services et reconstruire les images si nécessaire:
 
 
 
-# 2. Présentation de l'application
+## 2. Présentation de l'application
 
 Cette application permet de gérer un **budget partagé** entre plusieurs utilisateurs. Elle comprend un **système d'authentification via Google**, un **frontend interactif** pour afficher les budgets et les transactions, et un **backend** pour gérer et stocker les données.
 
@@ -61,37 +61,37 @@ L'architecture de l'application repose sur plusieurs services Docker, chacun aya
 
 
 
-# 3. Fonctionnalités principales
+## 3. Fonctionnalités principales
 
-## Page de connexion :
+### Page de connexion :
 - Permet à l'utilisateur de se connecter via Google.
 - Si l'utilisateur est déjà connecté, il est redirigé vers le frontend principal. Sinon, il peut se connecter avec son compte Google.
 
-## Frontend Principal :
+### Frontend Principal :
 - Après la connexion, l'utilisateur est redirigé vers l'interface principale où il peut :
   - Créer un budget.
   - Ajouter des transactions (montants, personnes concernées, descriptions).
   - Visualiser les transactions et les soldes des budgets.
   - Voir les utilisateurs associés à chaque budget.
 
-## Backend API :
+### Backend API :
 - Le backend expose plusieurs routes API pour gérer les budgets et les transactions (par exemples) :
   - `http://localhost:3001/api/sheets/` : Récupère la liste de tous les budgets.
   - `http://localhost:3001/api/sheets/:id` : Récupère un budget spécifique par ID.
   - `http://localhost:3001/api/sheets/:sheetId/transactions` : Récupère toutes les transactions pour un budget spécifique.
   - `http://localhost:3001/api/sheets/:sheetId/users` : Récupère tous les utilisateurs associés à un budget spécifique.
 
-## Base de données :
+### Base de données :
 - Une **base de données PostgreSQL** est utilisée pour stocker les budgets, les transactions et les utilisateurs. Elle est initialisée avec un fichier SQL au démarrage du service de base de données.
 
-## Reverse Proxy avec Nginx :
+### Reverse Proxy avec Nginx :
 - Nginx agit en tant que reverse proxy pour :
   - Diriger les utilisateurs vers le frontend de connexion ou le frontend principal en fonction de l'état d'authentification.
   - Gérer les requêtes API en les redirigeant vers le backend.
 
 
 
-# 4. Architecture des Dockerfiles
+## 4. Architecture des Dockerfiles
 
 L'application utilise **Docker** pour isoler les différentes parties du système. Voici un aperçu des services Docker et de leurs Dockerfiles :
 
@@ -117,7 +117,7 @@ L'application utilise **Docker** pour isoler les différentes parties du systèm
 
 
 
-# 5. Utilisation de Docker Compose
+## 5. Utilisation de Docker Compose
 
 Le fichier `docker-compose.yml` permet d'orchestrer tous les services Docker. Voici un aperçu de la configuration des services et des ports exposés :
 
@@ -130,7 +130,7 @@ Le fichier `docker-compose.yml` permet d'orchestrer tous les services Docker. Vo
 
 
 
-# 6. Test du système
+## 6. Test du système
 
 ### Connexion
 
@@ -248,9 +248,10 @@ Lorsque l’utilisateur ferme la feuille de budget, le **budget global** total e
 
 
 
-# 7. Liens et accès
+## 7. Liens et accès
 
 Les utilisateurs peuvent accéder aux différentes parties de l'application via ces ports selon l'état de leur connexion.
+
     - Frontend Principal : localhost:3017
     - Frontend de Connexion : localhost:3000
     - Backend API : localhost:3001
@@ -258,6 +259,6 @@ Les utilisateurs peuvent accéder aux différentes parties de l'application via 
 
 
 
-# 8. Conclusion
+## 8. Conclusion
 
 Ce projet repose sur une architecture Docker multi-services pour gérer l'authentification, le backend des données, et un frontend interactif. Grâce à Docker, chaque composant de l'application est isolé et peut être facilement déployé et géré. L'application offre une gestion complète des budgets partagés, avec des fonctionnalités d'ajout de transactions, de création de budgets, de gestion des utilisateurs, et de visualisation des données en temps réel. Les différentes requêtes API exposées par le backend permettent une interaction fluide avec la base de données et le frontend.
