@@ -7,11 +7,31 @@ Avant de démarrer le projet, assurez-vous d'avoir:
 
 <br>
 
+### Cloner le projet
+
+Pour cloner ce projet sur votre ordinateur, exécutez les commandes suivantes :
+
+    git clone https://github.com/tahlisfove/UPPA/tree/main/master_informatique/m2_informatique/budget-app ~/budget-app
+    cd ~/budget-app
+    
+<br>
+
 ### Lancer les Services avec Docker Compose
 
 Depuis un terminal dans le dossier racine, utilisez la commande suivante pour démarrer tous les services:
 
     docker-compose up --build
+
+<br>
+
+### Liens et accès
+
+Les utilisateurs peuvent accéder aux différentes parties de l'application via ces ports selon l'état de leur connexion.
+
+    - Nginx Reverse Proxy : localhost:8080
+    - Frontend de Connexion : localhost:3000
+    - Backend API : localhost:3001
+    - Frontend Principal : localhost:3017
 
 <br>
 
@@ -41,7 +61,7 @@ Pour redémarrer les services et reconstruire les images si nécessaire:
     
 Pour réinitialiser la base de données et les informations qu'elle contient:
 
-    remove budget-app-main_db_data
+    remove budget-app_db_data
 
 <br><br>
 
@@ -175,18 +195,7 @@ Le fichier `docker-compose.yml` permet d'orchestrer tous les services Docker. Vo
 
 <br><br>
 
-## 6. Liens et accès
-
-Les utilisateurs peuvent accéder aux différentes parties de l'application via ces ports selon l'état de leur connexion.
-
-    - Nginx Reverse Proxy : localhost:8080
-    - Frontend de Connexion : localhost:3000
-    - Backend API : localhost:3001
-    - Frontend Principal : localhost:3017
-
-<br><br>
-
-## 7. Test du système
+## 6. Test du système
 
 ### Connexion
 
@@ -344,6 +353,6 @@ Lorsque l’utilisateur ferme la feuille de budget, le **budget global** total e
 
 <br><br>
 
-## 8. Conclusion
+## 7. Conclusion
 
 Ce projet repose sur une architecture Docker multi-services pour gérer l'authentification, le backend des données, et un frontend interactif. Grâce à Docker, chaque composant de l'application est isolé et peut être facilement déployé et géré. L'application offre une gestion complète des budgets partagés, avec des fonctionnalités d'ajout de transactions, de création de budgets, de gestion des utilisateurs, et de visualisation des données en temps réel. Les différentes requêtes API exposées par le backend permettent une interaction fluide avec la base de données et le frontend.
