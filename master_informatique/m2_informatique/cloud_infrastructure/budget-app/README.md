@@ -153,6 +153,7 @@ Une fois connecté, l'utilisateur accède à l'**interface principale**, où il 
 L'utilisateur peut créer un **nouveau budget** en renseignant le nom du budget et les utilisateurs associés. Par exemple, un groupe d'amis partant en vacances crée une feuille de budget nommée "Vacances 2024" avec les utilisateurs suivants : Personne 1, Personne 2, Personne 3, Personne 4.
 
 ![Exemple de création de feuille de budget](img/create_feuille.png)
+![Exemple de création de feuille de budget](img/exemple_feuille.png)
 
 Une fois la feuille créée, elle apparaît sous la zone de création, et le budget initial est affiché à 0.
 
@@ -183,7 +184,7 @@ Lorsqu’un utilisateur clique sur un budget, il accède à une vue détaillée 
 5. **Ajout de transactions** :
    L'utilisateur peut ajouter des transactions à ce budget, comme par exemple des paiements effectués pour le groupe.
 
-   ![Zone des transactions](img/zone_transactions.png)
+   ![Zone des transactions](img/zone_transaction.png)
 
    <br>
 
