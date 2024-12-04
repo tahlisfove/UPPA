@@ -23,8 +23,6 @@ Une fois dans le shell PostgreSQL, vous pouvez exécuter les requêtes suivantes
     SELECT * FROM sheet_users;    -- Liste des utilisateurs associés aux budgets
     SELECT * FROM transactions;   -- Liste des transactions
     
-
-
 ### Arrêter et Redémarrer les Services
 
 Pour arrêter les services:
@@ -35,23 +33,17 @@ Pour redémarrer les services et reconstruire les images si nécessaire:
 
     docker-compose up (--build)
 
-
+<br><br>
 
 # Application de Gestion de Budget Partagé
 
 ## 1. Arborescence du projet
 
-
-
 ![Arborescence du projet](img/arbo.png)
 
-
+<br><br>
 
 ## 2. Présentation de l'application
-
-<br><br>
-<br><br>
-
 
 Cette application permet de gérer un **budget partagé** entre plusieurs utilisateurs. L'architecture de l'application repose sur plusieurs services Docker, chacun ayant un rôle spécifique dans le fonctionnement global de l'application. Ces services incluent :
 - Un **frontend principal** pour la gestion du budget.
@@ -61,7 +53,7 @@ Cette application permet de gérer un **budget partagé** entre plusieurs utilis
 - Une **base de données PostgreSQL** pour stocker les données.
 - Un **reverse proxy Nginx** pour gérer les redirections et les requêtes HTTP.
 
-
+<br><br>
 
 ## 3. Fonctionnalités principales
 
@@ -91,7 +83,7 @@ Cette application permet de gérer un **budget partagé** entre plusieurs utilis
   - Diriger les utilisateurs vers le frontend de connexion ou le frontend principal en fonction de l'état d'authentification.
   - Gérer les requêtes API en les redirigeant vers le backend.
 
-
+<br><br>
 
 ## 4. Architecture des Dockerfiles
 
@@ -117,7 +109,7 @@ L'application utilise **Docker** pour isoler les différentes parties du systèm
 ### f. Base de données (`db`)
 - **Image** : Utilisation de l'image officielle de **PostgreSQL**. Ce service expose le port `5432` et initialise la base de données avec un script `init.sql` situé dans le dossier **backend**.
 
-
+<br><br>
 
 ## 5. Utilisation de Docker Compose
 
@@ -130,7 +122,7 @@ Le fichier `docker-compose.yml` permet d'orchestrer tous les services Docker. Vo
 - **Base de Données (PostgreSQL)** : Expose le port `5432` pour la base de données.
 - **Nginx** : Expose le port `8080` pour accéder à l'application via le reverse proxy.
 
-
+<br><br>
 
 ## 6. Test du système
 
@@ -248,7 +240,7 @@ Lorsque l’utilisateur ferme la feuille de budget, le **budget global** total e
 
 ![Budget global](img/budget2.png)
 
-
+<br><br>
 
 ## 7. Liens et accès
 
@@ -259,7 +251,7 @@ Les utilisateurs peuvent accéder aux différentes parties de l'application via 
     - Backend API : localhost:3001
     - Nginx Reverse Proxy : localhost:8080
 
-
+<br><br>
 
 ## 8. Conclusion
 
