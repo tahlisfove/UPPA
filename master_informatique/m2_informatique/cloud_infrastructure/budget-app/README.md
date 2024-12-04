@@ -39,7 +39,7 @@ Pour redémarrer les services et reconstruire les images si nécessaire:
 
 ## 1. Arborescence du projet
 
-├── auth/
+├── auth/<br>
 │   ├── app.js
 │   ├── Dockerfile
 │   └── package.json
