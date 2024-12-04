@@ -49,6 +49,10 @@ Pour redémarrer les services et reconstruire les images si nécessaire:
 
 ## 2. Présentation de l'application
 
+<br><br>
+<br><br>
+
+
 Cette application permet de gérer un **budget partagé** entre plusieurs utilisateurs. L'architecture de l'application repose sur plusieurs services Docker, chacun ayant un rôle spécifique dans le fonctionnement global de l'application. Ces services incluent :
 - Un **frontend principal** pour la gestion du budget.
 - Un **frontend de connexion** pour l'authentification des utilisateurs.
