@@ -1,4 +1,4 @@
-### 0. Prérequis
+# 0. Prérequis
 
 Avant de démarrer le projet, assurez-vous d'avoir:
 
