@@ -23,8 +23,6 @@ Une fois dans le shell PostgreSQL, vous pouvez exécuter les requêtes suivantes
     SELECT * FROM sheet_users;    -- Liste des utilisateurs associés aux budgets
     SELECT * FROM transactions;   -- Liste des transactions
     
-![reqûetes depuis la base de données](img/psql.png)
-
 
 
 ## Arrêter et Redémarrer les Services
