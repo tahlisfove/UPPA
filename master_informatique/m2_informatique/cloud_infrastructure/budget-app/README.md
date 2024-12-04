@@ -132,15 +132,21 @@ Lorsqu'un utilisateur accède à l'application via `localhost:8080`, il est redi
 
 ![Page de connexion](img/page_login.png)
 
+<br>
+
 ### Authentification
 
 Une fois sur la page de connexion, l'utilisateur peut se connecter avec son compte Google. Si la connexion réussit, l'utilisateur est redirigé vers l'interface principale de l'application.
 
 ![Authentification Google](img/auth_google.png)
 
+<br>
+
 ### Frontend Principal
 
 Une fois connecté, l'utilisateur accède à l'**interface principale**, où il peut créer un budget, ajouter des transactions et gérer les utilisateurs associés aux budgets. Cette interface est servie par le service `frontend` via le port `3017`.
+
+<br>
 
 #### Création d'un budget
 
@@ -154,6 +160,8 @@ Une fois la feuille créée, elle apparaît sous la zone de création, et le bud
 
 Cette zone de création est **cliquable**, permettant d’accéder aux informations détaillées du budget, telles que les transactions et la gestion des utilisateurs.
 
+<br>
+
 #### Informations détaillées d'une feuille de budget
 
 Lorsqu’un utilisateur clique sur un budget, il accède à une vue détaillée qui comporte plusieurs sections :
@@ -163,30 +171,42 @@ Lorsqu’un utilisateur clique sur un budget, il accède à une vue détaillée 
 
    ![Titre de la feuille](img/titre_feuille.png)
 
-2. **Utilisateurs associés à la feuille** :
+   <br>
+
+3. **Utilisateurs associés à la feuille** :
    La liste des utilisateurs associés au budget est affichée, permettant à l'utilisateur de voir qui participe au budget.
 
    ![Zone des utilisateurs](img/zone_personnes.png)
 
-3. **Ajout de transactions** :
+   <br>
+
+5. **Ajout de transactions** :
    L'utilisateur peut ajouter des transactions à ce budget, comme par exemple des paiements effectués pour le groupe.
 
    ![Zone des transactions](img/zone_transactions.png)
 
-4. **Détails des dettes** :
+   <br>
+
+7. **Détails des dettes** :
    Une zone permet de savoir combien chaque personne doit à d'autres participants, en fonction des transactions effectuées.
 
    ![Zone des dettes](img/zone_dettes.png)
 
-5. **Historique des transactions** :
+   <br>
+
+9. **Historique des transactions** :
    Toutes les transactions effectuées pour ce budget sont listées dans une section d’historique.
 
    ![Zone historique des transactions](img/zone_historique.png)
 
-6. **Suppression du budget** :
+   <br>
+
+11. **Suppression du budget** :
    Une zone permet également de revenir en arrière ou de supprimer complètement la feuille de budget si nécessaire.
 
    ![Suppression de la feuille](img/delete_feuille.png)
+
+   <br>
 
 #### Ajout et suppression d'utilisateurs
 
@@ -198,10 +218,14 @@ Dans cet exemple, Personne 5 a été ajoutée.
 ![Ajout de Personne 5](img/ajout_personne5.png)
 ![Personne 5 ajoutée](img/personne5_ajoutee.png)
 
+<br>
+
 **Suppression d'une personne** :
 Il est également possible de supprimer des personnes du budget, mais uniquement si aucune transaction ne leur est liée. Par exemple, Personne 2 et Personne 3 ont été supprimées dans cet exemple.
 
 ![Suppression de personnes](img/suppression_personnes.png)
+
+<br>
 
 #### Ajout de transactions
 
@@ -216,6 +240,8 @@ La transaction est ensuite mise à jour dans la section **historique des transac
 
 Ainsi, Personne 1, Personne 3, et Personne 4 devront 25€ chacune à Personne 2 (100€ divisé par 4).
 
+<br>
+
 #### Ajouter d'autres transactions
 
 Des **transactions supplémentaires** peuvent être ajoutées. Par exemple, si Personne 4 achète des pizzas pour 50€, cela sera également ajouté.
@@ -226,6 +252,8 @@ Les **dettes** sont mises à jour en conséquence.
 
 ![Mise à jour des dettes (pizza)](img/calcul2.png)
 
+<br>
+
 #### Suppression d'une transaction
 
 Il est également possible de supprimer une transaction en cas d'erreur. Par exemple, la transaction de péage peut être supprimée, et tout est mis à jour. Dans cet exemple, seul le paiement de 50€ pour les pizzas reste, et les dettes sont réajustées.
@@ -233,6 +261,8 @@ Il est également possible de supprimer une transaction en cas d'erreur. Par exe
 ![Suppression de transaction](img/suppression_transaction.png)
 
 Après cette modification, seul Personne 4 a payé 50€ pour les pizzas, et donc Personne 1, Personne 2 et Personne 3 doivent 12,5€ chacun à Personne 4.
+
+<br>
 
 #### Budget global
 
