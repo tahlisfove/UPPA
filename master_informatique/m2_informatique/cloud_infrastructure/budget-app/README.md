@@ -39,7 +39,49 @@ Pour redémarrer les services et reconstruire les images si nécessaire:
 
 ## 1. Arborescence du projet
 
-![Arborescence du projet](img/arbo.png)
+├── auth/
+│   ├── app.js
+│   ├── Dockerfile
+│   └── package.json
+│
+├── backend/
+│   ├── app.js
+│   ├── Dockerfile
+│   ├── init.sql
+│   └── package.json
+│
+├── frontend/
+│   ├── src/
+│   │   ├── App.js
+│   │   └── index.js
+│   ├── public/
+│   │   ├── styles.css
+│   │   ├── script.js
+│   │   └── index.html
+│   ├── Dockerfile
+│   └── package.json
+│
+├── img/
+│   ├── psql.png
+│   └── ...
+│
+├── login-frontend/
+│   ├── src/
+│   │   ├── App.js
+│   │   └── index.js
+│   ├── public/
+│   │   ├── styles.css
+│   │   ├── script.js
+│   │   └── index.html
+│   ├── Dockerfile
+│   └── package.json
+│
+├── nginx/
+│   └── default.conf
+│
+├── .env
+├── docker-compose.yml
+└── README.md
 
 <br><br>
 
