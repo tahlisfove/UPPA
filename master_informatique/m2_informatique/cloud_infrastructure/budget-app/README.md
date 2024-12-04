@@ -166,7 +166,18 @@ Le fichier `docker-compose.yml` permet d'orchestrer tous les services Docker. Vo
 
 <br><br>
 
-## 6. Test du système
+## 6. Liens et accès
+
+Les utilisateurs peuvent accéder aux différentes parties de l'application via ces ports selon l'état de leur connexion.
+
+    - Nginx Reverse Proxy : localhost:8080
+    - Frontend de Connexion : localhost:3000
+    - Backend API : localhost:3001
+    - Frontend Principal : localhost:3017
+
+<br><br>
+
+## 7. Test du système
 
 ### Connexion
 
@@ -321,17 +332,6 @@ Il est également possible de supprimer une transaction en cas d'erreur. Par exe
 Lorsque l’utilisateur ferme la feuille de budget, le **budget global** total est affiché sur le côté de la feuille.
 
 ![Budget global](img/budget_v2.png)
-
-<br><br>
-
-## 7. Liens et accès
-
-Les utilisateurs peuvent accéder aux différentes parties de l'application via ces ports selon l'état de leur connexion.
-
-    - Frontend Principal : localhost:3017
-    - Frontend de Connexion : localhost:3000
-    - Backend API : localhost:3001
-    - Nginx Reverse Proxy : localhost:8080
 
 <br><br>
 
