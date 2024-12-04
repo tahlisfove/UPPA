@@ -200,13 +200,9 @@ L'utilisateur peut créer un **nouveau budget** en renseignant le nom du budget 
 
 <br>
 
-Une fois la feuille créée, elle apparaît sous la zone de création, et le budget initial est affiché à 0.
+Une fois la feuille créée, elle apparaît sous la zone de création, et le budget initial est affiché à 0. Cette zone de création est **cliquable**, permettant d’accéder aux informations détaillées du budget, telles que les transactions et la gestion des utilisateurs.
 
 ![Budget initial](img/budget_v1.png)
-
-<br>
-
-Cette zone de création est **cliquable**, permettant d’accéder aux informations détaillées du budget, telles que les transactions et la gestion des utilisateurs.
 
 <br>
 
@@ -260,20 +256,19 @@ Lorsqu’un utilisateur clique sur un budget, il accède à une vue détaillée 
 
 L'utilisateur peut ajouter ou supprimer des personnes du budget. Par exemple, si une personne se joint au groupe, elle peut être ajoutée facilement.
 
-<br>
-
 **Ajout d'une personne** :
 Dans cet exemple, Personne 5 a été ajoutée.
 
 ![Ajout de Personne 5](img/ajout_personne5.png)
+
+<br>
+
 ![Personne 5 ajoutée](img/personne5_ajoutee.png)
 
 <br>
 
 **Suppression d'une personne** :
 Il est également possible de supprimer des personnes du budget, mais uniquement si aucune transaction ne leur est liée. Par exemple, Personne 2 et Personne 3 ont été supprimées dans cet exemple.
-
-<br>
 
 ![Suppression de personnes](img/suppression_personnes.png)
 
@@ -285,12 +280,17 @@ Une fois que le budget est créé, les utilisateurs peuvent **ajouter des transa
 
 ![Ajout de transaction (péage)](img/ajout_zone_transaction.png)
 
+<br>
+
 La transaction est ensuite mise à jour dans la section **historique des transactions** et également dans la zone des **dettes**.
 
 ![Transaction ajoutée au historique](img/transaction1.png)
-![Calcul des dettes (péage)](img/calcul1.png)
+
+<br>
 
 Ainsi, Personne 1, Personne 3, et Personne 4 devront 25€ chacune à Personne 2 (100€ divisé par 4).
+
+![Calcul des dettes (péage)](img/calcul1.png)
 
 <br>
 
@@ -300,6 +300,8 @@ Des **transactions supplémentaires** peuvent être ajoutées. Par exemple, si P
 
 ![Transaction pizza](img/transaction2.png)
 
+<br>
+
 Les **dettes** sont mises à jour en conséquence.
 
 ![Mise à jour des dettes (pizza)](img/calcul2.png)
@@ -308,11 +310,9 @@ Les **dettes** sont mises à jour en conséquence.
 
 #### Suppression d'une transaction
 
-Il est également possible de supprimer une transaction en cas d'erreur. Par exemple, la transaction de péage peut être supprimée, et tout est mis à jour. Dans cet exemple, seul le paiement de 50€ pour les pizzas reste, et les dettes sont réajustées.
+Il est également possible de supprimer une transaction en cas d'erreur. Par exemple, la transaction de péage peut être supprimée, et tout est mis à jour. Dans cet exemple, seul le paiement de 50€ pour les pizzas reste, et les dettes sont réajustées. Après cette modification, seul Personne 4 a payé 50€ pour les pizzas, et donc Personne 1, Personne 2 et Personne 3 doivent 12,5€ chacun à Personne 4.
 
 ![Suppression de transaction](img/suppression_transaction.png)
-
-Après cette modification, seul Personne 4 a payé 50€ pour les pizzas, et donc Personne 1, Personne 2 et Personne 3 doivent 12,5€ chacun à Personne 4.
 
 <br>
 
