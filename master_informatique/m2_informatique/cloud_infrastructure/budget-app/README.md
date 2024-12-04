@@ -20,7 +20,9 @@ Dans un autre terminal vous pouvez accéder aux informations stockées dans la b
 Une fois dans le shell PostgreSQL, vous pouvez exécuter les requêtes suivantes pour vérifier les données (par exemple):
 
     SELECT * FROM sheets;         -- Liste des budgets
+    
     SELECT * FROM sheet_users;    -- Liste des utilisateurs associés aux budgets
+    
     SELECT * FROM transactions;   -- Liste des transactions
     
 
