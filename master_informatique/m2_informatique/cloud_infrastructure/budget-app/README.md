@@ -15,23 +15,31 @@ Dans un autre terminal vous pouvez accéder aux informations stockées dans la b
 
 Une fois dans le shell PostgreSQL, vous pouvez exécuter les requêtes suivantes pour vérifier les données (par exemple):
 
-SELECT * FROM sheets;         -- Liste des budgets
-SELECT * FROM sheet_users;    -- Liste des utilisateurs associés aux budgets
-SELECT * FROM transactions;   -- Liste des transactions
+    SELECT * FROM sheets;         -- Liste des budgets
+    SELECT * FROM sheet_users;    -- Liste des utilisateurs associés aux budgets
+    SELECT * FROM transactions;   -- Liste des transactions
+
+
 
 ![reqûetes depuis la base de données](img/psql.png)
 
+
+
 ## Arrêter et Redémarrer les Services
 
-Pour arrêter les services : "docker-compose down"
+Pour arrêter les services :    
+    "docker-compose down"
 
-Pour redémarrer les services et reconstruire les images si nécessaire : "docker-compose up (--build)"
+Pour redémarrer les services et reconstruire les images si nécessaire : 
+    "docker-compose up (--build)"
 
 
 
 # Application de Gestion de Budget Partagé
 
 ### 1. Arborescence du projet
+
+
 
 ![Arborescence du projet](img/arbo.png)
 
