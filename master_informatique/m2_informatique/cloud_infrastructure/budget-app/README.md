@@ -188,18 +188,23 @@ Une fois sur la page de connexion, l'utilisateur peut se connecter avec son comp
 
 Une fois connecté, l'utilisateur accède à l'**interface principale**, où il peut créer un budget, ajouter des transactions et gérer les utilisateurs associés aux budgets. Cette interface est servie par le service `frontend` via le port `3017`.
 
-<br>
-
 #### Création d'un budget
 
 L'utilisateur peut créer un **nouveau budget** en renseignant le nom du budget et les utilisateurs associés. Par exemple, un groupe d'amis partant en vacances crée une feuille de budget "Vacances 2024" avec les utilisateurs suivants : Personne 1, Personne 2, Personne 3, Personne 4.
 
 ![Exemple de création de feuille de budget](img/create_feuille.png)
+
+<br>
+
 ![Exemple de création de feuille de budget](img/exemple_feuille.png)
+
+<br>
 
 Une fois la feuille créée, elle apparaît sous la zone de création, et le budget initial est affiché à 0.
 
 ![Budget initial](img/budget_v1.png)
+
+<br>
 
 Cette zone de création est **cliquable**, permettant d’accéder aux informations détaillées du budget, telles que les transactions et la gestion des utilisateurs.
 
