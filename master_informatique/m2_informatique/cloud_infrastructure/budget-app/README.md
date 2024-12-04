@@ -143,12 +143,12 @@ L'application utilise **Docker** pour isoler les différentes parties du systèm
 ### d. Frontend de Connexion (`login-frontend`)
 - **Dockerfile** : Ce service est une simple page de connexion qui redirige l'utilisateur vers l'authentification Google. Il expose le port `3000` et dépend du service **auth** pour gérer l'authentification.
 
-### e. Nginx (Reverse Proxy)
+### e. Nginx (`nginx`)
 - **default.conf** : Ce fichier configure Nginx pour :
   - Agir en tant que reverse proxy en redirigeant les utilisateurs non authentifiés vers la page de connexion.
   - Servir les fichiers statiques du frontend principal après l'authentification.
 
-### f. Base de données (`db`)
+### f. Base de données (`bdd`)
 - **Image** : Utilisation de l'image officielle de **PostgreSQL**. Ce service expose le port `5432` et initialise la base de données avec un script `init.sql` situé dans le dossier **backend**.
 
 <br><br>
