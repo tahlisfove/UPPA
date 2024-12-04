@@ -150,7 +150,7 @@ Une fois connecté, l'utilisateur accède à l'**interface principale**, où il 
 
 #### Création d'un budget
 
-L'utilisateur peut créer un **nouveau budget** en renseignant le nom du budget et les utilisateurs associés. Par exemple, un groupe d'amis partant en vacances crée une feuille de budget nommée "Vacances 2024" avec les utilisateurs suivants : Personne 1, Personne 2, Personne 3, Personne 4.
+L'utilisateur peut créer un **nouveau budget** en renseignant le nom du budget et les utilisateurs associés. Par exemple, un groupe d'amis partant en vacances crée une feuille de budget "Vacances 2024" avec les utilisateurs suivants : Personne 1, Personne 2, Personne 3, Personne 4.
 
 ![Exemple de création de feuille de budget](img/create_feuille.png)
 ![Exemple de création de feuille de budget](img/exemple_feuille.png)
