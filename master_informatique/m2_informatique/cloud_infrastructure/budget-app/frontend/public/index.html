@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <!-- Métadonnées pour la page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Lien vers l'icone de la page -->
+    <link rel="icon" href="favicon.png" type="image/png">
+    
+    <!-- Lien vers le fichier CSS externe pour le style de la page -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Lien vers la bibliothèque Axios (pour les requêtes HTTP) -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <!-- Lien vers le fichier JavaScript externe, le script est chargé après le HTML grâce à "defer" -->
+    <script src="script.js" defer></script>
+
+    <!-- Titre de la page -->
+    <title>Gestion de Budget Partagé</title>
+  </head>
+
+  <body>
+    <!-- En-tête de la page -->
+    <header>
+      <h1>Gestion de Budget Partagé</h1>
+      <p>Créez une nouvelle feuille de budget et gérez les dépenses communes.</p>
+      <button id="logoutButton">Se déconnecter</button>
+    </header>
+    
+    <!-- Contenu principal de la page -->
+    <main>
+      <!-- Formulaire pour créer une nouvelle feuille de budget -->
+      <section class="budget-form">
+        <div class="titre">
+          <h2>Créer une nouvelle feuille de budget</h2>
+        </div>
+        <form id="budgetForm">
+          <div id="inputs">
+            <!-- Champ pour le nom de la feuille de budget -->
+            <label for="budgetName">Nom de la feuille de budget</label>
+            <input type="text" id="budgetName" name="budgetName" placeholder="Saisir le nom de la feuille" autocomplete="off" required>
+          </div>
+          <div id="inputs">
+            <!-- Champ pour la liste des utilisateurs -->
+            <label for="users">Liste des utilisateurs (séparés par des virgules)</label>
+            <input type="text" id="users" name="users" placeholder="Saisir les noms des utilisateurs" autocomplete="off" required>
+          </div>
+          <!-- Bouton pour soumettre le formulaire -->
+          <button id="createBudgetBtn" type="submit">Créer la feuille de budget</button>
+        </form>
+      </section>
+
+      <!-- Section contenant toutes les feuilles de budget créées -->
+      <section class="budgets-container" id="budgetsContainer">
+        <!-- Les feuilles de budget seront affichées ici -->
+      </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+      <div class="footerdiv">
+        <p class="footer-info">Gestion de Budget Partagé &copy; 2024</p>
+        <p class="footer-details">Christoph Samuel - M2 TI</p>
+      </div>
+    </footer>
+
+    <!-- Overlay (masque pour certaines interactions) -->
+    <div id="overlay" style="display: none;"></div>
+
+    <!-- Détail de la feuille de budget -->
+    <div id="budgetDetail" style="display: none;">
+      <h2 id="budgetDetailName"></h2>
+
+      <!-- Section pour modifier les utilisateurs et afficher des informations -->
+      <div id="placement3">
+        <div class="infos">
+          <div id="titreAdd">
+            <div id="nomesp">
+              <h3>Modification des utilisateurs</h3>
+            </div>
+            <div id="budgetDetailUsers"></div>
+          </div>
+
+          <!-- Section pour les transactions -->
+          <div id="budgetDetailTransactions"></div>
+
+          <!-- Formulaire pour ajouter une nouvelle transaction -->
+          <div class="transaction-form">
+            <h3>Nouvelle transaction</h3>
+            <div id="nom-somme">
+              <input type="text" id="amount" name="amount" placeholder="Montant" required pattern="^\d{1,6}(\.\d{0,2})?$" oninput="validateAmount(this)" />
+              <select id="transactionPerson" name="transactionPerson" required></select>
+              <input id="description" name="description" placeholder="Description de la transaction" required>
+            </div>
+            <!-- Bouton pour ajouter une transaction -->
+            <button id="addTransactionButton">Ajouter la transaction</button>
+          </div>
+        </div>
+
+        <!-- Liste des transactions et résumés des dépenses -->
+        <div id="transactionList">
+
+          <div id="budgetDetailTotal">
+              <h3>Total des dépenses : 
+              <label type="text" id="budgetTotalAmount" readonly>€</label>
+            </h3>
+            <div id="budgetDetailDebtSummary">
+              <!-- Les dettes seront affichées ici -->
+            </div>
+          </div>
+
+          <!-- Historique des transactions -->
+          <div id="transList">
+            <h3>Historique des transactions</h3>
+            <p id="aucunnetransaction">Aucune transaction pour le moment</p>
+            <ul id="transactionItems"></ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Boutons pour fermer ou supprimer une feuille de budget -->
+      <div class="buttonformulaire">
+        <button id="closeBudgetDetailButton">Fermer</button>
+        <button id="deleteBudgetButton">Supprimer la feuille</button>
+      </div>
+    </div>
+  </body>
+</html>
