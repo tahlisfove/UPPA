@@ -1,0 +1,137 @@
+/* style par défaut de la page */
+body {
+  background-color: #e9e5e5;
+  color: #333;
+  line-height: 1.6;
+  margin: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/******/
+
+
+/* style du header */
+header {
+  background-color: #333;
+  color: #f2f1f1;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+/* titre de la page header */
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2.5em;
+}
+
+/* message du header */
+header p {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+/* style du bouton de connexion */
+#loginButton {
+  background-color: #4CAF50; /* Vert de fond */
+  color: white; /* Couleur du texte */
+  font-size: 1.1em; /* Taille de la police */
+  padding: 12px 24px; /* Espacement intérieur */
+  border: none; /* Pas de bordure */
+  border-radius: 30px; /* Bords arrondis */
+  cursor: pointer; /* Change le curseur en main */
+  transition: all 0.3s ease; /* Animation lors du survol */
+  box-shadow: 0 4px 8px rgba(0, 128, 0, 0.2); /* Ombre subtile */
+  width: 100%; /* Largeur à 100% pour s’adapter à son conteneur */
+  max-width: 250px; /* Limiter la largeur maximale */
+  text-align: center; /* Centrer le texte */
+  font-weight: bold; /* Texte en gras */
+  text-transform: uppercase; /* Mettre le texte en majuscules */
+}
+
+/* effet au survol du button de connexion */
+#loginButton:hover {
+  background-color: #45a049; /* Vert légèrement plus foncé au survol */
+  box-shadow: 0 6px 12px rgba(0, 128, 0, 0.3); /* Ombre plus marquée au survol */
+}
+
+/* effet lors du clic du button de connexion */
+#loginButton:active {
+  background-color: #3c8d40; /* Changer la couleur lors du clic */
+  box-shadow: 0 2px 6px rgba(0, 128, 0, 0.2); /* Ombre plus légère lors du clic */
+  transform: translateY(2px); /* "Enfoncer" le bouton lors du clic */
+}
+
+
+/******/
+
+
+/* style pour la div du formulaire de création */
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+  
+/* div complet formulaire de création de feuille */
+.budget-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+  
+/* div du formulaire de création de feuille */
+#budgetForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 3%;
+}
+
+/* div comprennant le bouton de connection */
+#placement-btn {
+  margin: 25.3%;
+}
+  
+
+/******/
+
+
+/* style général du footer */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #f2f1f1;
+  padding: 6px 0;
+  margin-top: 3%;
+}
+
+/* div du footer pour placement */
+.footerdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* texte de droite du footer */
+.footer-details {
+  font-style: italic;
+  margin-right: 6%;
+}
+
+/* texte de gauche du footer */
+.footer-info {
+  margin-left: 6%;
+}
+
+/* taille du texte dans le footer */
+footer p {
+  font-size: 1em;
+}
