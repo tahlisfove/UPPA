@@ -49,9 +49,7 @@ Pour redémarrer les services et reconstruire les images si nécessaire:
 
 ## 2. Présentation de l'application
 
-Cette application permet de gérer un **budget partagé** entre plusieurs utilisateurs. Elle comprend un **système d'authentification via Google**, un **frontend interactif** pour afficher les budgets et les transactions, et un **backend** pour gérer et stocker les données.
-
-L'architecture de l'application repose sur plusieurs services Docker, chacun ayant un rôle spécifique dans le fonctionnement global de l'application. Ces services incluent :
+Cette application permet de gérer un **budget partagé** entre plusieurs utilisateurs. L'architecture de l'application repose sur plusieurs services Docker, chacun ayant un rôle spécifique dans le fonctionnement global de l'application. Ces services incluent :
 - Un **frontend principal** pour la gestion du budget.
 - Un **frontend de connexion** pour l'authentification des utilisateurs.
 - Un **backend API** pour gérer les budgets, les utilisateurs et les transactions.
