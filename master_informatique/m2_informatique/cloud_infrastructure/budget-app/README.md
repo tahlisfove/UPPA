@@ -41,7 +41,7 @@ Pour redémarrer les services et reconstruire les images si nécessaire:
 
 # Application de Gestion de Budget Partagé
 
-### 1. Arborescence du projet
+# 1. Arborescence du projet
 
 
 
@@ -49,7 +49,7 @@ Pour redémarrer les services et reconstruire les images si nécessaire:
 
 
 
-### 2. Présentation de l'application
+# 2. Présentation de l'application
 
 Cette application permet de gérer un **budget partagé** entre plusieurs utilisateurs. Elle comprend un **système d'authentification via Google**, un **frontend interactif** pour afficher les budgets et les transactions, et un **backend** pour gérer et stocker les données.
 
@@ -63,7 +63,7 @@ L'architecture de l'application repose sur plusieurs services Docker, chacun aya
 
 
 
-### 3. Fonctionnalités principales
+# 3. Fonctionnalités principales
 
 ## Page de connexion :
 - Permet à l'utilisateur de se connecter via Google.
@@ -93,7 +93,7 @@ L'architecture de l'application repose sur plusieurs services Docker, chacun aya
 
 
 
-### 4. Architecture des Dockerfiles
+# 4. Architecture des Dockerfiles
 
 L'application utilise **Docker** pour isoler les différentes parties du système. Voici un aperçu des services Docker et de leurs Dockerfiles :
 
@@ -119,7 +119,7 @@ L'application utilise **Docker** pour isoler les différentes parties du systèm
 
 
 
-### 5. Utilisation de Docker Compose
+# 5. Utilisation de Docker Compose
 
 Le fichier `docker-compose.yml` permet d'orchestrer tous les services Docker. Voici un aperçu de la configuration des services et des ports exposés :
 
@@ -132,7 +132,7 @@ Le fichier `docker-compose.yml` permet d'orchestrer tous les services Docker. Vo
 
 
 
-### 6. Test du système
+# 6. Test du système
 
 ### Connexion
 
@@ -250,7 +250,7 @@ Lorsque l’utilisateur ferme la feuille de budget, le **budget global** total e
 
 
 
-## 7. Liens et accès
+# 7. Liens et accès
 
 Les utilisateurs peuvent accéder aux différentes parties de l'application via ces ports selon l'état de leur connexion.
     - Frontend Principal : localhost:3017
@@ -260,6 +260,6 @@ Les utilisateurs peuvent accéder aux différentes parties de l'application via 
 
 
 
-## 8. Conclusion
+# 8. Conclusion
 
 Ce projet repose sur une architecture Docker multi-services pour gérer l'authentification, le backend des données, et un frontend interactif. Grâce à Docker, chaque composant de l'application est isolé et peut être facilement déployé et géré. L'application offre une gestion complète des budgets partagés, avec des fonctionnalités d'ajout de transactions, de création de budgets, de gestion des utilisateurs, et de visualisation des données en temps réel. Les différentes requêtes API exposées par le backend permettent une interaction fluide avec la base de données et le frontend.
