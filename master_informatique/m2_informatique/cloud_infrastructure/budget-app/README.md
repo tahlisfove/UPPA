@@ -224,6 +224,8 @@ Dans cet exemple, Personne 5 a été ajoutée.
 **Suppression d'une personne** :
 Il est également possible de supprimer des personnes du budget, mais uniquement si aucune transaction ne leur est liée. Par exemple, Personne 2 et Personne 3 ont été supprimées dans cet exemple.
 
+<br>
+
 ![Suppression de personnes](img/suppression_personnes.png)
 
 <br>
